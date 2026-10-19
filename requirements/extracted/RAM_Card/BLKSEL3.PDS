@@ -1,0 +1,84 @@
+
+
+; NET2PDS - vers 4.05.21 (12/06/1990) - (c)1990 Advanced Micro Devices, Inc.
+; PDS file created    2/24/1991   5:59p
+; Sourcefile: "BLKSEL"
+
+TITLE            ?
+REVISION         ?
+PATTERN          ?
+AUTHOR           ?
+COMPANY          ?
+DATE           11/09/2015
+; INPUTS....
+; BSC0 - BSC7 all active low inputs
+; ALE this is the inverted -ALE from the memory bus this signal is used as the
+;     clock for the PLD registered outputs latch on the rise of ALE
+; RAL this memory bus line goes low to indicate a register access cycle
+;    the registers occupy the bottom 32 words on each page of memory so these
+;    addresses need to be mapped out.
+; BYTE this line is low for single byte cycles (seems to be write only) on
+;    a read the processor knows which byte it wants and picks it out of the
+;    word returned by the write cycle.
+; BL when BYTE is low BL low select the LEFT or MSB high select LSB
+;
+; OUTPUTS
+; SELECT1 Select lower pair of SRAMs for Blocks 2, 4 ,6 and 8
+; SELECT1 Select lower pair of SRAMs for Blocks 10, 12 ,14 and 16
+; A15 address bit A15 for SRAMs this output is latched by ALE
+; A16 address bit A16 for SRAMs this output is latched by ALE
+; SELECTED this pin goes low if either pair of SRAMs is selected this
+;     output is latched by ALE
+; CE1_L enable low byte of first pair -BYTE and BL this output is latched by ALE
+; CE1_H enable high byte of first pair -BYTE and -BL this output is latched by ALE
+; CE2_L enable low byte of second pair -BYTE and BL this output is latched by ALE
+; CE2_H enable high byte of second pair -BYTE and -BL this output is latched by ALE
+
+CHIP     BLKSEL    PALCE22V10
+
+  PIN     1       ALE
+  PIN     2       BSC0
+  PIN     3       BSC1
+  PIN     4       BSC2
+  PIN     5       BSC3
+  PIN     6       BSC4
+  PIN     7       BSC5
+  PIN     8       BSC6
+  PIN     9       RAL
+  PIN     10      BYTE
+  PIN     11      BL
+  PIN     15      SELECTED     
+  PIN     16      SELECT1
+  PIN     17      SELECT2
+  PIN     18      A15           REGISTERED
+  PIN     19      A16           REGISTERED
+  PIN     20      CE1_L         REGISTERED
+  PIN     21      CE1_H         REGISTERED
+  PIN     22      CE2_L         REGISTERED
+  PIN     23      CE2_H         REGISTERED
+EQUATIONS
+
+ SELECT1  = ((BSC6*BSC5*BSC4*BSC3*BSC2*/BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*BSC3*/BSC2*BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*BSC3*/BSC2*/BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*/BSC3*BSC2*BSC1*BSC0)) * RAL
+ SELECT2  = ((BSC6*BSC5*BSC4*/BSC3*BSC2*/BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*/BSC3*/BSC2*BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*/BSC3*/BSC2*/BSC1*BSC0) +
+            (BSC6*BSC5*/BSC4*BSC3*BSC2*BSC1*BSC0)) * RAL
+ A15      = (BSC6*BSC5*BSC4*BSC3*/BSC2*BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*/BSC3*BSC2*BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*/BSC3*/BSC2*BSC1*BSC0) +
+            (BSC6*BSC5*/BSC4*BSC3*BSC2*BSC1*BSC0)
+ A16      = (BSC6*BSC5*BSC4*BSC3*/BSC2*/BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*/BSC3*BSC2*BSC1*BSC0) +
+            (BSC6*BSC5*BSC4*/BSC3*/BSC2*/BSC1*BSC0) +
+            (BSC6*BSC5*/BSC4*BSC3*BSC2*BSC1*BSC0)
+ SELECTED = (SELECT1 + SELECT2) * ALE
+ /CE1_L    = (SELECT1 * RAL * BYTE) + (SELECT1 * RAL * /BYTE * BL)
+ /CE1_H    = (SELECT1 * RAL * BYTE) + (SELECT1 * RAL * /BYTE * /BL)
+ /CE2_L    = (SELECT2 * RAL * BYTE) + (SELECT2 * RAL * /BYTE * BL)
+ /CE2_H    = (SELECT2 * RAL * BYTE) + (SELECT2 * RAL * /BYTE * /BL)
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+

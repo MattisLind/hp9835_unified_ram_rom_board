@@ -1,0 +1,35 @@
+file,hp_block,segment,description
+lpu_sys_0.bin,0o03,0,System LPU segment 0
+lpu_sys_1.bin,0o03,1,System LPU segment 1
+lpu_sys_2.bin,0o03,2,System LPU segment 2
+lpu_sys_3.bin,0o03,3,System LPU segment 3
+lpu_sys_4.bin,0o03,4,System LPU segment 4
+lpu_sys_5.bin,0o03,5,System LPU segment 5
+lpu_sys_6.bin,0o03,6,System LPU segment 6
+lpu_sys_7.bin,0o03,7,System LPU segment 7
+ppu_sys_0.bin,0o05,0,System PPU segment 0
+98331B_rom1.bin,0o05,1,98331B Mass Storage ROM1
+98331B_rom2.bin,0o05,2,98331B Mass Storage ROM2
+ppu_sys_3.bin,0o05,3,System PPU segment 3
+ppu_sys_4.bin,0o05,4,System PPU segment 4
+ppu_sys_5.bin,0o05,5,System PPU segment 5
+ppu_sys_6.bin,0o05,6,System PPU segment 6
+ppu_sys_7.bin,0o05,7,System PPU segment 7
+plotter_1.bin,0o07,6,98337A Plotter 1
+plotter_2.bin,0o07,7,98337A Plotter 2
+io_1.bin,0o11,1,98332A I/O 1
+io_2.bin,0o11,2,98332A I/O 2
+io_3.bin,0o11,3,98332A I/O 3
+io_4.bin,0o11,4,98332A I/O 4
+advanced.bin,0o13,1,98336A Advanced Programming
+structured.bin,0o13,2,98335A Structured Programming
+assembly_execute.bin,0o13,5,98338A Assembly Execution
+assembly_dev_1.bin,0o13,6,98339A Assembly Development & Execution 1
+assembly_dev_2.bin,0o13,7,98339A Assembly Development & Execution 2
+basic_dc_1.bin,0o21,0,98317A Basic Datacomm 1
+basic_dc_2.bin,0o21,1,98317A Basic Datacomm 2
+basic_dc_3.bin,0o21,2,98317A Basic Datacomm 3
+basic_dc_4.bin,0o21,3,98317A Basic Datacomm 4
+bisync_1.bin,0o21,4,98318A Bisync Datacomm 1
+bisync_2.bin,0o21,5,98318A Bisync Datacomm 2
+diag.rom,0o45,0,CE diagnostic ROM

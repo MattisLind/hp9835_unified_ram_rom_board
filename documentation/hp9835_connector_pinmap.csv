@@ -1,0 +1,51 @@
+pin,side,signal,status
+1,B.Cu solder side (odd),HP_BSC_N0,Supplied RAM/ROM references
+2,F.Cu component side (even),HP_BSC_N1,Supplied RAM/ROM references
+3,B.Cu solder side (odd),HP_BSC_N2,Supplied RAM/ROM references
+4,F.Cu component side (even),HP_BSC_N3,Supplied RAM/ROM references
+5,B.Cu solder side (odd),HP_BSC_N4,Supplied RAM/ROM references
+6,F.Cu component side (even),HP_BSC_N5,Supplied RAM/ROM references
+7,B.Cu solder side (odd),HP_BSC_N6,Supplied RAM/ROM references
+8,F.Cu component side (even),HP_BL_N,Supplied RAM/ROM references
+9,B.Cu solder side (odd),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+10,F.Cu component side (even),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+11,B.Cu solder side (odd),HP_IDA_N0,Supplied RAM/ROM references
+12,F.Cu component side (even),HP_IDA_N8,Supplied RAM/ROM references
+13,B.Cu solder side (odd),HP_IDA_N1,Supplied RAM/ROM references
+14,F.Cu component side (even),HP_IDA_N9,Supplied RAM/ROM references
+15,B.Cu solder side (odd),HP_IDA_N2,Supplied RAM/ROM references
+16,F.Cu component side (even),HP_IDA_N10,Supplied RAM/ROM references
+17,B.Cu solder side (odd),HP_IDA_N3,Supplied RAM/ROM references
+18,F.Cu component side (even),HP_IDA_N11,Supplied RAM/ROM references
+19,B.Cu solder side (odd),HP_IDA_N4,Supplied RAM/ROM references
+20,F.Cu component side (even),HP_IDA_N12,Supplied RAM/ROM references
+21,B.Cu solder side (odd),HP_IDA_N5,Supplied RAM/ROM references
+22,F.Cu component side (even),HP_IDA_N13,Supplied RAM/ROM references
+23,B.Cu solder side (odd),HP_IDA_N6,Supplied RAM/ROM references
+24,F.Cu component side (even),HP_IDA_N14,Supplied RAM/ROM references
+25,B.Cu solder side (odd),HP_IDA_N7,Supplied RAM/ROM references
+26,F.Cu component side (even),HP_IDA_N15,Supplied RAM/ROM references
+27,B.Cu solder side (odd),+12V,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03; rail identified but unused by 5 V board"
+28,F.Cu component side (even),-12V,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03; rail identified but unused by 5 V board"
+29,B.Cu solder side (odd),+12V,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03; rail identified but unused by 5 V board"
+30,F.Cu component side (even),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+31,B.Cu solder side (odd),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+32,F.Cu component side (even),HP_SOB_N,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+33,B.Cu solder side (odd),HP_STME_N,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03; separate STME buffer, labelled but unused on this card"
+34,F.Cu component side (even),HP_RAL_N,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+35,B.Cu solder side (odd),+5V,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+36,F.Cu component side (even),,"UNRESOLVED; intentionally unconnected, not assumed to be ground"
+37,B.Cu solder side (odd),+5V,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+38,F.Cu component side (even),HP_SUMC_N,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03; SUMC input to CPU, labelled but unused on this card"
+39,B.Cu solder side (odd),+5V,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+40,F.Cu component side (even),HP_MIP_N,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+41,B.Cu solder side (odd),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+42,F.Cu component side (even),HP_STM_N,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+43,B.Cu solder side (odd),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+44,F.Cu component side (even),HP_WRT_N,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+45,B.Cu solder side (odd),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+46,F.Cu component side (even),HP_PH2,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+47,B.Cu solder side (odd),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+48,F.Cu component side (even),HP_BYTE_N,Supplied RAM/ROM references
+49,B.Cu solder side (odd),GND,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03"
+50,F.Cu component side (even),+7V,"Original CPU corner schematic and Paul Berger correspondence, supplied 2026-10-03; rail identified but unused by 5 V board"

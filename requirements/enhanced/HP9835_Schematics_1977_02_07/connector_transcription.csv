@@ -1,0 +1,32 @@
+contact,normalized_signal,evidence,confidence,notes
+1,BSC0,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+2,BSC1,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+3,BSC2,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+4,BSC3,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+5,BSC4,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+6,BSC5,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+7,BSC6,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+11,IDA0,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+13,IDA1,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+15,IDA2,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+17,IDA3,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+19,IDA4,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+21,IDA5,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+23,IDA6,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+25,IDA7,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+12,IDA8,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+14,IDA9,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+16,IDA10,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+18,IDA11,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+20,IDA12,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+22,IDA13,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+24,IDA14,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+26,IDA15,page 1 bus column; cross-checked against reference cards,moderate,Polarity not independently determined
+48,BYTE,candidate contact reading in page 1 control column; signal supplied by reference-card mapping,tentative,Not independent verification of signal assignment
+8,BL,candidate contact reading in page 1 control column; signal supplied by reference-card mapping,tentative,Not independent verification of signal assignment
+44,WRT,candidate contact reading in page 1 control column; signal supplied by reference-card mapping,tentative,Not independent verification of signal assignment
+34,RAL,candidate contact reading in page 1 control column; signal supplied by reference-card mapping,tentative,Not independent verification of signal assignment
+46,PH2,candidate contact reading in page 1 control column; signal supplied by reference-card mapping,tentative,Not independent verification of signal assignment
+32,SMC,candidate contact reading in page 1 control column; signal supplied by reference-card mapping,tentative,Not independent verification of signal assignment
+42,STM,candidate contact reading in page 1 control column; signal supplied by reference-card mapping,tentative,Signal text not independently legible; STM 42 conflicts with ROM reference 33
+40,UMC,candidate contact reading in page 1 control column; signal supplied by reference-card mapping,tentative,Not independent verification of signal assignment

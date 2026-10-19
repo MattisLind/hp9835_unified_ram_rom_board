@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "hp9835_unified_ram_rom_board")(type "KiCad")(uri "${KIPRJMOD}/hp9835_unified_ram_rom_board.pretty")(options "")(descr "HP 9835 Rev F custom footprints"))
+)

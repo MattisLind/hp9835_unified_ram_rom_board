@@ -1,0 +1,73 @@
+
+
+; NET2PDS - vers 4.05.21 (12/06/1990) - (c)1990 Advanced Micro Devices, Inc.
+; PDS file created    2/24/1991   5:59p
+; Sourcefile: "MISC"
+
+TITLE            ?
+REVISION         ?
+PATTERN          ?
+AUTHOR           ?
+COMPANY          ?
+DATE           11/28/2017
+; INPUTS
+; PH2 clock input is phase 2 clock
+; ALE_IN -ALE from bus
+; SELECTED input from BLKSEL PLD latched selected
+; PIN32 (SMC) from bus indicates data should be ouput to bus
+; WR -WR memory bus signal
+;
+; OUTPUTS
+; CLK1, CLK2, and CLK3 this are the signals used internally in the PLD to
+;    control timing of the memory sequence.  CLK1 goes active on the rise of
+;    Phase 2 clock CLK2 comes active on the next rise of Phase 2 and finally
+;    CLK3 on the next rise of Phase 2 after that.
+; ALE inverted -ALE from bus
+; EN245 this goes low to enable the 245 buffers when CLK1 goes active and
+;    remains active for the remainder of the memory cycle
+; RAW40 activates a tristate buffer which in turn pulls down pin 40 on the
+;   memory bus which is UMC this is like an ACK to the processor from the
+;   memory on READ cycles the processor responds with SMC.
+; WRSRAM this will go low for one cycle of PH2 about 150nS plenty of time for
+;   the 55nS SRAM I am using
+; OE  Pin32 (SMC) qualified by SELECTED and ALE this signal enables the
+;      outputs on the RAM chips.
+
+CHIP     12Bit           PALCE16V8
+
+
+  PIN     1       CLKIN
+  PIN     2       ALE_IN
+  PIN     3       SELECTED
+  PIN     4       SMC
+  PIN     5       WR
+  PIN     10      GND
+  PIN     12      CLK3        REGISTERED
+  PIN     13      RAMWR
+  PIN     14      EN245
+  PIN     15      RAW40
+  PIN     16      OE
+  PIN     17      ALE
+  PIN     18      CLK2         REGISTERED
+  PIN     19      CLK1         REGISTERED
+  PIN     20      VCC
+
+
+EQUATIONS
+
+  CLK1.CLKF = CLKIN
+  CLK2.CLKF = CLKIN
+  CLK3.CLKF = CLKIN
+
+  ALE = /ALE_IN
+  CLK1 = SELECTED
+  CLK2 = CLK1
+  CLK3 = CLK2
+  /RAW40 = CLK1 * ALE * SELECTED
+  /OE  = SMC * SELECTED * ALE
+  /EN245 = CLK1 * ALE *SELECTED
+  /RAMWR = CLK2 * /WR * /CLK3
+
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+

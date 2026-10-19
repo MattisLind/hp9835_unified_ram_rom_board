@@ -1,0 +1,51 @@
+pin,RAM_Schematic.pdf,9835_ROM_Diagram.pdf,current_J3_net,assessment
+1,HP_BSC_N0,HP_BSC_N0,unconnected-(J3-Pin_1-Pad1),MISMATCH
+2,HP_BSC_N1,HP_BSC_N1,unconnected-(J3-Pin_2-Pad2),MISMATCH
+3,HP_BSC_N2,HP_BSC_N2,unconnected-(J3-Pin_3-Pad3),MISMATCH
+4,HP_BSC_N3,HP_BSC_N3,HP_BYTE_N,MISMATCH
+5,HP_BSC_N4,HP_BSC_N4,unconnected-(J3-Pin_5-Pad5),MISMATCH
+6,HP_BSC_N5,HP_BSC_N5,HP_PH2,MISMATCH
+7,HP_BSC_N6,HP_BSC_N6,unconnected-(J3-Pin_7-Pad7),MISMATCH
+8,HP_BL_N,,HP_WRT_N,MISMATCH
+9,,,unconnected-(J3-Pin_9-Pad9),Not established by these reference drawings
+10,,,unconnected-(J3-Pin_10-Pad10),Not established by these reference drawings
+11,HP_IDA_N0,HP_IDA_N0,unconnected-(J3-Pin_11-Pad11),MISMATCH
+12,HP_IDA_N8,HP_IDA_N8,HP_UMC_N,MISMATCH
+13,HP_IDA_N1,HP_IDA_N1,unconnected-(J3-Pin_13-Pad13),MISMATCH
+14,HP_IDA_N9,HP_IDA_N9,unconnected-(J3-Pin_14-Pad14),MISMATCH
+15,HP_IDA_N2,HP_IDA_N2,unconnected-(J3-Pin_15-Pad15),MISMATCH
+16,HP_IDA_N10,HP_IDA_N10,unconnected-(J3-Pin_16-Pad16),MISMATCH
+17,HP_IDA_N3,HP_IDA_N3,HP_STM_N,MISMATCH
+18,HP_IDA_N11,HP_IDA_N11,HP_RAL,MISMATCH
+19,HP_IDA_N4,HP_IDA_N4,unconnected-(J3-Pin_19-Pad19),MISMATCH
+20,HP_IDA_N12,HP_IDA_N12,HP_SMC,MISMATCH
+21,HP_IDA_N5,HP_IDA_N5,unconnected-(J3-Pin_21-Pad21),MISMATCH
+22,HP_IDA_N13,HP_IDA_N13,unconnected-(J3-Pin_22-Pad22),MISMATCH
+23,HP_IDA_N6,HP_IDA_N6,unconnected-(J3-Pin_23-Pad23),MISMATCH
+24,HP_IDA_N14,HP_IDA_N14,unconnected-(J3-Pin_24-Pad24),MISMATCH
+25,HP_IDA_N7,HP_IDA_N7,HP_IDA_N7,MATCH
+26,HP_IDA_N15,HP_IDA_N15,HP_IDA_N15,MATCH
+27,,,HP_IDA_N6,Not established by these reference drawings
+28,,,HP_IDA_N14,Not established by these reference drawings
+29,,,HP_IDA_N5,Not established by these reference drawings
+30,,,HP_IDA_N13,Not established by these reference drawings
+31,,,HP_IDA_N4,Not established by these reference drawings
+32,HP_SMC,HP_SMC,HP_IDA_N12,MISMATCH
+33,,HP_STM_N,HP_IDA_N3,STM source conflict: confirm 33 versus 42
+34,HP_RAL,HP_RAL,HP_IDA_N11,MISMATCH
+35,,,HP_IDA_N2,Not established by these reference drawings
+36,,,HP_IDA_N10,Not established by these reference drawings
+37,,,HP_IDA_N1,Not established by these reference drawings
+38,,,HP_IDA_N9,RAM_Card.pdf p2 says WAIT active low; drawings do not establish it
+39,,,HP_IDA_N0,Not established by these reference drawings
+40,HP_UMC_N,HP_UMC_N,HP_IDA_N8,MISMATCH
+41,,,unconnected-(J3-Pin_41-Pad41),Not established by these reference drawings
+42,HP_STM_N,,unconnected-(J3-Pin_42-Pad42),STM source conflict: confirm 33 versus 42
+43,,,HP_BSC_N6,Not established by these reference drawings
+44,HP_WRT_N,,HP_BL_N,MISMATCH
+45,,,HP_BSC_N4,Not established by these reference drawings
+46,HP_PH2,HP_PH2,HP_BSC_N5,MISMATCH
+47,,,HP_BSC_N2,Not established by these reference drawings
+48,HP_BYTE_N,,HP_BSC_N3,MISMATCH
+49,,,HP_BSC_N0,Not established by these reference drawings
+50,,,HP_BSC_N1,Not established by these reference drawings

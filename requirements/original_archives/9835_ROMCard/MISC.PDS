@@ -1,0 +1,84 @@
+
+; NET2PDS - vers 4.05.21 (12/06/1990) - (c)1990 Advanced Micro Devices, Inc.
+; PDS file created    01/25/2015
+; Sourcefile: "MISC"
+
+TITLE            ?
+REVISION         ?
+PATTERN          ?
+AUTHOR           ?
+COMPANY          ?
+DATE           01/25/2015
+
+; PH2 clock input is phase 2 clock
+; ALE_IN -ALE from bus
+; selected input from Massstor PLD latched selected
+; Pin 32 from bus indicates data should be ouput to bus
+; ALE inverted -ALE from bus
+; /Raw40 = Selected and (ALE latched by PH2)
+; /OE = (Pin32 latched by PH2) and Selected
+
+
+CHIP     MISC           PALCE16V8
+
+
+  PIN     1       PH2
+  PIN     2       ALE_IN
+  PIN     3       SELECTED
+  PIN     4       PIN32
+  PIN     10      GND
+  PIN     14      CE
+  PIN     15      RAW40
+  PIN     16      OE
+  PIN     17      ALE
+  PIN     18      R_ALE        REGISTERED
+  PIN     19      R_32         REGISTERED
+  PIN     20      VCC
+
+
+EQUATIONS
+
+  R_ALE.CLKF = PH2
+  R_32.CLKF = PH2
+
+  ALE = /ALE_IN
+  R_32 = PIN32
+  R_ALE = ALE
+  /RAW40 = SELECTED * R_ALE
+  /OE  = SELECTED * R_32
+  /CE = SELECTED
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+
+ TRACE_ON  ALE_IN ALE PIN32 R_32 R_ALE /RAW40 /OE PH2 SELECTED
+
+
+;0
+ SETF /PH2 /ALE_IN /PIN32 /SELECTED
+ SETF PH2 /ALE_IN /PIN32 /SELECTED
+ SETF /PH2 /ALE_IN /PIN32 /SELECTED
+ CHECK ALE /R_32 R_ALE  RAW40 OE
+;1
+ SETF /PH2 ALE_IN /PIN32 /SELECTED
+ CHECK /ALE /R_32 R_ALE  RAW40 OE
+;2
+ SETF PH2 ALE_IN /PIN32 /SELECTED
+ SETF /PH2 ALE_IN /PIN32 /SELECTED
+ CHECK /ALE /R_32 /R_ALE  RAW40 OE
+;2
+ SETF PH2 ALE_IN /PIN32 /SELECTED
+ SETF /PH2 ALE_IN /PIN32 /SELECTED
+ CHECK /ALE /R_32 /R_ALE  RAW40 OE
+;2
+ SETF /PH2 /ALE_IN /PIN32 /SELECTED
+ SETF PH2 /ALE_IN /PIN32 /SELECTED
+ CHECK ALE /R_32 R_ALE  RAW40 OE
+;2
+ SETF /PH2 /ALE_IN /PIN32 SELECTED
+ CHECK ALE /R_32 R_ALE  /RAW40 OE
+;2
+ SETF PH2 /ALE_IN PIN32 SELECTED
+ SETF /PH2 /ALE_IN PIN32 SELECTED
+ CHECK ALE R_32 R_ALE  /RAW40 /OE
+TRACE_OFF
+

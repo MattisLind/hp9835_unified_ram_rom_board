@@ -1,0 +1,9 @@
+flash_bank,word_base,byte_base,hp_block_octal,purpose,host_segment_notes
+0,0x00000,0x00000,003,System LPU ROM,Segments 0-7
+1,0x08000,0x10000,005,System PPU + Mass Storage,System 0 and 3-7; 98331B Mass Storage ROM1/ROM2 in segments 1-2
+2,0x10000,0x20000,007,Plotter option,Segments 6-7
+3,0x18000,0x30000,011,I/O option,Segments 1-4
+4,0x20000,0x40000,013,Programming + Assembly options,Advanced 1; Structured 2; Assy Execute 5; Assy Dev/Exec 6-7
+5,0x28000,0x50000,021,Datacomm options,Basic 0-3; Bisync 4-5
+6,0x30000,0x60000,045,CE Diagnostic ROM,Segment 0; diagnostic RAM resides in SRAM
+7,0x38000,0x70000,SPARE,Future/custom ROM,Unused by default

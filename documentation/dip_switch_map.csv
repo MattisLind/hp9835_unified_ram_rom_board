@@ -1,0 +1,18 @@
+switch,cpld_input,option,part_or_function,rom_modules,hp_block_octal,segments_octal,notes
+SW2.1,DIP_N[0],Mass Storage,98331B,2,005,1-2,Always enables both 98331B ROM modules together
+SW2.2,DIP_N[1],I/O,98332A,4,011,1-4,One switch enables all four I/O ROM modules
+SW2.3,DIP_N[2],Structured Programming,98335A,1,013,2,Independent of Advanced Programming
+SW2.4,DIP_N[3],Advanced Programming,98336A,1,013,1,Independent of Structured Programming
+SW2.5,DIP_N[4],Plotter,98337A,2,007,6-7,One switch enables both Plotter ROM modules
+SW2.6,DIP_N[5],Assembly Execution,98338A,1,013,5,Independent of Assembly Development/Execution
+SW2.7,DIP_N[6],Assembly Development & Execution,98339A,2,013,6-7,One switch enables both ROM modules
+SW2.8,DIP_N[7],Basic Datacomm,98317A,4,021,0-3,One switch enables all four Basic Datacomm ROM modules
+SW2.9,DIP_N[8],Bisync Datacomm,98318A,2,021,4-5,One switch enables both Bisync ROM modules
+SW2.10,DIP_N[9],Model selection (reserved),9835A / 9835B,pending,pending,pending,No effect in current RTL; await verified A/B ROM maps; diagnostics moved to J4
+SW2.11,DIP_N[10],RAM expansion,CY62146ELL 256Kx16,n/a,"2*BASE through 2*(BASE+7), even",full banks,Full 512 KiB; SW3 sets base in 64 KiB steps; base zero also aliases block 001
+SW2.12,DIP_N[11],System ROM replacement,9835 LPU+PPU system ROMs,multiple,003 and 005,LPU 0-7 / PPU 0 and 3-7,Original system ROM responders must be removed or disabled
+SW3.1,BASE_N[0],RAM base,Base bit 0,n/a,n/a,n/a,ON=1; weight 64 KiB; all OFF gives base zero and special mode
+SW3.2,BASE_N[1],RAM base,Base bit 1,n/a,n/a,n/a,ON=1; weight 128 KiB; all OFF gives base zero and special mode
+SW3.3,BASE_N[2],RAM base,Base bit 2,n/a,n/a,n/a,ON=1; weight 256 KiB; all OFF gives base zero and special mode
+SW3.4,BASE_N[3],RAM base,Base bit 3,n/a,n/a,n/a,ON=1; weight 512 KiB; all OFF gives base zero and special mode
+J4,DIAG_N,Diagnostic ROM/RAM,External two-pin switch/header,1 ROM + scratch RAM,045,ROM 0 / RAM top 256 words,Short pins 1-2 to enable; open disables; scratch aliases first 256 physical SRAM words

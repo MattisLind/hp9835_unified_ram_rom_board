@@ -1,0 +1,35 @@
+HP 9835 Unified Memory Card — ATF1508AS TQFP100 fitter requirements
+
+U1 matches this pin plan in the 2026-10-04 exported netlist (97/97 checks).
+See memory_bus_update_2026-10-03.md for remaining board validation work.
+
+Generated constraints and invocation:
+  ../logic/constraints/README.md
+  ../logic/constraints/hp9835_unified_ram_rom_board_pinned.pin
+
+1. Use ATF1508AS, TQFP100 (not PQFP100), and the actual purchased speed grade.
+2. Use -preassign KEEP; never silently relocate PCB pins when fitting fails.
+3. Pin 35 / hp_mip_n: open collector; never push-pull HIGH.
+   Fitter option: -str open_collector=hp_mip_n
+4. Disable keepers globally: -str pin_keep=OFF.
+   Retain external switch pull-ups; verify MIP release behavior in hardware.
+5. Enable JTAG: -str JTAG=ON. Fixed pads: TDI=4, TMS=15, TCK=62, TDO=73.
+6. Disable both power-down alternatives: -str pd1=OFF -str pd2=OFF.
+   Pin 1 carries MEM_D0 and pin 41 carries MEM_OE_N.
+7. Intended clocks: pin 87 HP_STM_N (raw STM/ from J3.42; falling edge), pin 90 HP_PH2.
+   No external inverter is used; active-cycle gating tests STM/ LOW.
+   Require the fitter to implement the falling-edge clock without changing pads.
+8. Pin 41 MEM_OE_N and pin 42 MEM_WE_N are shared flash/SRAM strobes.
+   Separate selects are FLASH_CE_N=40 and SRAM_CE_N=45.
+9. Pin 89 is reserved/tied inactive; it is not a VHDL core port.
+10. Inspect the fitted pin list and macrocell options, including unused-port
+    handling for MEM_D15, FLASH_RYBY_N and constant FLASH_RESET_N.
+    Verify normal MEM_D high impedance and EXTEST drive/capture behavior.
+11. Require a successful resource/timing fit before freezing board routing.
+
+Routing starting point remains documentation/pin_plan.csv. Regenerate with:
+  python3 tools/generate_cpld_constraints.py
+Validate against a KiCad XML netlist with:
+  python3 tools/generate_cpld_constraints.py --check --netlist schematic.xml
+
+Configuration update 2026-10-04: BASE_N[0..3] use pins 46,47,96,97; DIAG_N uses 98. DIP_N[9] remains wired to pole 10 but reserved pending A/B ROM mapping. Verify that unused-port optimization does not remove future configuration or required boundary-scan access. Three spare pads remain (85,99,100).

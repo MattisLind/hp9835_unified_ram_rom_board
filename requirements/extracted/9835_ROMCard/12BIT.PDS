@@ -1,0 +1,94 @@
+
+; NET2PDS - vers 4.05.21 (12/06/1990) - (c)1990 Advanced Micro Devices, Inc.
+; PDS file created    1/07/2015
+; Sourcefile: "12bit"
+
+TITLE            ?
+REVISION         ?
+PATTERN          ?
+AUTHOR           ?
+COMPANY          ?
+DATE           01/07/2015
+
+; IA0 - IA11 Input address from IDA bus
+; LA0 - LA12 latched and inverted address bits
+
+
+CHIP     12Bit           PALCE26V12-10JC
+
+
+  PIN     1       ALE
+  PIN     2       IA0
+  PIN     3       IA1
+  PIN     4       IA2
+  PIN     5       IA3
+  PIN     6       IA4
+  PIN     8       IA5
+  PIN     9       IA6
+  PIN     10      IA7
+  PIN     11      IA8
+  PIN     12      IA9
+  PIN     13      IA10
+  PIN     14      IA11
+  PIN     15      LA11         REGISTERED
+  PIN     16      LA10         REGISTERED
+  PIN     17      LA9          REGISTERED
+  PIN     18      LA8          REGISTERED
+  PIN     19      LA7          REGISTERED
+  PIN     20      LA6          REGISTERED
+  PIN     22      LA5          REGISTERED
+  PIN     23      LA4          REGISTERED
+  PIN     24      LA3          REGISTERED
+  PIN     25      LA2          REGISTERED
+  PIN     26      LA1          REGISTERED
+  PIN     27      LA0          REGISTERED
+
+
+EQUATIONS
+
+  LA0.CLKF = ALE
+  LA1.CLKF = ALE
+  LA2.CLKF = ALE
+  LA3.CLKF = ALE
+  LA4.CLKF = ALE
+  LA5.CLKF = ALE
+  LA6.CLKF = ALE
+  LA7.CLKF = ALE
+  LA8.CLKF = ALE
+  LA9.CLKF = ALE
+  LA10.CLKF = ALE
+  LA11.CLKF = ALE
+
+  LA0 = /IA0
+  LA1 = /IA1
+  LA2 = /IA2
+  LA3 = /IA3
+  LA4 = /IA4
+  LA5 = /IA5
+  LA6 = /IA6
+  LA7 = /IA7
+  LA8 = /IA8
+  LA9 = /IA9
+  LA10 = /IA10
+  LA11 = /IA11
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+
+ TRACE_ON  ALE IA0 IA1 IA2 IA3 IA4 IA5 IA6 IA7 IA8 IA9 IA10 IA11
+           LA0 LA1 LA2 LA3 LA4 LA5 LA6 LA7 LA8 LA9 LA10 LA11
+
+
+;0
+ SETF /IA0 IA1 /IA2 IA3 /IA4 IA5 /IA6 IA7 /IA8 IA9 /IA10 IA11 /ALE
+ CHECK /LA0 /LA1 /LA2 /LA3 /LA4 /LA5 /LA6 /LA7 /LA8 /LA9 /LA10 /LA11
+;1
+ SETF /IA0 IA1 /IA2 IA3 /IA4 IA5 /IA6 IA7 /IA8 IA9 /IA10 IA11 ALE
+ CHECK LA0 /LA1 LA2 /LA3 LA4 /LA5 LA6 /LA7 LA8 /LA9 LA10 /LA11
+;2
+ SETF IA0 /IA1 IA2 /IA3 IA4 /IA5 IA6 /IA7 IA8 /IA9 IA10 /IA11 /ALE
+ CHECK LA0 /LA1 LA2 /LA3 LA4 /LA5 LA6 /LA7 LA8 /LA9 LA10 /LA11
+;3
+ SETF IA0 /IA1 IA2 /IA3 IA4 /IA5 IA6 /IA7 IA8 /IA9 IA10 /IA11 ALE
+ CHECK /LA0 LA1 /LA2 LA3 /LA4 LA5 /LA6 LA7 /LA8 LA9 /LA10 LA11
+TRACE_OFF
+

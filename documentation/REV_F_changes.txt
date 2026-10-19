@@ -1,0 +1,8 @@
+Rev F
+====
+- Replaced legacy KiCad .sch with native KiCad 9 .kicad_sch.
+- Added custom .kicad_sym library with exact CPLD/FLASH/SRAM pinouts.
+- Added custom HP9835 2x25 2.54mm card-edge footprint, 2x10mm fingers.
+- Added full connector pin-map CSV with unresolved pins explicitly flagged.
+- Kept Rev E electrical/HDL architecture unchanged.
+- No PCB routing yet; schematic verification/ERC is intentionally the next gate.

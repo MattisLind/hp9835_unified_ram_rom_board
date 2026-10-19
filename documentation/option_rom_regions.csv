@@ -1,0 +1,20 @@
+switch,option,part_number,rom_count,hp_block_octal,segment,word_address_octal
+SW1,Mass Storage ROM1,98331B,2,005,1,10000
+SW1,Mass Storage ROM2,98331B,2,005,2,20000
+SW2,I/O 1,98332A,4,011,1,10000
+SW2,I/O 2,98332A,4,011,2,20000
+SW2,I/O 3,98332A,4,011,3,30000
+SW2,I/O 4,98332A,4,011,4,40000
+SW3,Structured Programming,98335A,1,013,2,20000
+SW4,Advanced Programming,98336A,1,013,1,10000
+SW5,Plotter 1,98337A,2,007,6,60000
+SW5,Plotter 2,98337A,2,007,7,70000
+SW6,Assembly Execution,98338A,1,013,5,50000
+SW7,Assembly Development & Execution 1,98339A,2,013,6,60000
+SW7,Assembly Development & Execution 2,98339A,2,013,7,70000
+SW8,Basic Datacomm 1,98317A,4,021,0,00000
+SW8,Basic Datacomm 2,98317A,4,021,1,10000
+SW8,Basic Datacomm 3,98317A,4,021,2,20000
+SW8,Basic Datacomm 4,98317A,4,021,3,30000
+SW9,Bisync Datacomm 1,98318A,2,021,4,40000
+SW9,Bisync Datacomm 2,98318A,2,021,5,50000

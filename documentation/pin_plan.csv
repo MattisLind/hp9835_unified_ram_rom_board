@@ -1,0 +1,85 @@
+ATF1508_TQFP100_pin,signal,direction,notes
+1,MEM_D[0],BIDIR,Physical active-low HP representation on memory side of HCT245; address latched inverted; EXTEST drive/capture
+2,MEM_D[1],BIDIR,Physical active-low HP representation; EXTEST drive/capture
+4,TDI,JTAG,Dedicated JTAG when enabled
+5,MEM_D[2],BIDIR,
+6,MEM_D[3],BIDIR,
+7,MEM_D[4],BIDIR,
+8,MEM_D[5],BIDIR,
+9,MEM_D[6],BIDIR,
+10,MEM_D[7],BIDIR,
+12,MEM_D[8],BIDIR,
+13,MEM_D[9],BIDIR,
+14,MEM_D[10],BIDIR,
+15,TMS,JTAG,Dedicated JTAG when enabled
+16,MEM_D[11],BIDIR,
+17,MEM_D[12],BIDIR,
+19,MEM_D[13],BIDIR,
+20,MEM_D[14],BIDIR,
+21,MEM_D[15],BIDIR,
+22,HP_BSC_N[0],IN,
+23,HP_BSC_N[1],IN,
+24,HP_BSC_N[2],IN,
+25,HP_BSC_N[3],IN,
+27,HP_BSC_N[4],IN,
+28,HP_BSC_N[5],IN,
+29,HP_BSC_N[6],IN,
+30,HP_BYTE_N,IN,
+31,HP_BL_N,IN,
+32,HP_SOB_N,IN,CPU SOB/ contact 32; reference SMC equation enables reads when HIGH
+33,HP_WRT_N,IN,Active low write indication
+35,HP_MIP_N,OUT-OC,"Direct HP MIP/ contact 40; configure ATF1508 pin OPEN COLLECTOR; pin keeper OFF; 0=assert, 1=release"
+36,XCVR_OE_N,OUT,Shared OE# for two 74HCT245s; EXTEST sets high while programming flash
+37,XCVR_DIR,OUT,1 HP->MEM_D; 0 MEM_D->HP
+40,FLASH_CE_N,OUT,
+41,MEM_OE_N,OUT,Shared OE# to MX29F400C and CY62146ELL; PD2 function disabled
+42,MEM_WE_N,OUT,Shared WE# to MX29F400C and CY62146ELL; EXTEST uses for flash programming
+44,FLASH_RESET_N,OUT,Normally high
+45,SRAM_CE_N,OUT,
+46,BASE_N[0],IN,SW3 pole 1; base bit 0; ON=1
+47,BASE_N[1],IN,SW3 pole 2; base bit 1; ON=1
+48,SRAM_BLE_N,OUT,
+49,SRAM_BHE_N,OUT,
+50,FLASH_RYBY_N,IN,Flash status available to boundary-scan programmer
+52,DIP_N[0],IN,SW1 98331B Mass Storage (two ROMs)
+53,DIP_N[1],IN,SW2 98332A I/O
+54,DIP_N[2],IN,SW3 98335A Structured Programming
+55,DIP_N[3],IN,SW4 98336A Advanced Programming
+56,DIP_N[4],IN,SW5 98337A Plotter
+57,DIP_N[5],IN,SW6 98338A Assembly Execution
+58,DIP_N[6],IN,SW7 98339A Assembly Development & Execution
+60,DIP_N[7],IN,SW8 98317A Basic Datacomm
+61,DIP_N[8],IN,SW9 98318A Bisync Datacomm
+62,TCK,JTAG,Dedicated JTAG when enabled
+63,MEM_A[0],OUT,Shared flash/SRAM address
+64,MEM_A[1],OUT,
+65,MEM_A[2],OUT,
+67,MEM_A[3],OUT,
+68,MEM_A[4],OUT,
+69,MEM_A[5],OUT,
+70,MEM_A[6],OUT,
+71,MEM_A[7],OUT,
+72,MEM_A[8],OUT,
+73,TDO,JTAG,Dedicated JTAG when enabled
+75,MEM_A[9],OUT,
+76,MEM_A[10],OUT,
+77,MEM_A[11],OUT,
+78,MEM_A[12],OUT,
+79,MEM_A[13],OUT,
+80,MEM_A[14],OUT,
+81,MEM_A[15],OUT,
+83,MEM_A[16],OUT,
+84,MEM_A[17],OUT,
+85,SPARE_GCLK3,INOUT,Reserve for optional oscillator/debug clock
+87,HP_STM_N,IN,Dedicated GCLK1; raw STM/ from J3.42; falling-edge address capture
+88,HP_RAL_N,IN,Dedicated input/OE1 pin used as ordinary input
+89,GCLR_N,IN,Reserve/tie inactive per fitter configuration
+90,HP_PH2,IN,Dedicated GCLK2
+92,DIP_N[9],IN,SW2 pole 10 reserved for A/B; no decode effect until ROM maps confirmed
+93,DIP_N[10],IN,SW2 pole 11 enables full 512 KiB at selected base
+94,DIP_N[11],IN,SW12 System ROM replacement
+96,BASE_N[2],IN,SW3 pole 3; base bit 2; ON=1
+97,BASE_N[3],IN,SW3 pole 4; base bit 3; ON=1
+98,DIAG_N,IN,J4.1; 10k pull-up; J4.2 GND; short enables diagnostics
+99,SPARE3,INOUT,
+100,SPARE4,INOUT,
