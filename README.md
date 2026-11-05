@@ -26,3 +26,5 @@ Revision F carries forward the Rev-E architecture: ATF1508AS-100, MX29F400C 48-p
 The [2026-10-03 bus update](documentation/memory_bus_update_2026-10-03.md) records the original CPU signal names, resolved STM/STME contacts, connector supplies, and raw-STM clock conversion.
 
 The [2026-10-04 configuration update](documentation/configuration_update_2026-10-04.md) describes base selection, original-circuit aliasing, the remote diagnostic switch and the deferred A/B ROM decision.
+
+The accepted programming-interface change (2026-11-05) is an onboard FT232H single-channel USB-to-JTAG bridge for CPLD ISP and flash boundary-scan programming, with no separate external JTAG header. Schottky-isolated USB/HP supply paths will permit bench power and prevent USB supply backfeed through the power contacts when installed in an unpowered HP; HP-facing signal isolation is also required. USB is normally disconnected while the HP runs. Schematic integration, voltage/current checks and programming software remain pending; see [design decisions, section 15](requirements/design_decisions.md#15-jtag-programming-strategy).

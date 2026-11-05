@@ -161,6 +161,26 @@ This saves sixteen CPLD I/O pins and makes the 100-pin ATF1508 practical.
 
 ## 15. JTAG programming strategy
 
+Decision confirmed 2026-11-05: use an onboard **FT232H single-channel USB-to-JTAG bridge** for both CPLD programming and flash access. No separate external JTAG socket/header is required. The FT2232H's second channel is unnecessary for this board.
+
+The FT232H provides one MPSSE interface supporting JTAG; FT232HL in 48-pin LQFP is a suitable assembly-friendly package. See the [FTDI product information](https://ftdichip.com/products/ft232hl/) and [MPSSE command reference, AN_108](https://ftdichip.com/Support/Documents/AppNotes/AN_108_Command_Processor_for_MPSSE_and_MCU_Host_Bus_Emulation_Modes.pdf).
+
+The intended signal mapping is:
+
+| FT232H signal | Direction at FT232H | ATF1508AS TQFP100 connection |
+| --- | --- | --- |
+| ADBUS0 / TCK | Output | TCK, pin 62 |
+| ADBUS1 / TDI | Output | TDI, pin 4 |
+| ADBUS2 / TDO | Input | TDO, pin 73 |
+| ADBUS3 / TMS | Output | TMS, pin 15 |
+
+This mapping defines the signal endpoints; any buffers and power-off isolation must be included in the schematic design. Keep JTAG enabled in every fitted CPLD image because USB is the intended programming connection.
+
+The same JTAG connection serves two operations:
+
+- CPLD ISP programming, with a device-specific programming sequence such as an SVF file played by an FTDI-capable host tool;
+- flash erase/program/read/verify using CPLD boundary scan, without a second USB channel or an additional CPLD serial programming interface.
+
 The MX29F400C is intended to be programmable and readable through the ATF1508 JTAG boundary-scan port.
 
 During flash programming:
@@ -169,11 +189,45 @@ During flash programming:
 - boundary scan drives the flash address bus;
 - boundary scan drives/captures `MEM_D[15:0]`;
 - boundary scan controls flash chip enable and the shared OE/WE signals;
-- SRAM remains unselected.
+- SRAM remains unselected;
+- HP MIP/ remains released.
 
-The programming software must account for the complemented flash-data convention introduced by the non-inverting HCT245 data path.
+The programming software must account for the complemented flash-data convention introduced by the non-inverting HCT245 data path. Flash command words must retain their manufacturer-defined values at the flash pins; only ROM payload words follow the complemented-image convention.
 
-A physical RUN/PROGRAM isolation mechanism remains a recommended safety feature if flash programming is to be performed while the card is installed in a powered HP 9835. Programming a separately powered card avoids host-bus contention by construction.
+USB programming is intended for bench use and must also be electrically safe with the card installed in an **unpowered** HP 9835. USB is normally disconnected while the HP is running; live-machine programming is not a required operating mode. When the HP supply is absent or PROGRAM is selected, hardware must keep the HCT245s disabled and MIP/ released through power-up, CPLD erase/programming and entry to/exit from boundary scan, including before software has established safe output states. This isolation must not depend on a working CPLD image.
+
+Implementation status: this is the accepted programming architecture, not an implemented USB circuit. The current KiCad schematic still contains the earlier J2 JTAG header. Replacing it requires the FT232H support circuit, USB connector and protection, defined startup/suspend states, and power-off-safe JTAG connections. The Schottky supply arrangement below is selected; component sizing, voltage/current margins and the hardware isolation circuit remain to be completed. The flash boundary-scan programmer and hardware verification are also outstanding.
+
+### 15.1 USB bench power and Schottky supply isolation
+
+Decision confirmed 2026-11-05: USB must power the parts needed to program the CPLD and flash on the bench. Use Schottky diodes to isolate the USB and HP supply sources so that USB cannot supply the HP9835 through the card's power contacts, including when the card is installed in an unpowered machine.
+
+The intended target supply connection is:
+
+```mermaid
+flowchart LR
+    HP["HP_5V_RAW: J3.35/37/39"] --> DH["D_HP: anode to cathode"]
+    USB["USB_VBUS"] --> CTRL["Target power control"] --> DU["D_USB: anode to cathode"]
+    DH --> LOCAL["+5V_LOCAL: target circuitry"]
+    DU --> LOCAL
+```
+
+Both Schottky cathodes connect to `+5V_LOCAL`. `D_HP` blocks USB-to-HP supply current; `D_USB` blocks HP-to-USB supply current, apart from their specified reverse leakage. Ground is common. Raw HP supply contacts and the local target supply must be separate nets; no power symbol, pull-up, test connection or auxiliary supply path may bypass the diodes. This is supply isolation, not galvanic isolation or automatic source priority.
+
+The target domain must include the CPLD, flash and their local pulls/decoupling. Keep the SRAM and HCT245s supplied from that domain as well, with SRAM deselected and the transceivers disabled during programming; leaving these shared-bus devices unpowered would require additional signal isolation. The FT232H can use a separate USB-powered supply branch so it can enumerate before enabling the larger target load. Its JTAG interface must then be safe with either side unpowered, including ordinary HP operation with USB disconnected. Its VCCIO remains 3.3V, not `+5V_LOCAL`.
+
+| Operating condition | Required behavior |
+| --- | --- |
+| Bench, USB only | FT232H enumerates; USB then powers the programming target within the granted current budget. |
+| Installed, HP running, USB absent | HP supplies the card through D_HP; the unpowered USB interface does not disturb JTAG or receive power through signal pins. |
+| Installed, HP off, USB connected | USB supplies only the card's programming circuitry; D_HP blocks the power-contact path and HP-facing signals remain inactive. |
+| Both supplies present | Neither source is driven by the other. Diode ORing alone does not select a preferred source or make live programming supported. |
+
+Blocking the power-contact path alone is insufficient. Check all HP-facing signals and pull-ups for paths into the unpowered machine, including MIP/, data transceivers and CPLD startup/ISP pin behavior. Qualify HP bus drive using the **raw HP supply**, not the USB-powered local rail; defaults must remain safe before software or JTAG takes control. The existing HCT245 DIR/OE wiring findings must also be resolved against physical pins before relying on transceiver isolation.
+
+The Schottky forward drop must be included in the supply budget for both sources, at worst-case load and temperature. The [ATF1508AS datasheet, Table 1-1](https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/ATF1508AS%28L%29-5V-128-Macrocell-CPLD-Data-Sheet-20006682A.pdf) specifies a 4.75V minimum for the commercial device and 4.5V for industrial; the [MX29F400C](https://www.macronix.com/Lists/Datasheet/Attachments/8538/MX29F400C%20T-B%2C%205V%2C%204Mb%2C%20v2.3.pdf), [CY62146ELL](https://www.infineon.com/part/CY62146ELL-45ZSXI) and [74HCT245](https://assets.nexperia.com/documents/data-sheet/74HC_HCT245.pdf) require at least 4.5V. Check CPLD ISP requirements as well. For illustration, 4.75V at a source minus a 0.30V diode drop leaves only 4.45V, which is insufficient. Diode ORing is not regulation and cannot guarantee valid target voltage from every USB source/cable. Diode selection and the supported source range remain subject to this check.
+
+Budget USB current for FT232H, target startup, CPLD ISP and flash erase/program activity. The [FTDI USB hardware guidelines](https://www.ftdichip.com/Documents/AppNotes/AN_146_USB_Hardware_Design_Guidelines_for_FTDI_ICs.pdf) specify the ordinary USB 2.0 limits of 100mA before enumeration and up to 500mA after configuration. The standard ATF1508AS alone has a specified standby maximum above 100mA, so do not connect the whole target load directly at USB insertion. Use a controlled USB target-power branch, appropriate power descriptors and suspend behavior; an FT232H PWREN#-controlled load switch is a candidate. Source blocking remains provided by the Schottky diodes. Check inrush, diode current/thermal ratings and reverse leakage, then verify installed-card backfeed with the HP off before treating this arrangement as validated.
 
 ## 16. Shared OE# and WE# signals
 

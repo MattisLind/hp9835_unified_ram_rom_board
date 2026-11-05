@@ -14,6 +14,13 @@ Generated constraints and invocation:
 4. Disable keepers globally: -str pin_keep=OFF.
    Retain external switch pull-ups; verify MIP release behavior in hardware.
 5. Enable JTAG: -str JTAG=ON. Fixed pads: TDI=4, TMS=15, TCK=62, TDO=73.
+   Programming-interface decision 2026-11-05: onboard FT232H USB-to-JTAG,
+   with no external JTAG header. Keep JTAG enabled in every fitted image.
+   USB schematic integration is pending; see ../requirements/design_decisions.md,
+   section 15, for signal mapping, isolation requirements and remaining work.
+   USB bench power uses Schottky-isolated USB/HP sources (section 15.1).
+   Check the purchased device's VCC/ISP limits after the diode drop.
+   With USB power and HP off, keep HP bus drive disabled and MIP/ released.
 6. Disable both power-down alternatives: -str pd1=OFF -str pd2=OFF.
    Pin 1 carries MEM_D0 and pin 41 carries MEM_OE_N.
 7. Intended clocks: pin 87 HP_STM_N (raw STM/ from J3.42; falling edge), pin 90 HP_PH2.
