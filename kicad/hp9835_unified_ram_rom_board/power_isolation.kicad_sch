@@ -1,0 +1,7137 @@
+(kicad_sch
+  (version 20250114)
+  (generator eeschema)
+  (uuid "b7873bce-9d1a-521d-99b3-1d82e435939a")
+  (paper "A3")
+  (title_block
+    (title "Power sources and HP bus isolation")
+    (date "2026-11-07")
+    (rev "G")
+    (company "HP 9835 unified memory")
+    (comment 1 "Assembly: USB or external JTAG; see population CSV")
+    (comment 2 "Hardware fit/timing and bench validation required"))
+  (lib_symbols
+    (symbol "74xGxx:74LVC1G07"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at 0 7.62 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "74LVC1G07"
+        (at 3.81 -7.62 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Single Buffer Gate, Open Drain, Low-Voltage CMOS"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "Single Gate Buff LVC CMOS Open Drain"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SOT?23* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "74LVC1G07_0_1"
+        (polyline
+          (pts
+            (xy -7.62 6.35)
+            (xy -7.62 -6.35)
+            (xy 5.08 0)
+            (xy -7.62 6.35))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -3.81 -1.27)
+            (xy -1.27 -1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -2.54 1.27)
+            (xy -3.81 0)
+            (xy -2.54 -1.27)
+            (xy -1.27 0)
+            (xy -2.54 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "74LVC1G07_1_1"
+        (pin free line
+          (at -2.54 -10.16 90)
+          (length 6.35)
+          (name "NC"
+            (effects
+              (font
+                (size 0.762 0.762))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -15.24 0 0)
+          (length 7.62)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at -5.08 -10.16 90)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin open_collector line
+          (at 12.7 0 180)
+          (length 7.62)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at -5.08 10.16 270)
+          (length 5.08)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "74xGxx:74LVC1G32"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at -5.08 7.62 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "74LVC1G32"
+        (at 7.62 -7.62 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Single OR Gate, Low-Voltage CMOS"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "Single Gate OR LVC CMOS"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SOT* SG-*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "74LVC1G32_0_1"
+        (arc
+          (start -7.62 5.08)
+          (mid -5.838 0)
+          (end -7.62 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -7.62 2.54)
+            (xy -6.35 2.54))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -7.62 -2.54)
+            (xy -6.35 -2.54))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start 5.08 0)
+          (mid 3.202 -3.202)
+          (end 0 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start 0 5.08)
+          (mid 3.2271 3.2271)
+          (end 5.08 0)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 5.08)
+            (xy -7.62 5.08))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy 0 -5.08)
+            (xy -7.62 -5.08))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "74LVC1G32_1_1"
+        (pin input line
+          (at -15.24 2.54 0)
+          (length 7.62)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -15.24 -2.54 0)
+          (length 7.62)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -10.16 90)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 12.7 0 180)
+          (length 7.62)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 10.16 270)
+          (length 5.08)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector_Generic:Conn_01x02"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x02"
+        (at 0 -5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:D_Schottky"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "D"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "D_Schottky"
+        (at 0 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Schottky diode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "diode Schottky"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "D_Schottky_0_1"
+        (polyline
+          (pts
+            (xy -1.905 0.635)
+            (xy -1.905 1.27)
+            (xy -1.27 1.27)
+            (xy -1.27 -1.27)
+            (xy -0.635 -1.27)
+            (xy -0.635 -0.635))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 1.27)
+            (xy 1.27 -1.27)
+            (xy -1.27 0)
+            (xy 1.27 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "D_Schottky_1_1"
+        (pin passive line
+          (at -3.81 0 0)
+          (length 2.54)
+          (name "K"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 3.81 0 180)
+          (length 2.54)
+          (name "A"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "hp9835_unified_ram_rom_board:+5V_BENCH"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+5V_BENCH"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"+5V\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "+5V_BENCH_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "+5V_BENCH_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+5V_BENCH"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "hp9835_unified_ram_rom_board:+5V_HP"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+5V_HP"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"+5V\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "+5V_HP_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "+5V_HP_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+5V_HP"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "hp9835_unified_ram_rom_board:74AHCT32"
+      (body_styles demorgan)
+      (pin_names
+        (offset 1.016))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at 0 1.27 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "74AHCT32"
+        (at 0 -1.27 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Quad 2-input OR"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_locked" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "TTL Or2"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "DIP?14*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "74AHCT32_1_1"
+        (arc
+          (start -3.81 3.81)
+          (mid -2.589 0)
+          (end -3.81 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.81 3.81)
+            (xy -0.635 3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -3.81 -3.81)
+            (xy -0.635 -3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start 3.81 0)
+          (mid 2.1855 -2.584)
+          (end -0.6096 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start -0.6096 3.81)
+          (mid 2.1928 2.5924)
+          (end 3.81 0)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -0.635 3.81)
+            (xy -3.81 3.81)
+            (xy -3.81 3.81)
+            (xy -3.556 3.4036)
+            (xy -3.0226 2.2606)
+            (xy -2.6924 1.0414)
+            (xy -2.6162 -0.254)
+            (xy -2.7686 -1.4986)
+            (xy -3.175 -2.7178)
+            (xy -3.81 -3.81)
+            (xy -3.81 -3.81)
+            (xy -0.635 -3.81))
+          (stroke
+            (width -25.4)
+            (type default))
+          (fill
+            (type background)))
+        (pin input line
+          (at -7.62 2.54 0)
+          (length 4.318)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 -2.54 0)
+          (length 4.318)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_1_2"
+        (arc
+          (start 0 3.81)
+          (mid 3.7934 0)
+          (end 0 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy 0 3.81)
+            (xy -3.81 3.81)
+            (xy -3.81 -3.81)
+            (xy 0 -3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin input inverted
+          (at -7.62 2.54 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input inverted
+          (at -7.62 -2.54 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output inverted
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_2_1"
+        (arc
+          (start -3.81 3.81)
+          (mid -2.589 0)
+          (end -3.81 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.81 3.81)
+            (xy -0.635 3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -3.81 -3.81)
+            (xy -0.635 -3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start 3.81 0)
+          (mid 2.1855 -2.584)
+          (end -0.6096 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start -0.6096 3.81)
+          (mid 2.1928 2.5924)
+          (end 3.81 0)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -0.635 3.81)
+            (xy -3.81 3.81)
+            (xy -3.81 3.81)
+            (xy -3.556 3.4036)
+            (xy -3.0226 2.2606)
+            (xy -2.6924 1.0414)
+            (xy -2.6162 -0.254)
+            (xy -2.7686 -1.4986)
+            (xy -3.175 -2.7178)
+            (xy -3.81 -3.81)
+            (xy -3.81 -3.81)
+            (xy -0.635 -3.81))
+          (stroke
+            (width -25.4)
+            (type default))
+          (fill
+            (type background)))
+        (pin input line
+          (at -7.62 2.54 0)
+          (length 4.318)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 -2.54 0)
+          (length 4.318)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_2_2"
+        (arc
+          (start 0 3.81)
+          (mid 3.7934 0)
+          (end 0 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy 0 3.81)
+            (xy -3.81 3.81)
+            (xy -3.81 -3.81)
+            (xy 0 -3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin input inverted
+          (at -7.62 2.54 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input inverted
+          (at -7.62 -2.54 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output inverted
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_3_1"
+        (arc
+          (start -3.81 3.81)
+          (mid -2.589 0)
+          (end -3.81 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.81 3.81)
+            (xy -0.635 3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -3.81 -3.81)
+            (xy -0.635 -3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start 3.81 0)
+          (mid 2.1855 -2.584)
+          (end -0.6096 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start -0.6096 3.81)
+          (mid 2.1928 2.5924)
+          (end 3.81 0)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -0.635 3.81)
+            (xy -3.81 3.81)
+            (xy -3.81 3.81)
+            (xy -3.556 3.4036)
+            (xy -3.0226 2.2606)
+            (xy -2.6924 1.0414)
+            (xy -2.6162 -0.254)
+            (xy -2.7686 -1.4986)
+            (xy -3.175 -2.7178)
+            (xy -3.81 -3.81)
+            (xy -3.81 -3.81)
+            (xy -0.635 -3.81))
+          (stroke
+            (width -25.4)
+            (type default))
+          (fill
+            (type background)))
+        (pin output line
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 2.54 0)
+          (length 4.318)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 -2.54 0)
+          (length 4.318)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_3_2"
+        (arc
+          (start 0 3.81)
+          (mid 3.7934 0)
+          (end 0 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy 0 3.81)
+            (xy -3.81 3.81)
+            (xy -3.81 -3.81)
+            (xy 0 -3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin output inverted
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input inverted
+          (at -7.62 2.54 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input inverted
+          (at -7.62 -2.54 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_4_1"
+        (arc
+          (start -3.81 3.81)
+          (mid -2.589 0)
+          (end -3.81 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.81 3.81)
+            (xy -0.635 3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -3.81 -3.81)
+            (xy -0.635 -3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start 3.81 0)
+          (mid 2.1855 -2.584)
+          (end -0.6096 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (arc
+          (start -0.6096 3.81)
+          (mid 2.1928 2.5924)
+          (end 3.81 0)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -0.635 3.81)
+            (xy -3.81 3.81)
+            (xy -3.81 3.81)
+            (xy -3.556 3.4036)
+            (xy -3.0226 2.2606)
+            (xy -2.6924 1.0414)
+            (xy -2.6162 -0.254)
+            (xy -2.7686 -1.4986)
+            (xy -3.175 -2.7178)
+            (xy -3.81 -3.81)
+            (xy -3.81 -3.81)
+            (xy -0.635 -3.81))
+          (stroke
+            (width -25.4)
+            (type default))
+          (fill
+            (type background)))
+        (pin output line
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 2.54 0)
+          (length 4.318)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 -2.54 0)
+          (length 4.318)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_4_2"
+        (arc
+          (start 0 3.81)
+          (mid 3.7934 0)
+          (end 0 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy 0 3.81)
+            (xy -3.81 3.81)
+            (xy -3.81 -3.81)
+            (xy 0 -3.81))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin output inverted
+          (at 7.62 0 180)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input inverted
+          (at -7.62 2.54 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input inverted
+          (at -7.62 -2.54 0)
+          (length 3.81)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_5_0"
+        (pin power_in line
+          (at 0 -12.7 90)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 12.7 270)
+          (length 5.08)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "74AHCT32_5_1"
+        (rectangle
+          (start -5.08 7.62)
+          (end 5.08 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (embedded_fonts no))
+    (symbol "hp9835_unified_ram_rom_board:TLV3011BDBV"
+      (pin_names
+        (offset 0.7))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 11.43 0)
+        (effects
+          (font
+            (size 1 1))))
+      (property "Value" "TLV3011BDBV"
+        (at 0 8.89 0)
+        (effects
+          (font
+            (size 1 1))))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1 1))
+          (hide yes)))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv3011.pdf"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1 1))
+          (hide yes)))
+      (property "Description" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1 1))
+          (hide yes)))
+      (symbol "TLV3011BDBV_0_1"
+        (rectangle
+          (start -8.89 6.35)
+          (end 8.89 -6.35)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TLV3011BDBV_1_1"
+        (pin input line
+          (at -11.43 1.27 0)
+          (length 2.54)
+          (name "IN+"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "3"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin input line
+          (at -11.43 -1.27 0)
+          (length 2.54)
+          (name "IN-"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "4"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin open_collector line
+          (at 11.43 1.27 180)
+          (length 2.54)
+          (name "OUT"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin output line
+          (at 11.43 -1.27 180)
+          (length 2.54)
+          (name "REF"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "5"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin power_in line
+          (at 0 8.89 270)
+          (length 2.54)
+          (name "V+"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "6"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin power_in line
+          (at 0 -8.89 90)
+          (length 2.54)
+          (name "V-"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)))))))
+    (symbol "hp9835_unified_ram_rom_board:TPS2552DBV"
+      (pin_names
+        (offset 0.7))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 12.7 0)
+        (effects
+          (font
+            (size 1 1))))
+      (property "Value" "TPS2552DBV"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1 1))))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1 1))
+          (hide yes)))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2552.pdf"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1 1))
+          (hide yes)))
+      (property "Description" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1 1))
+          (hide yes)))
+      (symbol "TPS2552DBV_0_1"
+        (rectangle
+          (start -10.16 7.62)
+          (end 10.16 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TPS2552DBV_1_1"
+        (pin power_in line
+          (at -12.7 2.54 0)
+          (length 2.54)
+          (name "IN"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin input line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "EN_N"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "3"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin power_out line
+          (at 12.7 2.54 180)
+          (length 2.54)
+          (name "OUT"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "6"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin open_collector line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name "FAULT_N"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "4"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin passive line
+          (at 12.7 -2.54 180)
+          (length 2.54)
+          (name "ILIM"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "5"
+            (effects
+              (font
+                (size 0.85 0.85)))))
+        (pin power_in line
+          (at 0 -10.16 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 0.9 0.9))))
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)))))))
+    (symbol "hp9835_unified_ram_rom_board:USB_TARGET_5V"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "USB_TARGET_5V"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"+5V\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "USB_TARGET_5V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "USB_TARGET_5V_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "USB_TARGET_5V"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:+3V3"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+3V3"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"+3V3\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "+3V3_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "+3V3_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:+5V"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+5V"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"+5V\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "+5V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "+5V_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:GND"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:PWR_FLAG"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#FLG"
+        (at 0 1.905 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "PWR_FLAG"
+        (at 0 3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Special symbol for telling ERC where power comes from"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "flag power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (embedded_fonts no))
+    (symbol "power:VBUS"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "VBUS"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VBUS\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "VBUS_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "VBUS_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "Schottky source ORing - all cathodes feed local +5V"
+    (at 12.7 12.7 0)
+    (effects
+      (font
+        (size 1.5 1.5)
+        (bold yes))
+      (justify left top))
+    (uuid "3dc5ce0f-f017-5fe9-b02c-67a93c5702cb"))
+  (symbol
+    (lib_id "Device:D_Schottky")
+    (at 96.52 40.64 180)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "85177b93-f0e7-5dc2-8bc8-6042c1c9e5e6")
+    (property "Reference" "D1"
+      (effects
+        (font
+          (size 1 1)))
+      (at 96.52 36.44 0))
+    (property "Value" "PMEG2010ER"
+      (effects
+        (font
+          (size 0.95 0.95)))
+      (at 96.52 44.84 0))
+    (property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
+      (at 96.52 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 96.52 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 96.52 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "f4447bad-5c3a-5695-8559-e3e9f2b7dbd2"))
+    (pin "2"
+      (uuid "662ccc23-4d72-5622-ab65-dba292f20293"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "D1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 100.33 40.64)
+      (xy 105.41 40.64))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "481aa8e2-aa43-5a30-84e1-9d2308d297c4"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 105.41 40.64 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "53c95984-32ca-513a-8af4-4cafd2c039a0")
+    (property "Reference" "#PWR0096"
+      (at 105.41 31.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 107.91 40.64 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify left)))
+    (property "Footprint" ""
+      (at 105.41 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 105.41 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 105.41 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "f43ebd9c-7b08-5af9-8f8b-89758caab033"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0096")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 92.71 40.64)
+      (xy 87.63 40.64))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9d807477-5c2c-5486-96c4-83de36d6376e"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:+5V_HP")
+    (at 87.63 40.64 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "5d804041-25c9-5865-bb6e-370fff053430")
+    (property "Reference" "#PWR0097"
+      (at 87.63 31.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V_HP"
+      (at 85.13 40.64 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify right)))
+    (property "Footprint" ""
+      (at 87.63 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 87.63 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 87.63 40.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "3162c374-f55e-5a3d-be11-0fd892954014"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0097")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:D_Schottky")
+    (at 96.52 66.04 180)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "90d1a00f-f589-5e10-98cb-3464d9b29e25")
+    (property "Reference" "D2"
+      (effects
+        (font
+          (size 1 1)))
+      (at 96.52 61.84 0))
+    (property "Value" "PMEG2010ER"
+      (effects
+        (font
+          (size 0.95 0.95)))
+      (at 96.52 70.24 0))
+    (property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
+      (at 96.52 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 96.52 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 96.52 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "4c0a0a38-6e5e-5ca0-a220-988ef7352e3d"))
+    (pin "2"
+      (uuid "f20542ff-95ac-5dd8-99ac-ac4ee7a92261"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "D2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 100.33 66.04)
+      (xy 105.41 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "11ba7502-4b9f-5218-9185-7c584437e050"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 105.41 66.04 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "e5eca3af-6013-5c16-b46d-ed3445f5975f")
+    (property "Reference" "#PWR0098"
+      (at 105.41 56.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 107.91 66.04 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify left)))
+    (property "Footprint" ""
+      (at 105.41 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 105.41 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 105.41 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "cfc1c9b6-f327-50bb-983b-d29429ec707c"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0098")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 92.71 66.04)
+      (xy 87.63 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3fdc15bf-46f0-5f02-ae34-fa7ef4243079"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:USB_TARGET_5V")
+    (at 87.63 66.04 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "b8dc8aa9-6d96-5019-82fb-1bf03e0f16bb")
+    (property "Reference" "#PWR0099"
+      (at 87.63 56.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "USB_TARGET_5V"
+      (at 85.13 66.04 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify right)))
+    (property "Footprint" ""
+      (at 87.63 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 87.63 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 87.63 66.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "1a603c22-6164-569c-9db3-ccf6723ecf28"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0099")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:D_Schottky")
+    (at 96.52 91.44 180)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4efe0934-0566-5da5-a9e6-c167e83eff6b")
+    (property "Reference" "D3"
+      (effects
+        (font
+          (size 1 1)))
+      (at 96.52 87.24 0))
+    (property "Value" "PMEG2010ER"
+      (effects
+        (font
+          (size 0.95 0.95)))
+      (at 96.52 95.64 0))
+    (property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
+      (at 96.52 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 96.52 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 96.52 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "d529de79-cf47-5b0c-8394-22acbe495633"))
+    (pin "2"
+      (uuid "862728bf-c423-56c0-bc66-6daee1e94c01"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "D3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 100.33 91.44)
+      (xy 105.41 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c900b0e5-f294-5504-a901-c3296029ba95"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 105.41 91.44 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "ea581c80-1515-58a0-bf93-7afa3e27217c")
+    (property "Reference" "#PWR0100"
+      (at 105.41 82.16 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 107.91 91.44 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify left)))
+    (property "Footprint" ""
+      (at 105.41 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 105.41 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 105.41 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "2b52b248-a3e3-5a37-be77-a721794a982b"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0100")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 92.71 91.44)
+      (xy 87.63 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fe7af21e-79cf-53c5-ae3c-a7efbe35c692"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:+5V_BENCH")
+    (at 87.63 91.44 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "4faec0fc-8f94-59cf-8406-e0253c0e291c")
+    (property "Reference" "#PWR0101"
+      (at 87.63 82.16 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V_BENCH"
+      (at 85.13 91.44 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify right)))
+    (property "Footprint" ""
+      (at 87.63 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 87.63 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 87.63 91.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "998b8ac6-46af-5fd7-bf86-c051e0dc80e4"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0101")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 30.48 116.84 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b4c0b286-ca94-5637-b0d6-250a15e41dc6")
+    (property "Reference" "J5"
+      (at 30.48 111.37 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "BENCH 5V INPUT"
+      (at 30.48 113.77 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 30.48 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 30.48 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 30.48 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "eef8f3a0-55a6-5414-b66d-d5192b16e377"))
+    (pin "2"
+      (uuid "b9e218be-6c6a-5e22-b1ca-fb1ae7e37298"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "J5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 25.4 116.84)
+      (xy 20.32 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e5c925d5-f355-53a1-a520-14d911bdf54d"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:+5V_BENCH")
+    (at 20.32 116.84 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "8ac3aff8-d704-59e8-9421-b282471e8216")
+    (property "Reference" "#PWR0102"
+      (at 20.32 107.56 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V_BENCH"
+      (at 17.82 116.84 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify right)))
+    (property "Footprint" ""
+      (at 20.32 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 20.32 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 20.32 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "068c616a-9815-541e-8c76-5c374b3b4ce2"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0102")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 25.4 119.38)
+      (xy 20.32 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0f3e34d7-30d8-5469-9a19-a98bb0797716"))
+  (symbol
+    (lib_id "power:GND")
+    (at 20.32 119.38 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "c846e776-1b41-5a71-9a85-62780767f74a")
+    (property "Reference" "#PWR0103"
+      (at 30.48 110.1 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 30.48 112.5 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 20.32 119.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 20.32 119.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 20.32 119.38 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "13314aa4-d40d-5175-a391-3f5f5d353280"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0103")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (text "J5 supplies HEADER assembly on the bench.\n+5V_HP is raw edge-connector power.\nNever bridge raw HP/USB sources to local +5V.\nKeep the HP off during installed-card programming."
+    (at 12.7 142.24 0)
+    (effects
+      (font
+        (size 1.05 1.05))
+      (justify left top))
+    (uuid "61c698a4-cd06-5626-b424-a11c8aa392e8"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 27.94 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fa4723f1-8771-5207-814e-7f19306aa3b5")
+    (property "Reference" "#FLG0104"
+      (at 27.94 165.98 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 27.94 168.38 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 27.94 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 27.94 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 27.94 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (pin "1"
+      (uuid "1e61e3fb-6fe5-5647-95c0-25e9bb917378"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#FLG0104")
+          (unit 1)))))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:+5V_HP")
+    (at 27.94 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "be2185a8-8285-5faa-9807-6b0d7c4a566e")
+    (property "Reference" "#PWR0105"
+      (at 27.94 165.98 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V_HP"
+      (at 27.94 172.16 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 27.94 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 27.94 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 27.94 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "4d4cbed7-297e-5ff0-a191-c44b48017f7a"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0105")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 58.42 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c0dc2c75-fe34-55ee-919a-912538352c2d")
+    (property "Reference" "#FLG0106"
+      (at 58.42 165.98 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 58.42 168.38 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 58.42 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 58.42 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (pin "1"
+      (uuid "0fecf26c-d4ef-5f7e-a6df-c47cd6445cd7"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#FLG0106")
+          (unit 1)))))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:+5V_BENCH")
+    (at 58.42 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "bb7f0f45-f521-54a9-be10-c43eb5fbad3f")
+    (property "Reference" "#PWR0107"
+      (at 58.42 165.98 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V_BENCH"
+      (at 58.42 172.16 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 58.42 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 58.42 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "fad7f7df-f2c9-53d1-9dbf-b039626bf252"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0107")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 88.9 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "3e4e898e-ee5e-5cac-9303-8696a84a5e7f")
+    (property "Reference" "#FLG0108"
+      (at 88.9 165.98 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 88.9 168.38 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 88.9 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 88.9 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 88.9 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (pin "1"
+      (uuid "aeeb0978-fd00-513f-8ae5-11a49e839603"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#FLG0108")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 88.9 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "a478cbfa-9c80-5605-894e-e7c6041e328e")
+    (property "Reference" "#PWR0109"
+      (at 88.9 165.98 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 88.9 172.16 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 88.9 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 88.9 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 88.9 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "933126e8-ab5e-5e4a-94a7-769f1f8d1257"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0109")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 119.38 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "52f5b884-61e2-5857-9efc-f933e6e90784")
+    (property "Reference" "#FLG0110"
+      (at 119.38 165.98 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 119.38 168.38 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 119.38 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 119.38 175.26 0)
+      (effects
+        (font
+          (size 0.8 0.8))
+        (hide yes)))
+    (pin "1"
+      (uuid "9f0d4f29-57f9-50b4-88b1-038b3c3cdcb4"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#FLG0110")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 119.38 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "8b32d477-8263-52d7-a1ab-836acf821676")
+    (property "Reference" "#PWR0111"
+      (at 129.54 165.98 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 129.54 168.38 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 119.38 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 119.38 175.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "4d7d5d4e-16a8-5695-8359-dfab25e9f88c"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0111")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:TPS2552DBV")
+    (at 195.58 48.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2e42ff6f-2ba5-5aaf-a12e-941287fd907d")
+    (property "Reference" "U9"
+      (at 195.58 36.44 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "TPS2552DBV"
+      (at 195.58 38.84 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+      (at 195.58 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2552.pdf"
+      (at 195.58 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 195.58 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "34c2b6aa-7f0e-591b-a340-1503eb2098c8"))
+    (pin "3"
+      (uuid "7c52b073-400c-5d70-adad-1f9f3b016a2e"))
+    (pin "6"
+      (uuid "32ae48ae-d2a5-56a5-a672-3a5af44b8cf8"))
+    (pin "4"
+      (uuid "cb9f92a6-b2f2-5afc-bac7-3bcf60909bc8"))
+    (pin "5"
+      (uuid "7fbb567d-10e2-516c-b7cb-3ea9f1240ee2"))
+    (pin "2"
+      (uuid "484a731d-6a65-5a12-a256-bc69e61c8cc7"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U9")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 182.88 45.72)
+      (xy 177.8 45.72))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e088af37-5386-5862-87b4-f690ef835cfe"))
+  (symbol
+    (lib_id "power:VBUS")
+    (at 177.8 45.72 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "6c66228e-ba19-5b8e-877f-b53c88130860")
+    (property "Reference" "#PWR0112"
+      (at 177.8 36.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "VBUS"
+      (at 175.3 45.72 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify right)))
+    (property "Footprint" ""
+      (at 177.8 45.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 177.8 45.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 177.8 45.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "b85c4dfa-299c-545d-ac7c-9ce73c5079cf"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0112")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 182.88 48.26)
+      (xy 177.8 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "77165092-0e59-533e-ae22-04254db240ff"))
+  (global_label "USB_PWREN_N"
+    (shape input)
+    (at 177.8 48.26 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "c1f4bcab-3705-5c64-9a41-fccadbb40893")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 177.8 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 208.28 45.72)
+      (xy 213.36 45.72))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a032477f-0072-5b69-8bc3-01766e8365c7"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:USB_TARGET_5V")
+    (at 213.36 45.72 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "6d4c54ea-4a3d-559e-a923-429e746a9826")
+    (property "Reference" "#PWR0113"
+      (at 213.36 36.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "USB_TARGET_5V"
+      (at 215.86 45.72 90)
+      (effects
+        (font
+          (size 0.85 0.85))
+        (justify left)))
+    (property "Footprint" ""
+      (at 213.36 45.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 213.36 45.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 213.36 45.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "879e885a-2caa-585d-b377-db8710157318"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0113")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 208.28 48.26)
+      (xy 213.36 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a4aab19f-f8c8-5dd8-bb1e-52fbd1110b67"))
+  (global_label "USB_FAULT_N"
+    (shape input)
+    (at 213.36 48.26 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "c0d76246-bf01-5c6e-9022-d29611524688")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 213.36 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 208.28 50.8)
+      (xy 213.36 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ad53437e-231d-5eed-b541-c582362cd7f3"))
+  (global_label "USB_ILIM"
+    (shape input)
+    (at 213.36 50.8 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "25fb5e5e-f5bc-5012-89bd-18c7633d8a1e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 213.36 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 195.58 58.42)
+      (xy 195.58 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "28037afe-28e7-5cbb-a890-c63288bb31e1"))
+  (symbol
+    (lib_id "power:GND")
+    (at 195.58 60.96 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "048709f0-9d33-564b-930d-79b95260dc18")
+    (property "Reference" "#PWR0114"
+      (at 205.74 51.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 205.74 54.08 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 195.58 60.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 195.58 60.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 195.58 60.96 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "cfa88870-9722-50a7-a7a7-c65fce4a6c0d"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0114")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 160.02 88.9 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "972dfb17-ccb3-5dd9-9a3d-c74371b83e97")
+    (property "Reference" "R30"
+      (at 163.02 87.6 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "88k7 1%"
+      (at 164.52 90.2 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 160.02 88.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 160.02 88.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 160.02 88.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "007a03cd-6f26-5d4f-93d0-c16b6c8be299"))
+    (pin "2"
+      (uuid "a0b8aa44-3a9f-5eb2-971e-d9fea4632458"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R30")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 160.02 85.09)
+      (xy 160.02 80.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bdfe80d1-75fb-5e3c-bc91-a292d4cf1c5b"))
+  (global_label "USB_ILIM"
+    (shape input)
+    (at 160.02 80.01 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "a17d10fc-8191-5652-b768-77d670a3f6ea")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 160.02 80.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 160.02 92.71)
+      (xy 160.02 95.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1c0a6bb3-86ea-5adc-b9d6-06fe479e0afe"))
+  (symbol
+    (lib_id "power:GND")
+    (at 160.02 95.25 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "5e5b779a-d846-50de-98b1-1dee37873813")
+    (property "Reference" "#PWR0115"
+      (at 170.18 85.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 170.18 88.37 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 160.02 95.25 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 160.02 95.25 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 160.02 95.25 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "044f4795-866f-5391-bd2e-2a54e6b7cdda"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0115")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 205.74 88.9 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "464728a6-6d0c-56ed-8d99-600bf34ae068")
+    (property "Reference" "R31"
+      (at 208.74 87.6 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 210.24 90.2 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 205.74 88.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 205.74 88.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 205.74 88.9 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "22d68563-9328-5641-b6bd-afe3455f9ca0"))
+    (pin "2"
+      (uuid "6ace47ca-7397-5372-8b02-06607576769a"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R31")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 205.74 92.71)
+      (xy 205.74 97.79))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d166e722-f253-58c4-b64b-471edaa013ed"))
+  (global_label "USB_FAULT_N"
+    (shape input)
+    (at 205.74 97.79 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "b0fb7f77-e5ca-5773-8ee3-be56558d6bcd")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 205.74 97.79 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 205.74 85.09)
+      (xy 205.74 82.55))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2d266693-f5a1-51ea-a11b-6dcebe342d5f"))
+  (symbol
+    (lib_id "power:+3V3")
+    (at 205.74 82.55 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "6cc89a4b-6004-5d85-b6ba-85a1779f215e")
+    (property "Reference" "#PWR0116"
+      (at 205.74 73.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 205.74 79.45 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 205.74 82.55 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 205.74 82.55 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 205.74 82.55 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "690df5d3-bf93-5194-b248-3ca3da68850d"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0116")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:C")
+    (at 251.46 48.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "39799ce3-50e8-55aa-9c43-d2c56a40eba0")
+    (property "Reference" "C11"
+      (at 254.46 46.96 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "1u"
+      (at 255.96 49.56 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 251.46 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 251.46 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 251.46 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "d2204366-54ee-5060-814d-025dab2e87cd"))
+    (pin "2"
+      (uuid "54d1f9df-4d31-56dc-bc55-44a02abe6287"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "C11")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 251.46 44.45)
+      (xy 251.46 41.91))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "88feafaf-8224-5533-9681-45f1296ffee6"))
+  (symbol
+    (lib_id "power:VBUS")
+    (at 251.46 41.91 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "ac88ce3a-b286-51f9-b961-ed32671b6f0e")
+    (property "Reference" "#PWR0117"
+      (at 251.46 32.63 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "VBUS"
+      (at 251.46 38.81 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 251.46 41.91 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 251.46 41.91 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 251.46 41.91 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "53d14847-95d0-508a-a71b-4fe1b3503fa5"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0117")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 251.46 52.07)
+      (xy 251.46 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "464aff14-f2ae-506e-b08c-0980fe24d551"))
+  (symbol
+    (lib_id "power:GND")
+    (at 251.46 54.61 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "de24dd03-cad9-5b7d-a52e-9c86877e79f3")
+    (property "Reference" "#PWR0118"
+      (at 261.62 45.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 261.62 47.73 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 251.46 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 251.46 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 251.46 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "ec179b48-7632-50c9-beba-e8ac822c4612"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0118")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:C")
+    (at 281.94 48.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d82f1f49-43e6-563f-8a3d-bd99ed8087c5")
+    (property "Reference" "C12"
+      (at 284.94 46.96 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "1u"
+      (at 286.44 49.56 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+      (at 281.94 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 281.94 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 281.94 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "f208fc75-5cab-5628-b62f-9995fe8f1b64"))
+    (pin "2"
+      (uuid "593ac2a6-df8f-5cbe-9ff2-1f61674a3b5f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "C12")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 281.94 44.45)
+      (xy 281.94 41.91))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ba9518aa-5f82-5a9c-98a5-9dbb7f9c1784"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:USB_TARGET_5V")
+    (at 281.94 41.91 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "2355f35e-e68f-5703-a4da-b348bccfeaff")
+    (property "Reference" "#PWR0119"
+      (at 281.94 32.63 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "USB_TARGET_5V"
+      (at 281.94 38.81 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 281.94 41.91 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 281.94 41.91 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 281.94 41.91 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "613e5062-46f3-5a68-b6c4-6edf9b9b6d11"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0119")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 281.94 52.07)
+      (xy 281.94 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "25545d60-35fa-55c3-919d-fbef0eae451c"))
+  (symbol
+    (lib_id "power:GND")
+    (at 281.94 54.61 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "2c8332df-d64b-5907-abf4-329fb7e18018")
+    (property "Reference" "#PWR0120"
+      (at 292.1 45.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 292.1 47.73 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 281.94 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 281.94 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 281.94 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "a558a2e0-3751-52a6-b253-7528a2895657"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0120")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (text "USB target switch: EN# from FT232H PWREN#.\nR30 sets target current limit ~299mA nominal,\n262-342mA across tolerance (TI datasheet).\nUSB-only logic enumerates before target power.\nSuspend removes the USB target source."
+    (at 142.24 114.3 0)
+    (effects
+      (font
+        (size 1.05 1.05))
+      (justify left top))
+    (uuid "e94f38ab-f2e8-5da4-9b9c-3d83feb7c75f"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:TLV3011BDBV")
+    (at 335.28 76.2 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9263955c-0ace-5081-a9f7-4c581b0622a0")
+    (property "Reference" "U10"
+      (at 344.17 65.65 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "TLV3011BDBV"
+      (at 344.17 68.05 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+      (at 335.28 76.2 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv3011.pdf"
+      (at 335.28 76.2 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 335.28 76.2 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "3"
+      (uuid "9c22f053-fecb-5080-a4b7-fd6947064f70"))
+    (pin "4"
+      (uuid "206ec9ec-4221-56a2-9e49-a869d602eeee"))
+    (pin "1"
+      (uuid "5d3b8d72-2755-51b7-a7f4-2dce9c2899af"))
+    (pin "5"
+      (uuid "39c4851e-db07-577b-8901-2bcd544f15e8"))
+    (pin "6"
+      (uuid "6d6fd4e0-e963-55b9-aa85-152073104355"))
+    (pin "2"
+      (uuid "47659265-9933-56b2-80a0-b925a2997a3b"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U10")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 323.85 74.93)
+      (xy 318.77 74.93))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ae9d607f-f003-5444-9fe3-a79ffb704a72"))
+  (global_label "USB_REF_1V242"
+    (shape input)
+    (at 318.77 74.93 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "3e5d18a5-514c-5657-bb65-5a7e0c6e569a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 318.77 74.93 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 323.85 77.47)
+      (xy 318.77 77.47))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "955d2edb-e6b0-5bd1-93d5-389af98d246d"))
+  (global_label "USB_LOCAL_SENSE"
+    (shape input)
+    (at 318.77 77.47 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "4771cea9-3c24-5b1a-bf64-081c8d1d560b")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 318.77 77.47 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 346.71 74.93)
+      (xy 351.79 74.93))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4a0264bd-0a12-5d3b-9abb-84eaa6dc57d7"))
+  (global_label "USB_TARGET_BAD"
+    (shape input)
+    (at 351.79 74.93 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "28fefe5d-f852-535f-8ca1-946d1e652d80")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 351.79 74.93 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 346.71 77.47)
+      (xy 351.79 77.47))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "708ee9e7-7e4f-5740-ad7d-370e3794bae3"))
+  (global_label "USB_REF_1V242"
+    (shape input)
+    (at 351.79 77.47 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "28cf444e-d91d-5171-a3ef-ea265ef17a60")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 351.79 77.47 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 335.28 67.31)
+      (xy 335.28 64.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9aaa63bb-090f-5882-9ca1-93ff27889c55"))
+  (symbol
+    (lib_id "power:+3V3")
+    (at 335.28 64.77 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "5e99b31c-388d-5355-a6b2-ad000f8a791e")
+    (property "Reference" "#PWR0121"
+      (at 335.28 55.49 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 335.28 61.67 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 335.28 64.77 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 335.28 64.77 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 335.28 64.77 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "c26eb3db-b938-5e14-978d-87b1d2662c09"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0121")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 335.28 85.09)
+      (xy 335.28 87.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1fe46473-15a2-5bba-a2c3-a779dc1d5eff"))
+  (symbol
+    (lib_id "power:GND")
+    (at 335.28 87.63 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "0833beb8-91c7-5b71-acc9-abeb9f2ec774")
+    (property "Reference" "#PWR0122"
+      (at 345.44 78.35 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 345.44 80.75 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 335.28 87.63 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 335.28 87.63 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 335.28 87.63 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "0b6254f3-468a-5557-a2aa-b4c5727524d0"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0122")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 304.8 116.84 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "dceab18d-abef-56c8-b5b8-70fd41b55579")
+    (property "Reference" "R32"
+      (at 307.8 115.54 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "100k 0.1%"
+      (at 309.3 118.14 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 304.8 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 304.8 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 304.8 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "e5b7a062-e4d9-553f-b46e-3029ab19faf8"))
+    (pin "2"
+      (uuid "d5b3d7c5-74da-5485-81e1-89ffd1797d72"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R32")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 304.8 120.65)
+      (xy 304.8 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9c63f98e-bbf6-5c84-8491-9f74d9e425f9"))
+  (global_label "USB_LOCAL_SENSE"
+    (shape input)
+    (at 304.8 125.73 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "076e842d-2789-570b-a478-84372dc6afe6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 304.8 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 304.8 113.03)
+      (xy 304.8 110.49))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c3b6cec3-ae5e-5b53-8b02-740f1616b7f9"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 304.8 110.49 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "bc261bc7-9c1c-5f28-9ce4-1fdb4a832b2e")
+    (property "Reference" "#PWR0123"
+      (at 304.8 101.21 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 304.8 107.39 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 304.8 110.49 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 304.8 110.49 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 304.8 110.49 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "b9a120ae-c845-54fd-a6e0-4be0c66cdbde"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0123")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 347.98 116.84 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "16ede52f-6cb9-51eb-b84d-cab14e46917e")
+    (property "Reference" "R33"
+      (at 350.98 115.54 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "37k4 0.1%"
+      (at 352.48 118.14 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 347.98 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 347.98 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 347.98 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "d94fd625-0530-5c83-ae54-3191b3738baf"))
+    (pin "2"
+      (uuid "a34f45a0-6d20-55be-b42f-e50c97a28d69"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R33")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 347.98 113.03)
+      (xy 347.98 107.95))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fc4a5e69-f680-57d8-89df-bf303e135300"))
+  (global_label "USB_LOCAL_SENSE"
+    (shape input)
+    (at 347.98 107.95 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "a481d02d-9c20-5e46-a216-94655387467f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 347.98 107.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 347.98 120.65)
+      (xy 347.98 123.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "af7cdab3-610a-53f6-bde6-7cc2b5a0f8d5"))
+  (symbol
+    (lib_id "power:GND")
+    (at 347.98 123.19 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "5e6b57c9-33c7-5463-8ade-1ae1255444de")
+    (property "Reference" "#PWR0124"
+      (at 358.14 113.91 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 358.14 116.31 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 347.98 123.19 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 347.98 123.19 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 347.98 123.19 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "8bd9748f-de7e-5e49-ac05-104cec139fe6"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0124")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 388.62 116.84 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5b9c468c-075a-5e67-a442-daba7a9634fa")
+    (property "Reference" "R34"
+      (at 391.62 115.54 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 393.12 118.14 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 388.62 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 388.62 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 388.62 116.84 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "143247b7-090f-54f3-a0d9-d9af811269d8"))
+    (pin "2"
+      (uuid "ac2b1a42-cf51-5466-a220-23184c6cc4e5"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R34")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 388.62 120.65)
+      (xy 388.62 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "397fe6be-21fa-5101-a363-f98e917710cc"))
+  (global_label "USB_TARGET_BAD"
+    (shape input)
+    (at 388.62 125.73 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "8efbe87e-1e55-58c0-8986-e39754b55b70")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 388.62 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 388.62 113.03)
+      (xy 388.62 110.49))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b0571fe1-ac91-5aae-9c67-6de54bee6e57"))
+  (symbol
+    (lib_id "power:+3V3")
+    (at 388.62 110.49 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "9606dcbf-5f35-5240-baec-528400b44b6d")
+    (property "Reference" "#PWR0125"
+      (at 388.62 101.21 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 388.62 107.39 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 388.62 110.49 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 388.62 110.49 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 388.62 110.49 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "a7dd7704-72d6-57fe-9a0b-27f4c9101096"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0125")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "74xGxx:74LVC1G32")
+    (at 337.82 160.02 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "932ad01b-e665-5b65-ae0e-49125de7da4e")
+    (property "Reference" "U11"
+      (at 347.98 150.74 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "74LVC1G32"
+      (at 347.98 153.14 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 337.82 160.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+      (at 337.82 160.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 337.82 160.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "81fa4c5d-8274-5d00-a8d2-b0004f6c591c"))
+    (pin "2"
+      (uuid "a6e53644-b792-52d8-a049-eff1b3d9f4a8"))
+    (pin "3"
+      (uuid "d4c3d726-2223-55b9-84ae-beb93feaa53f"))
+    (pin "4"
+      (uuid "0c8705f9-a64d-5713-b167-071bc8c5e702"))
+    (pin "5"
+      (uuid "bb29e592-f1a1-5cd4-a7b9-0b7650dcd6ad"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U11")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 322.58 157.48)
+      (xy 317.5 157.48))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0fe8dd93-fc1d-54d6-9fbc-1fa4e21fe363"))
+  (global_label "USB_TARGET_BAD"
+    (shape input)
+    (at 317.5 157.48 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "2764d27f-e636-562a-9641-43570e70c726")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 317.5 157.48 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 322.58 162.56)
+      (xy 317.5 162.56))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4de9f892-f06c-542d-9a90-eb85409268ce"))
+  (global_label "USB_PWREN_N"
+    (shape input)
+    (at 317.5 162.56 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "a21c260b-3e93-5d7a-8fb1-aa8ff7e86c5a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 317.5 162.56 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 350.52 160.02)
+      (xy 355.6 160.02))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a3126d26-8884-5c72-b115-1bb69b7cb0ca"))
+  (global_label "USB_JTAG_POWER_OFF"
+    (shape input)
+    (at 355.6 160.02 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "741948fd-3311-51af-8fd3-6f6877eb8635")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 355.6 160.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 337.82 170.18)
+      (xy 337.82 172.72))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bfdca99a-35cc-5b81-9d62-386404a29300"))
+  (symbol
+    (lib_id "power:GND")
+    (at 337.82 172.72 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "7651eebb-1cdb-59d0-8b22-d86ad95d0fa9")
+    (property "Reference" "#PWR0126"
+      (at 347.98 163.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 347.98 165.84 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 337.82 172.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 337.82 172.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 337.82 172.72 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "65fd0de9-cf35-5b9f-9acc-bb5a530dcca6"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0126")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 337.82 149.86)
+      (xy 337.82 147.32))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "24249645-799e-5ddf-a980-94445f6e01c4"))
+  (symbol
+    (lib_id "power:+3V3")
+    (at 337.82 147.32 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "37df91c3-e597-550e-927a-89c7f817e24a")
+    (property "Reference" "#PWR0127"
+      (at 337.82 138.04 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 337.82 144.22 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 337.82 147.32 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 337.82 147.32 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 337.82 147.32 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "4494b502-ea5a-574c-bee2-055fc2e9f582"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0127")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 388.62 160.02 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "97053de3-55eb-5eb9-9241-e9ddf815977d")
+    (property "Reference" "R35"
+      (at 391.62 158.72 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 393.12 161.32 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 388.62 160.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 388.62 160.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "USB"
+      (at 388.62 160.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "8968e7e5-7ffa-5974-9043-41ebafb98770"))
+    (pin "2"
+      (uuid "45155947-f35e-5bb4-bb84-0cbc376a8811"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R35")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 388.62 163.83)
+      (xy 388.62 168.91))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3c529cd5-2266-5b9d-904e-0f13f546fbbb"))
+  (global_label "USB_JTAG_OE_N"
+    (shape input)
+    (at 388.62 168.91 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "5324106a-71e8-5cb9-9123-d8ad89311f6b")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 388.62 168.91 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 388.62 156.21)
+      (xy 388.62 153.67))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bbe56316-ab8a-550b-b357-1625f8c1f47a"))
+  (symbol
+    (lib_id "power:+3V3")
+    (at 388.62 153.67 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "96d5b7c5-dbca-5255-92b0-1ed32ea5b251")
+    (property "Reference" "#PWR0128"
+      (at 388.62 144.39 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 388.62 150.57 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 388.62 153.67 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 388.62 153.67 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 388.62 153.67 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "bde0812f-1562-5c89-8030-d7f691aa2d60"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0128")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (text "USB JTAG lockout below ~4.56V local supply.\nRequires industrial ATF1508AS and valid 5V source;\nSchottky ORing does not regulate voltage."
+    (at 292.1 185.42 0)
+    (effects
+      (font
+        (size 1.05 1.05))
+      (justify left top))
+    (uuid "b937be9e-9780-5723-b5b7-75a5a06014cb"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:TLV3011BDBV")
+    (at 58.42 223.52 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6d75275b-dedf-54e4-b0dc-2a0972cab4e9")
+    (property "Reference" "U12"
+      (at 67.31 212.97 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "TLV3011BDBV"
+      (at 67.31 215.37 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+      (at 58.42 223.52 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv3011.pdf"
+      (at 58.42 223.52 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 223.52 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "3"
+      (uuid "cfc07fe4-1fe7-5983-9f37-e1dec1fb63cc"))
+    (pin "4"
+      (uuid "9c2d9081-28c6-5699-a6df-f0946cf97f9b"))
+    (pin "1"
+      (uuid "e6e92f92-f751-5087-9104-f257b80f57d8"))
+    (pin "5"
+      (uuid "2205be4d-c6bd-50fc-a848-c34ab372c107"))
+    (pin "6"
+      (uuid "434d59d6-ef7b-5030-808b-5f92ebb0abfc"))
+    (pin "2"
+      (uuid "c0d2652b-fa7f-5ca5-8a17-4e0444921037"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U12")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 46.99 222.25)
+      (xy 41.91 222.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c8efca2f-804c-5e49-8c86-e1887f601ba0"))
+  (global_label "HP_REF_1V242"
+    (shape input)
+    (at 41.91 222.25 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "7ac53a5c-6006-5ef2-9dc6-8588a372ee78")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 41.91 222.25 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 46.99 224.79)
+      (xy 41.91 224.79))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6fb4c914-2037-5bae-97ee-31caf40a8950"))
+  (global_label "HP_RAW_SENSE"
+    (shape input)
+    (at 41.91 224.79 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "a510dc80-0d4f-578c-87f6-d5f4437e99e1")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 41.91 224.79 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 69.85 222.25)
+      (xy 74.93 222.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bbfb59c7-6c83-5f83-b4d0-d5818e3bf73e"))
+  (global_label "HP_POWER_BAD"
+    (shape input)
+    (at 74.93 222.25 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "83171061-f2f9-5421-b8b9-c7b507ef6131")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 74.93 222.25 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 69.85 224.79)
+      (xy 74.93 224.79))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "43c7f477-673e-5e9a-be61-8aa9b61edf8c"))
+  (global_label "HP_REF_1V242"
+    (shape input)
+    (at 74.93 224.79 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "1c432dea-697d-52e2-b50e-1f15de82dbcf")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 74.93 224.79 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 58.42 214.63)
+      (xy 58.42 212.09))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cf3f92ec-6d72-59c0-bbeb-b65238ab914c"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 58.42 212.09 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "1c0c498c-d641-56c7-9cdd-a601aa21515b")
+    (property "Reference" "#PWR0129"
+      (at 58.42 202.81 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 58.42 208.99 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 58.42 212.09 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 58.42 212.09 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 212.09 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "d9a7095f-e366-5971-97fc-a7285b89581d"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0129")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 58.42 232.41)
+      (xy 58.42 234.95))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8651715a-f58e-52f6-abbc-00fd385f274d"))
+  (symbol
+    (lib_id "power:GND")
+    (at 58.42 234.95 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "8a1aadf4-f7de-5122-8f62-d185a0bc1328")
+    (property "Reference" "#PWR0130"
+      (at 68.58 225.67 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 68.58 228.07 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 58.42 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 58.42 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "8d7376c8-a6e6-5da3-801b-123ab31629aa"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0130")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 20.32 261.62 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1e16123d-99a9-548f-97b5-0148bb9fc481")
+    (property "Reference" "R36"
+      (at 23.32 260.32 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "100k 0.1%"
+      (at 24.82 262.92 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 20.32 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 20.32 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 20.32 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "f8852d5d-7885-5004-bfd1-517816cdaf05"))
+    (pin "2"
+      (uuid "c4cab1a5-9a4f-5dcc-8fa2-2d6051e4b71e"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R36")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 20.32 265.43)
+      (xy 20.32 270.51))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "73d46c13-b34b-5f14-8da1-5e92ba8d0b98"))
+  (global_label "HP_RAW_SENSE"
+    (shape input)
+    (at 20.32 270.51 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "fa667a83-6b50-56e1-9b9c-b0e330f331d1")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 20.32 270.51 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 20.32 257.81)
+      (xy 20.32 255.27))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cca23b13-ba39-5b05-a0ae-b97a6f21fe54"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:+5V_HP")
+    (at 20.32 255.27 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "1678b9b2-6820-5d63-8b01-8cb56e816f4c")
+    (property "Reference" "#PWR0131"
+      (at 20.32 245.99 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V_HP"
+      (at 20.32 252.17 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 20.32 255.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 20.32 255.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 20.32 255.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "509166e0-a7b0-5674-9f20-1b944e60c136"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0131")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 66.04 261.62 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e6cc992b-7a45-5a44-ab1b-bb59bc882267")
+    (property "Reference" "R37"
+      (at 69.04 260.32 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "37k4 0.1%"
+      (at 70.54 262.92 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 66.04 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 66.04 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 66.04 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "53e7757b-b0ad-5b7c-a42b-b1ada48c8fcb"))
+    (pin "2"
+      (uuid "eca9a60e-4687-54a4-9868-844e49636394"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R37")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 66.04 257.81)
+      (xy 66.04 252.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9082e92b-69e3-5dd3-8269-0ee4b3cc6e9c"))
+  (global_label "HP_RAW_SENSE"
+    (shape input)
+    (at 66.04 252.73 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "25a86115-9a72-54bc-9eea-9063f8f97d69")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 66.04 252.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 66.04 265.43)
+      (xy 66.04 267.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c70eb931-e632-5e49-b973-2541be79edd1"))
+  (symbol
+    (lib_id "power:GND")
+    (at 66.04 267.97 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "02bd4821-ad83-54ce-ba00-e8365a74743e")
+    (property "Reference" "#PWR0132"
+      (at 76.2 258.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 76.2 261.09 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 66.04 267.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 66.04 267.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 66.04 267.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "8828230c-6cdc-5e1d-b60d-6f0c78ab8575"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0132")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 109.22 261.62 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "20654f0e-9daf-5ce0-8571-a6170c94a19d")
+    (property "Reference" "R38"
+      (at 112.22 260.32 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 113.72 262.92 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 109.22 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 109.22 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 109.22 261.62 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "911b8f0f-9a32-5df8-897c-6fabd4d6c094"))
+    (pin "2"
+      (uuid "1b8c644e-3909-5301-8d9e-e484f7bf2af8"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R38")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 109.22 265.43)
+      (xy 109.22 270.51))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f26139aa-fe06-5771-bfbf-ff9692a9afa3"))
+  (global_label "HP_POWER_BAD"
+    (shape input)
+    (at 109.22 270.51 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "860c126e-cd56-579f-aa84-cf4272f52a93")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 109.22 270.51 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 109.22 257.81)
+      (xy 109.22 255.27))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "51f63124-f2e1-59ee-826f-244292199b7b"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 109.22 255.27 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "cc53e42e-868f-5fff-9ddf-9bf06a372c25")
+    (property "Reference" "#PWR0133"
+      (at 109.22 245.99 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 109.22 252.17 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 109.22 255.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 109.22 255.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 109.22 255.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "3604d1f9-341b-5fca-b282-37647d16c7ad"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0133")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 157.48 208.28 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ad042d7b-73d2-5544-91a5-8725927717fc")
+    (property "Reference" "JP1"
+      (at 157.48 202.81 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "RUN: FIT SHUNT / PROGRAM: OPEN"
+      (at 157.48 205.21 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 157.48 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 157.48 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 157.48 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "fde69003-3804-5cbc-be97-6597862294cc"))
+    (pin "2"
+      (uuid "6831f541-bcca-5dab-95c4-503c1e19bb6e"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "JP1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 152.4 208.28)
+      (xy 147.32 208.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "efa04d25-9bcb-5e22-8290-f8fe24bde3e7"))
+  (global_label "PROGRAM"
+    (shape input)
+    (at 147.32 208.28 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "b7c2baef-36f9-58e1-a989-ecbe4c408bdb")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 147.32 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 152.4 210.82)
+      (xy 147.32 210.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "45654852-70ee-5851-bb3a-53baf8fa8d0a"))
+  (symbol
+    (lib_id "power:GND")
+    (at 147.32 210.82 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "7b10439b-fc5d-546e-ad59-07ea4e33508b")
+    (property "Reference" "#PWR0134"
+      (at 157.48 201.54 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 157.48 203.94 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 147.32 210.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 147.32 210.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 147.32 210.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "fd52f701-f512-5e70-a18f-b1767eaa9172"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0134")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 149.86 241.3 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9f4fe54b-e792-5e85-a5e5-1afc14ac363f")
+    (property "Reference" "R39"
+      (at 152.86 240 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 154.36 242.6 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 149.86 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 149.86 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 149.86 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "bc32a9b8-46b7-59f7-b04a-b9dfd02504fc"))
+    (pin "2"
+      (uuid "89e6ff84-87cd-5d01-90c2-86031a241d7f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R39")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 149.86 245.11)
+      (xy 149.86 250.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e867d819-498d-546f-bf77-12a025d7e4bc"))
+  (global_label "PROGRAM"
+    (shape input)
+    (at 149.86 250.19 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "1f249184-78f2-558c-b4f6-68540b5f9fd4")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 149.86 250.19 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 149.86 237.49)
+      (xy 149.86 234.95))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e587d63e-7665-539d-a9d7-6351a17322c1"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 149.86 234.95 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "f92c74bd-5ae0-5a21-a987-dafcfb17c86c")
+    (property "Reference" "#PWR0135"
+      (at 149.86 225.67 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 149.86 231.85 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 149.86 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 149.86 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 149.86 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "ed2d1964-e794-5f7b-afd9-9c15dded8e6a"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0135")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 195.58 241.3 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d9734c07-0c97-5b12-b496-09409923f8df")
+    (property "Reference" "R40"
+      (at 198.58 240 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 200.08 242.6 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 195.58 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 195.58 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 195.58 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "727d80fc-40a2-58d1-baa3-71a9b9a36515"))
+    (pin "2"
+      (uuid "7af8c363-3345-5702-ad97-074993bd889f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "R40")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 195.58 245.11)
+      (xy 195.58 250.19))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d8354980-3483-5c4f-ab75-001ed455069d"))
+  (global_label "CPLD_MIP_N"
+    (shape input)
+    (at 195.58 250.19 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "bd88b6a3-87f6-5f11-9b9b-2df9cfe322be")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 195.58 250.19 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 195.58 237.49)
+      (xy 195.58 234.95))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e57138f2-1add-55ce-8a19-20177117e18b"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 195.58 234.95 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "e40b203c-d5e8-5593-b8c0-ca3e60d84744")
+    (property "Reference" "#PWR0136"
+      (at 195.58 225.67 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 195.58 231.85 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 195.58 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 195.58 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 195.58 234.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "fd40f6f3-7d04-510f-aaa0-d751e61418a9"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0136")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:74AHCT32")
+    (at 220.98 208.28 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "09b8feb1-5a11-5d5b-8c28-cc4584a608e4")
+    (property "Reference" "U14"
+      (at 220.98 199 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "74AHCT32PW"
+      (at 220.98 201.4 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+      (at 220.98 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+      (at 220.98 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 220.98 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "470afb52-3e27-5576-91e0-48a9dccbeba2"))
+    (pin "2"
+      (uuid "ffaaec44-1c9d-5b77-9eb1-78d687ec7412"))
+    (pin "3"
+      (uuid "337e7b55-da27-57af-8116-30a5643ef7f4"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U14")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 213.36 205.74)
+      (xy 208.28 205.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d55fa85a-5fe9-563c-93ab-994a3949f061"))
+  (global_label "HP_POWER_BAD"
+    (shape input)
+    (at 208.28 205.74 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "18454a8e-8e4c-5adc-b293-cd5e9358d994")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 208.28 205.74 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 213.36 210.82)
+      (xy 208.28 210.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6dfed012-1973-5f59-8e80-213a1712b596"))
+  (global_label "PROGRAM"
+    (shape input)
+    (at 208.28 210.82 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "bf7d8a63-661b-5a61-9e1d-03118ef40dd5")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 208.28 210.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 228.6 208.28)
+      (xy 233.68 208.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d12d810d-df63-567a-9831-ffbffd4718d5"))
+  (global_label "HP_DISABLE"
+    (shape input)
+    (at 233.68 208.28 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "56ead364-3bdb-5ba2-a471-5d0e9a23f159")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 233.68 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:74AHCT32")
+    (at 284.48 208.28 0)
+    (unit 2)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "483eec67-fe2e-594c-85cc-41d4720d1800")
+    (property "Reference" "U14"
+      (at 284.48 199 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "74AHCT32PW"
+      (at 284.48 201.4 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+      (at 284.48 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+      (at 284.48 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 284.48 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "4"
+      (uuid "ea7be5b6-538d-5fc7-91c0-d243f215585e"))
+    (pin "5"
+      (uuid "d6e74389-0e32-5e71-8e2f-42bcc215fbc1"))
+    (pin "6"
+      (uuid "0d5f9eed-6c99-5773-92dc-93f318cb7402"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U14")
+          (unit 2)))))
+  (wire
+    (pts
+      (xy 276.86 205.74)
+      (xy 271.78 205.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bb839ce2-5c8e-54fc-9448-1f4145c440c6"))
+  (global_label "CPLD_XCVR_OE_N"
+    (shape input)
+    (at 271.78 205.74 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "9b1a0566-8086-54e2-8a33-55866e1a42f7")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 271.78 205.74 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 276.86 210.82)
+      (xy 271.78 210.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "103aa0e2-f5cd-55ad-ba9c-e9fa6c707eb0"))
+  (global_label "HP_DISABLE"
+    (shape input)
+    (at 271.78 210.82 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "1afb0018-18ed-5d59-bd75-9ca2f7126ede")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 271.78 210.82 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 292.1 208.28)
+      (xy 297.18 208.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5abf6046-6bc6-5ce7-8bcb-58c4abd31a7e"))
+  (global_label "XCVR_OE_N"
+    (shape input)
+    (at 297.18 208.28 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "ed0f8f67-789a-598e-b087-ecb774d69401")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 297.18 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:74AHCT32")
+    (at 220.98 256.54 0)
+    (unit 3)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1de7320b-eee2-5b1a-be83-ed02204e1a16")
+    (property "Reference" "U14"
+      (at 220.98 247.26 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "74AHCT32PW"
+      (at 220.98 249.66 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+      (at 220.98 256.54 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+      (at 220.98 256.54 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 220.98 256.54 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "8"
+      (uuid "16e6b8e3-8ec2-588d-9e27-f58fc42dc282"))
+    (pin "9"
+      (uuid "f8458e64-6331-5974-851c-2b11ed37feae"))
+    (pin "10"
+      (uuid "d25ab62a-1d36-5d0d-947a-d5918031c53a"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U14")
+          (unit 3)))))
+  (wire
+    (pts
+      (xy 228.6 256.54)
+      (xy 233.68 256.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e60299f8-518b-5971-9c26-e316aa1c6348"))
+  (global_label "HP_MIP_GATE_N"
+    (shape input)
+    (at 233.68 256.54 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "6719a5bf-8294-5101-b262-3e8e20ff4ce5")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 233.68 256.54 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 213.36 254)
+      (xy 208.28 254))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "56989839-3fdd-55fd-96e5-57e172f5c7cf"))
+  (global_label "CPLD_MIP_N"
+    (shape input)
+    (at 208.28 254 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "5e8eb8f3-3d90-5a68-b81c-bdd4057386d6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 208.28 254 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 213.36 259.08)
+      (xy 208.28 259.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3e366763-7225-5461-95bb-05b4dd631c73"))
+  (global_label "HP_DISABLE"
+    (shape input)
+    (at 208.28 259.08 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "13fc92e7-c6e9-55db-8e47-0acf9cc6cb36")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 208.28 259.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:74AHCT32")
+    (at 284.48 238.76 0)
+    (unit 4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8f91fe3b-20b8-5eb7-86ec-51a51b81ad82")
+    (property "Reference" "U14"
+      (at 284.48 229.48 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "74AHCT32PW"
+      (at 284.48 231.88 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+      (at 284.48 238.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+      (at 284.48 238.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 284.48 238.76 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "11"
+      (uuid "767d66f3-4f88-581b-a272-3bfc18a0e952"))
+    (pin "12"
+      (uuid "78e6f347-9216-58c6-bb3f-fc13dc0565e1"))
+    (pin "13"
+      (uuid "85babfac-6ecc-5cef-b4d6-4fc2df9f2e37"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U14")
+          (unit 4)))))
+  (no_connect
+    (at 292.1 238.76)
+    (uuid "86f78618-9f18-5374-a40f-829e788748fc"))
+  (wire
+    (pts
+      (xy 276.86 236.22)
+      (xy 271.78 236.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f0756a40-3be7-5faf-9a09-b1d5b7c54b18"))
+  (symbol
+    (lib_id "power:GND")
+    (at 271.78 236.22 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "dd28be6c-2ee0-5c08-8188-faed11a07201")
+    (property "Reference" "#PWR0137"
+      (at 281.94 226.94 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 281.94 229.34 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 271.78 236.22 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 271.78 236.22 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 271.78 236.22 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "3c701195-8290-5036-b626-dd131df4d9c0"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0137")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 276.86 241.3)
+      (xy 271.78 241.3))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "81091159-c3e9-5290-9db7-251337e9cea5"))
+  (symbol
+    (lib_id "power:GND")
+    (at 271.78 241.3 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "aa449903-44ca-568a-8e17-fcb98246f815")
+    (property "Reference" "#PWR0138"
+      (at 281.94 232.02 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 281.94 234.42 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 271.78 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 271.78 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 271.78 241.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "dd9630d0-bc93-5225-b3cc-1a446eed879f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0138")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:74AHCT32")
+    (at 388.62 233.68 0)
+    (unit 5)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fd4d7bf8-5e34-5371-ad2b-da3cd7e2625a")
+    (property "Reference" "U14"
+      (at 398.78 221.86 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "74AHCT32PW"
+      (at 398.78 224.26 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+      (at 388.62 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+      (at 388.62 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 388.62 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "7"
+      (uuid "85ee82d9-da97-5aac-a1f6-91d1f98134a4"))
+    (pin "14"
+      (uuid "2ea0434b-a938-53b9-b0c1-80a96d68ca57"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U14")
+          (unit 5)))))
+  (wire
+    (pts
+      (xy 388.62 246.38)
+      (xy 388.62 248.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9dea2aa5-4e52-5dd3-8922-1a97db71a56c"))
+  (symbol
+    (lib_id "power:GND")
+    (at 388.62 248.92 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "5cac5b94-08c2-5abe-9a7b-e34f61425760")
+    (property "Reference" "#PWR0139"
+      (at 398.78 239.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 398.78 242.04 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 388.62 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 388.62 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 388.62 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "80d9c3b6-269e-55b3-a6a8-4ab8a073b218"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0139")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 388.62 220.98)
+      (xy 388.62 218.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6e31af20-9f1b-5f1f-881a-6d9ff3e3be52"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 388.62 218.44 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "2ec5987a-8c84-5d77-879e-78db7011e840")
+    (property "Reference" "#PWR0140"
+      (at 388.62 209.16 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 388.62 215.34 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 388.62 218.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 388.62 218.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 388.62 218.44 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "8216776d-670b-5b89-9f47-a46d11af6a36"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0140")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "74xGxx:74LVC1G07")
+    (at 365.76 208.28 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8c3afd0b-215c-5d39-8467-836c0a98f2de")
+    (property "Reference" "U13"
+      (at 375.92 199 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "74LVC1G07DBV"
+      (at 375.92 201.4 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 365.76 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
+      (at 365.76 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 365.76 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Requirement" "5.5V tolerant input and Ioff open-drain output required"
+      (at 365.76 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "6cc01acc-eebe-5616-b326-2ea296e51f4c"))
+    (pin "2"
+      (uuid "993e7895-82d5-567b-b4a5-079830d7b5df"))
+    (pin "3"
+      (uuid "e86b0161-3d39-56b6-aaf1-28136bfa669e"))
+    (pin "4"
+      (uuid "d5e4a23b-5627-5e38-8de9-f6d23ed5aa60"))
+    (pin "5"
+      (uuid "e7371021-ddcf-5921-9bc1-45234c69a8a0"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "U13")
+          (unit 1)))))
+  (no_connect
+    (at 363.22 218.44)
+    (uuid "a9e77152-929d-5737-a84e-c7ce805b68b9"))
+  (wire
+    (pts
+      (xy 350.52 208.28)
+      (xy 345.44 208.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f17df0d0-7c8d-5887-acb9-05607f39342f"))
+  (global_label "HP_MIP_GATE_N"
+    (shape input)
+    (at 345.44 208.28 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "71e6ca9b-9450-5a76-baa6-2092f387cbda")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 345.44 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 378.46 208.28)
+      (xy 383.54 208.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a0e296ba-465c-59f2-875a-4b27c0f2aa8b"))
+  (global_label "HP_MIP_N"
+    (shape input)
+    (at 383.54 208.28 180)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify left))
+    (uuid "9bf75203-c64e-5574-85d8-c56c0b84068f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 383.54 208.28 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 360.68 218.44)
+      (xy 360.68 220.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3eee0f17-b2b9-53b2-b1d0-ddc5c7231524"))
+  (symbol
+    (lib_id "power:GND")
+    (at 360.68 220.98 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "1c1d8f51-c60a-5a75-b70c-0e3e00aee761")
+    (property "Reference" "#PWR0141"
+      (at 370.84 211.7 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 370.84 214.1 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 360.68 220.98 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 360.68 220.98 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 360.68 220.98 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "0a29a6cf-dc3f-51f0-8994-48d4fce2959a"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0141")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 360.68 198.12)
+      (xy 360.68 195.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ff2d19b9-29c1-5f40-88e1-3290c9d293b1"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:+5V_HP")
+    (at 360.68 195.58 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "1fdf0ddf-608e-5831-840e-144b9f6bfc5f")
+    (property "Reference" "#PWR0142"
+      (at 360.68 186.3 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V_HP"
+      (at 360.68 192.48 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 360.68 195.58 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 360.68 195.58 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 360.68 195.58 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "f47c1756-2545-5697-8e36-68dc873ab83f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a"
+          (reference "#PWR0142")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (text "U13 supply is raw HP +5V; Ioff releases MIP when HP is off.\nNo USB-fed pull-up is connected to the HP MIP bus.\nJP1 OPEN forces isolation independently of U1 configuration."
+    (at 12.7 185.42 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left top))
+    (uuid "295c6849-f246-56fd-8ee8-5b900967c86e")))

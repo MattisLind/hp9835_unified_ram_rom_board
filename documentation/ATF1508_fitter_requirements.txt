@@ -1,7 +1,7 @@
 HP 9835 Unified Memory Card — ATF1508AS TQFP100 fitter requirements
 
-U1 matches this pin plan in the 2026-10-04 exported netlist (97/97 checks).
-See memory_bus_update_2026-10-03.md for remaining board validation work.
+Rev G U1 matches this pin plan in the 2026-11-07 exported netlist (97/97 checks).
+See programming_update_2026-11-07.md for schematic changes and remaining validation.
 
 Generated constraints and invocation:
   ../logic/constraints/README.md
@@ -11,16 +11,23 @@ Generated constraints and invocation:
 2. Use -preassign KEEP; never silently relocate PCB pins when fitting fails.
 3. Pin 35 / hp_mip_n: open collector; never push-pull HIGH.
    Fitter option: -str open_collector=hp_mip_n
+   Rev G board net CPLD_MIP_N feeds U14/U13 hardware isolation before HP MIP/.
 4. Disable keepers globally: -str pin_keep=OFF.
    Retain external switch pull-ups; verify MIP release behavior in hardware.
 5. Enable JTAG: -str JTAG=ON. Fixed pads: TDI=4, TMS=15, TCK=62, TDO=73.
-   Programming-interface decision 2026-11-05: onboard FT232H USB-to-JTAG,
-   with no external JTAG header. Keep JTAG enabled in every fitted image.
-   USB schematic integration is pending; see ../requirements/design_decisions.md,
+   Programming-interface decision revised 2026-11-07: order-time assembly choice
+   of onboard FT232H USB-to-JTAG OR external JTAG header; do not populate both.
+   External header: 2x5, 2.54mm, male THROUGH-HOLE, preferably keyed/shrouded,
+   using the Atmel ATF15xx / ATDH1150USB JTAG-A pinout (section 15.2).
+   Keep JTAG enabled in every fitted image for both assembly options.
+   Rev G schematic includes both interfaces; see ../requirements/design_decisions.md,
    section 15, for signal mapping, isolation requirements and remaining work.
-   USB bench power uses Schottky-isolated USB/HP sources (section 15.1).
+   USB-option bench power uses Schottky-isolated USB/HP sources (section 15.1).
    Check the purchased device's VCC/ISP limits after the diode drop.
    With USB power and HP off, keep HP bus drive disabled and MIP/ released.
+   JP1: shunt fitted = RUN; open = PROGRAM. U12-U14 enforce isolation in hardware.
+   Pin 36 / xcvr_oe_n is the request net CPLD_XCVR_OE_N, qualified by U14
+   before reaching physical OE# pad 19 on U2/U3. This uses no extra CPLD ports.
 6. Disable both power-down alternatives: -str pd1=OFF -str pd2=OFF.
    Pin 1 carries MEM_D0 and pin 41 carries MEM_OE_N.
 7. Intended clocks: pin 87 HP_STM_N (raw STM/ from J3.42; falling edge), pin 90 HP_PH2.

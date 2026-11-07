@@ -89,10 +89,12 @@ entity hp9835_unified_ram_rom_board is
         -- Two 74HCT245 devices share these controls. A side is HP IDA and B
         -- side is MEM_D. The parts are non-inverting, so both sides carry the
         -- HP bus physical (active-low/complemented) representation.
+        -- Rev G qualifies the OE request with external HP-power/PROGRAM logic.
         XCVR_OE_N      : out   std_logic;
         XCVR_DIR       : out   std_logic;
 
-        -- HP MIP/ acknowledge line (contact 40; called UMC in the RAM reference), connected directly to an ATF1508 I/O.
+        -- MIP/ request (CPU contact 40; UMC in the RAM reference). Rev G routes
+        -- this through U14/U13 power/PROGRAM isolation before the physical bus.
         -- IMPORTANT: configure this physical pin as OPEN COLLECTOR and disable
         -- its pin keeper. Logic '0' asserts MIP; logic '1' releases the line.
         HP_MIP_N       : out   std_logic
@@ -365,9 +367,9 @@ begin
     end process;
 
     -- Assert the wired MIP/ acknowledge after the first PH2 stage.
-    -- HP_MIP_N is connected directly to an ATF1508 pin configured as an
-    -- open-collector output (pin keeper disabled). Therefore '0' pulls the
-    -- shared HP line low and '1' releases it to the backplane pull-up.
+    -- HP_MIP_N uses an ATF1508 open-collector output (pin keeper disabled).
+    -- Rev G's external U14/U13 isolation passes the request only with HP power
+    -- valid and RUN selected; '1' releases the request and physical HP line.
     HP_MIP_N <= '0' when
         phase1 = '1' and sel_any = '1' and HP_STM_N = '0'
         else '1';

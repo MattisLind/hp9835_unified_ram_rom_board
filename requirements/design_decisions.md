@@ -161,7 +161,14 @@ This saves sixteen CPLD I/O pins and makes the 100-pin ATF1508 practical.
 
 ## 15. JTAG programming strategy
 
-Decision confirmed 2026-11-05: use an onboard **FT232H single-channel USB-to-JTAG bridge** for both CPLD programming and flash access. No separate external JTAG socket/header is required. The FT2232H's second channel is unnecessary for this board.
+Decision revised 2026-11-07: provide **two mutually exclusive assembly options, selected when ordering the board**, on the same PCB:
+
+| Order option | Populate | Leave unpopulated |
+| --- | --- | --- |
+| Onboard USB programming | FT232H and its USB connector, clock, configuration and power/interface support circuitry | External JTAG header J2 |
+| External JTAG programming | Through-hole JTAG header J2 and any required links for the external programming path | FT232H and circuitry used only by the onboard USB interface |
+
+Both options support CPLD ISP and flash access through the same four CPLD JTAG pins. Retain common JTAG biasing, safe memory-control defaults and HP bus isolation in both assemblies; these functions must not disappear when the FT232H is omitted. Provide both interface footprints in the PCB design and explicit assembly/BOM selections, rather than a runtime selector. Do not populate both interfaces in the standard order options. This supersedes the 2026-11-05 choice to omit an external JTAG connector entirely. The FT2232H's second channel remains unnecessary for this board.
 
 The FT232H provides one MPSSE interface supporting JTAG; FT232HL in 48-pin LQFP is a suitable assembly-friendly package. See the [FTDI product information](https://ftdichip.com/products/ft232hl/) and [MPSSE command reference, AN_108](https://ftdichip.com/Support/Documents/AppNotes/AN_108_Command_Processor_for_MPSSE_and_MCU_Host_Bus_Emulation_Modes.pdf).
 
@@ -174,7 +181,7 @@ The intended signal mapping is:
 | ADBUS2 / TDO | Input | TDO, pin 73 |
 | ADBUS3 / TMS | Output | TMS, pin 15 |
 
-This mapping defines the signal endpoints; any buffers and power-off isolation must be included in the schematic design. Keep JTAG enabled in every fitted CPLD image because USB is the intended programming connection.
+This mapping defines the onboard USB option's signal endpoints; any buffers and power-off isolation must be included in the schematic design. The external-header option connects to the same CPLD JTAG pins, with the connector pinout specified in section 15.2. Keep JTAG enabled in every fitted CPLD image for both assembly options.
 
 The same JTAG connection serves two operations:
 
@@ -196,11 +203,11 @@ The programming software must account for the complemented flash-data convention
 
 USB programming is intended for bench use and must also be electrically safe with the card installed in an **unpowered** HP 9835. USB is normally disconnected while the HP is running; live-machine programming is not a required operating mode. When the HP supply is absent or PROGRAM is selected, hardware must keep the HCT245s disabled and MIP/ released through power-up, CPLD erase/programming and entry to/exit from boundary scan, including before software has established safe output states. This isolation must not depend on a working CPLD image.
 
-Implementation status: this is the accepted programming architecture, not an implemented USB circuit. The current KiCad schematic still contains the earlier J2 JTAG header. Replacing it requires the FT232H support circuit, USB connector and protection, defined startup/suspend states, and power-off-safe JTAG connections. The Schottky supply arrangement below is selected; component sizing, voltage/current margins and the hardware isolation circuit remain to be completed. The flash boundary-scan programmer and hardware verification are also outstanding.
+Implementation status, 2026-11-07: Revision G implements both interfaces in the five-sheet KiCad schematic. J2 is the ten-pin through-hole header specified below; J6/U6-U11/U15 and their support parts form the USB option. The schematic defaults to USB population with J2 marked DNP; `documentation/assembly_variants.csv` specifies FIT/DNP choices for both order options. JP1, U12-U14 and the common biasing/isolation components are fitted in both. Local target power is named `+5V` in the schematic; raw HP power is `+5V_HP`. See [the implementation and validation record](../documentation/programming_update_2026-11-07.md). The flash boundary-scan programmer, target fit/timing, voltage/current margins and hardware verification remain outstanding.
 
 ### 15.1 USB bench power and Schottky supply isolation
 
-Decision confirmed 2026-11-05: USB must power the parts needed to program the CPLD and flash on the bench. Use Schottky diodes to isolate the USB and HP supply sources so that USB cannot supply the HP9835 through the card's power contacts, including when the card is installed in an unpowered machine.
+Decision confirmed 2026-11-05, retained for the onboard USB assembly option on 2026-11-07: USB must power the parts needed to program the CPLD and flash on the bench. Use Schottky diodes to isolate the USB and HP supply sources so that USB cannot supply the HP9835 through the card's power contacts, including when the card is installed in an unpowered machine. The external-header assembly needs a target power source independent of the omitted FT232H; do not rely on its PWREN# or on the programmer cable to power the target.
 
 The intended target supply connection is:
 
@@ -229,6 +236,27 @@ The Schottky forward drop must be included in the supply budget for both sources
 
 Budget USB current for FT232H, target startup, CPLD ISP and flash erase/program activity. The [FTDI USB hardware guidelines](https://www.ftdichip.com/Documents/AppNotes/AN_146_USB_Hardware_Design_Guidelines_for_FTDI_ICs.pdf) specify the ordinary USB 2.0 limits of 100mA before enumeration and up to 500mA after configuration. The standard ATF1508AS alone has a specified standby maximum above 100mA, so do not connect the whole target load directly at USB insertion. Use a controlled USB target-power branch, appropriate power descriptors and suspend behavior; an FT232H PWREN#-controlled load switch is a candidate. Source blocking remains provided by the Schottky diodes. Check inrush, diode current/thermal ratings and reverse leakage, then verify installed-card backfeed with the HP off before treating this arrangement as validated.
 
+### 15.2 External JTAG header option
+
+Use a **2 x 5, 2.54 mm pitch, male through-hole header**, preferably a keyed/shrouded IDC box header, with the **Atmel ATF15xx / ATDH1150USB JTAG-A ten-pin pinout**. The [ATF15xx-DK3-U user guide, Figures 8-9](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/UserGuides/Atmel-8961-CPLD-ATF15xx-DK3-U-Development-Kit-UserGuide.pdf) specifies this header and compatibility with ATDH1150USB and ByteBlaster/MV/II cables. Connector compatibility alone does not establish software/device programming support for an arbitrary adapter.
+
+| J2 pin | Signal | Board connection |
+| --- | --- | --- |
+| 1 | TCK | U1 pin 62 |
+| 2 | GND | Board ground |
+| 3 | TDO | U1 pin 73 |
+| 4 | VCCT | Actual local CPLD I/O supply |
+| 5 | TMS | U1 pin 15 |
+| 6 | NC | No connection |
+| 7 | NC | No connection |
+| 8 | NC | No connection |
+| 9 | TDI | U1 pin 4 |
+| 10 | GND | Board ground |
+
+Pin assignments follow the [ATDH1150USB user guide, Table 1](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/UserGuides/Atmel-8909-CPLD-ATDH1150USB-ATF15-JTAG-ISP-Download-Cable-UserGuide.pdf). VCCT is supplied **from the target**; it powers the cable's output buffers as well as establishing their voltage. The guide specifies a maximum 150mA target-supply requirement for that cable, which must be included in the header option's power budget. Do not treat pin 4 as a default cable-to-board power input. Use an adapter compatible with the board's 5V CPLD I/O supply.
+
+Mark pin 1 and orient the shroud/key to match the selected ribbon cable and the physical connector drawing. `Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical` is a suitable KiCad footprint starting point; check the purchased connector's drawing and board clearance before layout. Pins 6-8 remain unconnected because the ATF1508 does not use separate reset connections on this header.
+
 ## 16. Shared OE# and WE# signals
 
 Flash and SRAM do not need separate output-enable and write-enable CPLD pins.
@@ -247,18 +275,18 @@ An unselected device ignores the shared OE/WE activity. This saves two ATF1508 I
 
 The default/idle condition must keep both chip enables inactive and both shared control strobes inactive.
 
-## 17. MIP/ is driven directly as open collector
+## 17. MIP/ uses an open-collector request and a power-isolated open-drain output
 
-The external tri-state buffer originally proposed for generating the HP MIP/ acknowledge signal is not required.
-
-The ATF1508 output pin connected to HP MIP is configured as **open collector**. The CPLD therefore either:
+Revision G adds hardware isolation between the CPLD request and HP MIP/. U1 pin 35 remains configured as **open collector** on `CPLD_MIP_N`. The CPLD therefore either:
 
 - pulls MIP low to assert acknowledge; or
 - releases the line.
 
 It must never actively drive MIP high.
 
-The ATF1508 pin keeper must be disabled on this signal so the HP wired acknowledge network and its pull-up determine the released state.
+U14 qualifies this request with HP power presence and the RUN/PROGRAM jumper. U13, a 74LVC1G07 with Ioff protection, drives the physical `HP_MIP_N` line as open drain and is powered from raw `+5V_HP`. When the HP is off, U13 is unpowered and releases its output. Its input tolerates the USB-powered local logic. No pull-up from local +5V connects to the HP MIP bus. R40 and R50 provide local inactive defaults before the logic establishes its outputs.
+
+The ATF1508 pin keeper must remain disabled on the request. The HP wired acknowledge network and its existing host-side pull-up determine the released physical MIP level. This supersedes the Rev-F direct-drive choice because USB bench power introduces a separate power domain.
 
 The fitter requirements file records this special pin configuration.
 
@@ -270,7 +298,7 @@ The multiplexed address is captured at the HP STM-related address-latch event. `
 
 HP `PH2` is then used for sequencing/acknowledge timing.
 
-No additional oscillator is presently required. Provision for one is not part of the current Rev-F design unless later timing verification demonstrates a need.
+The HP memory logic needs no additional oscillator. Revision G's optional USB interface has its own 12MHz crystal Y1 for the FT232H; this clock is not used by the HP memory logic.
 
 ## 19. System-ROM replacement caveat
 
@@ -347,7 +375,7 @@ The following items should remain visible rather than being guessed:
 - connector contact 36, whose function remains unestablished;
 - final fabrication specification for edge-finger gold plating and bevel;
 - any timing changes required after testing on a real HP 9835;
-- exact JTAG in-system programming interlock if programming while installed in a live machine is desired.
+- hardware programming isolation for both assembly options, including USB-powered programming with the card installed in an unpowered HP; live-machine programming is not required.
 
 The file `documentation/hp9835_connector_pinmap.csv` records unresolved connector contacts explicitly.
 

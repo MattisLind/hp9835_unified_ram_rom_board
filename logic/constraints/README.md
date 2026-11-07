@@ -1,6 +1,6 @@
 # ATF1508AS TQFP100 pin constraints
 
-These files implement `documentation/pin_plan.csv`. U1 now matches all 97 checked assignments in the 2026-10-04 KiCad netlist. See `documentation/memory_bus_update_2026-10-03.md` for remaining board checks.
+These files implement `documentation/pin_plan.csv`. U1 matches all 97 checked assignments in the 2026-11-07 Rev G KiCad netlist. See `documentation/programming_update_2026-11-07.md` for the programming/power changes and remaining board checks. The pad plan and logic equations are retained; U1.35 and U1.36 now use board nets `CPLD_MIP_N` and `CPLD_XCVR_OE_N` through external isolation logic. The netlist checker explicitly accounts for these two board-net aliases without renaming the VHDL ports or fitter options.
 
 `hp9835_unified_ram_rom_board_pinned.pin` is a Microchip **FIT1508** input, used after Yosys synthesis. It is not an FPGA PCF/XDC file or a direct Yosys placement command. It assigns all 76 scalar core-port bits, reserving the four hardware JTAG pins. Supply pins, GCLR tie-off, and spare pads are board connections, not VHDL ports.
 

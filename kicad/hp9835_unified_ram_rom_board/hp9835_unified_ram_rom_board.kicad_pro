@@ -435,10 +435,28 @@
   "sheets": [
     [
       "84c24153-2fcb-4318-851a-b096109d7b0d",
-      "hp9835_unified_ram_rom_board"
+      "Memory / CPLD"
+    ],
+    [
+      "da693c4c-48ec-5014-8910-89e62fc36d19",
+      "Configuration"
+    ],
+    [
+      "1ef18840-1366-5101-9bb6-5959269fb265",
+      "Programming options"
+    ],
+    [
+      "b7873bce-9d1a-521d-99b3-1d82e435939a",
+      "Power / HP isolation"
+    ],
+    [
+      "0ead2df1-0a06-5953-aa19-c81efe32a18d",
+      "Decoupling"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "BOARD_REV": "G"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0

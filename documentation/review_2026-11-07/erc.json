@@ -1,0 +1,117 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T10:32:16",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/84c24153-2fcb-4318-851a-b096109d7b0d",
+            "violations": [
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'HP_STME_N'",
+                            "pos": {
+                                "x": 0.2794,
+                                "y": 1.1684
+                            },
+                            "uuid": "b2adee2e-fb63-52af-932b-34d3b890ec04"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label '-12V'",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 1.0922
+                            },
+                            "uuid": "e3859170-a2ad-54a7-a396-7790d6532c48"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'HP_SUMC_N'",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 1.2192
+                            },
+                            "uuid": "5d498a13-7345-5bda-99ed-850c832fdc15"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label '+7V'",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 1.3716
+                            },
+                            "uuid": "891585fe-34e3-5218-bb56-edf0a1012558"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                }
+            ]
+        },
+        {
+            "path": "/Configuration and safe idle defaults/",
+            "uuid_path": "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19",
+            "violations": []
+        },
+        {
+            "path": "/USB / external JTAG assembly options/",
+            "uuid_path": "/84c24153-2fcb-4318-851a-b096109d7b0d/1ef18840-1366-5101-9bb6-5959269fb265",
+            "violations": []
+        },
+        {
+            "path": "/Power sources and HP bus isolation/",
+            "uuid_path": "/84c24153-2fcb-4318-851a-b096109d7b0d/b7873bce-9d1a-521d-99b3-1d82e435939a",
+            "violations": []
+        },
+        {
+            "path": "/Local bypass and bulk capacitance/",
+            "uuid_path": "/84c24153-2fcb-4318-851a-b096109d7b0d/0ead2df1-0a06-5953-aa19-c81efe32a18d",
+            "violations": []
+        }
+    ],
+    "source": "hp9835_unified_ram_rom_board.kicad_sch"
+}

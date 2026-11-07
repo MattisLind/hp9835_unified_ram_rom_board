@@ -28,8 +28,8 @@ ATF1508_TQFP100_pin,signal,direction,notes
 31,HP_BL_N,IN,
 32,HP_SOB_N,IN,CPU SOB/ contact 32; reference SMC equation enables reads when HIGH
 33,HP_WRT_N,IN,Active low write indication
-35,HP_MIP_N,OUT-OC,"Direct HP MIP/ contact 40; configure ATF1508 pin OPEN COLLECTOR; pin keeper OFF; 0=assert, 1=release"
-36,XCVR_OE_N,OUT,Shared OE# for two 74HCT245s; EXTEST sets high while programming flash
+35,HP_MIP_N,OUT-OC,Rev G: CPLD_MIP_N request through U14/U13 to HP MIP/ contact 40; configure OPEN COLLECTOR; pin keeper OFF
+36,XCVR_OE_N,OUT,Rev G: CPLD_XCVR_OE_N request to U14; hardware HP-power/PROGRAM interlock drives U2/U3 physical OE# pad 19
 37,XCVR_DIR,OUT,1 HP->MEM_D; 0 MEM_D->HP
 40,FLASH_CE_N,OUT,
 41,MEM_OE_N,OUT,Shared OE# to MX29F400C and CY62146ELL; PD2 function disabled

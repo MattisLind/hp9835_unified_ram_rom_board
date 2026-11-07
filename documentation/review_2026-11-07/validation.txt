@@ -1,0 +1,23 @@
+$ python3 tools/generate_cpld_constraints.py --check --netlist documentation/review_2026-11-07/schematic.xml
+
+Validated 76 scalar VHDL ports; no duplicate or reserved-pin assignments
+U1 netlist check: 0 mismatches / 97 checked pins
+
+$ python3 tools/check_memory_bus.py documentation/review_2026-11-07/schematic.xml
+
+PASS: all 50 J3 contacts; isolated HP supply; separate STM/STME; buffered MIP/SUMC; unused rails isolated
+
+$ python3 tools/check_configuration.py documentation/review_2026-11-07/schematic.xml
+
+PASS: 12 configuration poles, 4 base poles, 5 pull-ups, remote diagnostic header
+
+$ python3 tools/check_programming.py documentation/review_2026-11-07/schematic.xml
+
+PASS: 10-pin THT JTAG, FT232H/EEPROM, bidirectional JTAG isolation, source diodes,
+      USB enumeration/undervoltage/MPSSE gating, HP isolation, physical memory buses, assembly variants
+
+PASS: executable VHDL unchanged; comments only
+
+PASS: all five sheets use native GND and power symbols, not GND/+5V net labels
+
+PASS: all 112 components have existing footprints with every symbol pad number present

@@ -18,6 +18,8 @@ POWER = {3: '+5V', 18: '+5V', 34: '+5V', 51: '+5V', 66: '+5V',
          82: '+5V', 39: '+5V', 91: '+5V', 11: 'GND', 26: 'GND',
          38: 'GND', 43: 'GND', 59: 'GND', 74: 'GND', 86: 'GND', 95: 'GND'}
 JTAG = {4: 'TDI', 15: 'TMS', 62: 'TCK', 73: 'TDO'}
+# Rev G routes these existing core outputs through hardware isolation.
+BOARD_NETS = {'HP_MIP_N': 'CPLD_MIP_N', 'XCVR_OE_N': 'CPLD_XCVR_OE_N'}
 DEDICATED = {87, 88, 89, 90}
 
 
@@ -115,7 +117,8 @@ def audit_netlist(path, assignments):
         raise ValueError('No U1 in supplied netlist')
     expected = dict(POWER)
     expected.update(JTAG)
-    expected.update({p: s.replace('[', '').replace(']', '') for p, s, _ in assignments})
+    expected.update({p: BOARD_NETS.get(s, s.replace('[', '').replace(']', ''))
+                     for p, s, _ in assignments})
     # GCLR_N is not a core port; the existing plan calls for tying it inactive.
     expected[89] = '+5V'
     mismatches = [(p, value, actual.get(p, '<absent>')) for p, value in sorted(expected.items())

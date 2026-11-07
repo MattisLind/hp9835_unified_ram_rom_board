@@ -1,0 +1,32 @@
+ERC report (2026-11-07T10:32:19, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(27.94 mm, 116.84 mm): Global Label 'HP_STME_N'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(50.80 mm, 109.22 mm): Global Label '-12V'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(50.80 mm, 121.92 mm): Global Label 'HP_SUMC_N'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(50.80 mm, 137.16 mm): Global Label '+7V'
+
+***** Sheet /Configuration and safe idle defaults/
+
+***** Sheet /USB / external JTAG assembly options/
+
+***** Sheet /Power sources and HP bus isolation/
+
+***** Sheet /Local bypass and bulk capacitance/
+
+ ** ERC messages: 4  Errors 0  Warnings 4
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

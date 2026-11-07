@@ -24,7 +24,7 @@ for row in rows:
         assert name == expected, (pin, expected, name)
     else:
         assert pin == '36' and (not nodes or nodes == {('J3', pin)}), (pin, nodes)
-for signal, pins in {'GND': [9,10,30,31,41,43,45,47,49], '+5V': [35,37,39],
+for signal, pins in {'GND': [9,10,30,31,41,43,45,47,49], '+5V_HP': [35,37,39],
                      '+12V': [27,29], '-12V': [28], '+7V': [50]}.items():
     for pin in pins:
         assert nets['J3', str(pin)][0] == signal
@@ -33,6 +33,11 @@ for pin, expected in [(33, 'HP_STME_N'), (38, 'HP_SUMC_N'), (28, '-12V'), (50, '
 assert nets['J3', '27'][1] == {('J3', '27'), ('J3', '29')}
 assert ('U1', '87') in nets['J3', '42'][1]
 assert ('J3', '33') not in nets['J3', '42'][1]
-assert ('U1', '35') in nets['J3', '40'][1]
+assert nets['J3', '40'][1] == {('J3', '40'), ('U13', '4')}
+assert nets['U13', '5'][0] == '+5V_HP'  # raw HP supply; no USB-fed MIP pull-up
+assert nets['U1', '35'][0] == 'CPLD_MIP_N'
+assert ('U14', '9') in nets['U1', '35'][1]
 assert ('J3', '38') not in nets['J3', '40'][1]
-print('PASS: all 50 J3 contacts; supplies; separate STM/STME and MIP/SUMC; unused rails isolated')
+assert nets['J3', '35'][0] != nets['U1', '39'][0]
+assert nets['D1', '2'][0] == '+5V_HP' and nets['D1', '1'][0] == '+5V'
+print('PASS: all 50 J3 contacts; isolated HP supply; separate STM/STME; buffered MIP/SUMC; unused rails isolated')

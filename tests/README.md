@@ -16,6 +16,9 @@ For schematic checks, export a KiCad XML netlist and run:
 python3 tools/check_memory_bus.py /path/to/schematic.xml
 python3 tools/check_configuration.py /path/to/schematic.xml
 python3 tools/generate_cpld_constraints.py --check --netlist /path/to/schematic.xml
+python3 tools/check_programming.py /path/to/schematic.xml
 ```
 
 Simulation and generic synthesis do not prove that the design fits the ATF1508, meets bus timing or programs flash correctly via EXTEST. A/B ROM selection remains deferred; pole 10 is reserved and intentionally has no effect.
+
+The Rev G programming check validates the physical ten-pin JTAG mapping, FT232H/EEPROM and buffer directions, separated supply sources and Schottky orientation, USB power/enable and nominal undervoltage gating, HP bus isolation, memory address/data/control pads and both assembly population columns. It checks connectivity, not analog performance. The memory-bus check distinguishes raw `+5V_HP` from local `+5V` and checks the isolated MIP path through U13.

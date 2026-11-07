@@ -1,0 +1,6141 @@
+(kicad_sch
+  (version 20250114)
+  (generator eeschema)
+  (uuid "da693c4c-48ec-5014-8910-89e62fc36d19")
+  (paper "A3")
+  (title_block
+    (title "Configuration and safe idle defaults")
+    (date "2026-11-07")
+    (rev "G")
+    (company "HP 9835 unified memory")
+    (comment 1 "Assembly: USB or external JTAG; see population CSV")
+    (comment 2 "Hardware fit/timing and bench validation required"))
+  (lib_symbols
+    (symbol "Connector_Generic:Conn_01x02"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x02"
+        (at 0 -5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Switch:SW_DIP_x04"
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "SW"
+        (at 0 8.89 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "SW_DIP_x04"
+        (at 0 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "dip switch"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SW?DIP?x4*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "SW_DIP_x04_0_0"
+        (circle
+          (center -2.032 5.08)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -2.032 2.54)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -2.032 -2.54)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.524 5.207)
+            (xy 2.3622 6.2484))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.524 2.667)
+            (xy 2.3622 3.7084))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.524 0.127)
+            (xy 2.3622 1.1684))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.524 -2.3876)
+            (xy 2.3622 -1.3462))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.032 5.08)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.032 2.54)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.032 -2.54)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "SW_DIP_x04_0_1"
+        (rectangle
+          (start -3.81 7.62)
+          (end 3.81 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "SW_DIP_x04_1_1"
+        (pin passive line
+          (at -7.62 5.08 0)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -7.62 2.54 0)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -7.62 0 0)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -7.62 -2.54 0)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 7.62 -2.54 180)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 7.62 0 180)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 7.62 2.54 180)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 7.62 5.08 180)
+          (length 5.08)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "hp9835_unified_ram_rom_board:SW_DIP_12"
+      (pin_names
+        (offset 1.016))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "SW"
+        (at 0 22.86 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "SW_DIP_12"
+        (at 0 20.32 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "12-position DIP switch, switch ON grounds configuration input"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "SW_DIP_12_0_1"
+        (rectangle
+          (start -10.16 17.78)
+          (end 10.16 -17.78)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "SW_DIP_12_1_1"
+        (pin passive line
+          (at -12.7 13.97 0)
+          (length 2.54)
+          (name "SW1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 11.43 0)
+          (length 2.54)
+          (name "SW2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 8.89 0)
+          (length 2.54)
+          (name "SW3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 6.3500000000000005 0)
+          (length 2.54)
+          (name "SW4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 3.8100000000000005 0)
+          (length 2.54)
+          (name "SW5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 1.2700000000000014 0)
+          (length 2.54)
+          (name "SW6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -1.2699999999999996 0)
+          (length 2.54)
+          (name "SW7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -3.8100000000000005 0)
+          (length 2.54)
+          (name "SW8"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -6.35 0)
+          (length 2.54)
+          (name "SW9"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -8.889999999999999 0)
+          (length 2.54)
+          (name "SW10"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -11.429999999999998 0)
+          (length 2.54)
+          (name "SW11"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -13.97 0)
+          (length 2.54)
+          (name "SW12"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 13.97 180)
+          (length 2.54)
+          (name "COM1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "24"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 11.43 180)
+          (length 2.54)
+          (name "COM2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "23"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 8.89 180)
+          (length 2.54)
+          (name "COM3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "22"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 6.3500000000000005 180)
+          (length 2.54)
+          (name "COM4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "21"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 3.8100000000000005 180)
+          (length 2.54)
+          (name "COM5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "20"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 1.2700000000000014 180)
+          (length 2.54)
+          (name "COM6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "19"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 -1.2699999999999996 180)
+          (length 2.54)
+          (name "COM7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "18"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 -3.8100000000000005 180)
+          (length 2.54)
+          (name "COM8"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "17"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 -6.35 180)
+          (length 2.54)
+          (name "COM9"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "16"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 -8.889999999999999 180)
+          (length 2.54)
+          (name "COM10"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "15"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 -11.429999999999998 180)
+          (length 2.54)
+          (name "COM11"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 -13.97 180)
+          (length 2.54)
+          (name "COM12"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "power:+5V"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+5V"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"+5V\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "+5V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "+5V_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:GND"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "Configuration switches - open = HIGH; ON/short = LOW"
+    (at 15.24 15.24 0)
+    (effects
+      (font
+        (size 1.5 1.5)
+        (bold yes))
+      (justify left top))
+    (uuid "c26d254a-f7de-5bed-b6aa-fd8aeeca6a5e"))
+  (symbol
+    (lib_id "hp9835_unified_ram_rom_board:SW_DIP_12")
+    (at 55.88 68.58 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c37c07e1-cfd7-5b31-b23a-92b7006305dc")
+    (property "Reference" "SW2"
+      (at 55.88 46.6 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "OPTIONS / RAM / SYSTEM ROM"
+      (at 55.88 49 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx12_Slide_9.78x32.66mm_W7.62mm_P2.54mm"
+      (at 55.88 68.58 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 55.88 68.58 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 55.88 68.58 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "9aa24be7-1b2f-52a9-b850-caa5ce4d491e"))
+    (pin "2"
+      (uuid "f09e4cd7-ae66-58a9-ae52-6f087220ce2b"))
+    (pin "3"
+      (uuid "abf0121b-4543-5a2f-a8c1-962a451856ef"))
+    (pin "4"
+      (uuid "5e97608d-3607-5969-b5b4-08ca43272089"))
+    (pin "5"
+      (uuid "b5c0142a-714b-5004-89de-11565e24e4ab"))
+    (pin "6"
+      (uuid "2b4b1b4f-3cc1-561c-b6ae-1279969c9f0e"))
+    (pin "7"
+      (uuid "854c36eb-fc68-5c99-90d6-16d60e6e6ad7"))
+    (pin "8"
+      (uuid "7ad67ed0-03a0-58ad-9b2f-bd509e874377"))
+    (pin "9"
+      (uuid "93f15318-59cd-522f-b23f-b8e83eba1bf6"))
+    (pin "10"
+      (uuid "09ba0f0c-ebd0-5a1e-b2e7-cd16ec3e68f6"))
+    (pin "11"
+      (uuid "092b12ee-a36a-5d9c-b683-c62ef9817005"))
+    (pin "12"
+      (uuid "5333ace4-41ff-5ff4-bf3f-71f7bdb02e00"))
+    (pin "24"
+      (uuid "91458996-1fb5-55d6-b860-7f140b26c42e"))
+    (pin "23"
+      (uuid "c0271657-6c20-5911-9c42-af6746958c1b"))
+    (pin "22"
+      (uuid "441240a4-2035-56bd-bc1b-681072efb31f"))
+    (pin "21"
+      (uuid "41431164-d118-5f2d-a00a-ad173a5a2664"))
+    (pin "20"
+      (uuid "bf5c9897-deb2-55c3-b891-663d64276913"))
+    (pin "19"
+      (uuid "2d9cbaa8-ce28-55e5-b9a9-df5b276bdb97"))
+    (pin "18"
+      (uuid "e756ee5a-6511-5522-a60f-11b33ec5fc8a"))
+    (pin "17"
+      (uuid "6539b6ad-48f5-5cd9-ac85-f629cb6d447b"))
+    (pin "16"
+      (uuid "6ccc3809-3379-59f2-bf68-fc425ce7afd9"))
+    (pin "15"
+      (uuid "5baa3f16-78cc-57a9-a0ed-865c63dbeee3"))
+    (pin "14"
+      (uuid "b73ce72f-cbe3-532b-8205-3f19e00d96b6"))
+    (pin "13"
+      (uuid "3f0d5d93-a262-59c4-aeec-a5ab2b54a2c1"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "SW2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 43.18 54.61)
+      (xy 38.1 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9594a133-a439-53b4-97b7-d3d5a81ffd61"))
+  (global_label "DIP_N0"
+    (shape input)
+    (at 38.1 54.61 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "e2e92a2f-7f6e-5a74-9695-7f808ae5c923")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 57.15)
+      (xy 38.1 57.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5df5462a-51c4-5cf4-a8d3-be20d141b754"))
+  (global_label "DIP_N1"
+    (shape input)
+    (at 38.1 57.15 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "263ad2bc-4b0d-5a92-bd9f-b886a18426b6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 57.15 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 59.69)
+      (xy 38.1 59.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "75707200-0006-5ea4-b80f-9e4f0c64fce0"))
+  (global_label "DIP_N2"
+    (shape input)
+    (at 38.1 59.69 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "e15abf3c-893b-587e-8f27-15ea29d67bd6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 59.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 62.23)
+      (xy 38.1 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8f14a1df-b470-5a9b-8a5d-fc0ab7fd49d0"))
+  (global_label "DIP_N3"
+    (shape input)
+    (at 38.1 62.23 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "7b51599d-231f-5a56-82d1-e314e888d9ad")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 62.23 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 64.77)
+      (xy 38.1 64.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4a04f933-99ee-5561-85e6-c671250f55bf"))
+  (global_label "DIP_N4"
+    (shape input)
+    (at 38.1 64.77 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "8855eb7b-e7fa-5183-b9b1-9bd54ad0bf1a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 64.77 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 67.31)
+      (xy 38.1 67.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "04ce4f1f-5864-54b9-b834-3b946f4b77e4"))
+  (global_label "DIP_N5"
+    (shape input)
+    (at 38.1 67.31 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "febaac6d-81d5-509c-8722-0a6fb4e36523")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 67.31 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 69.85)
+      (xy 38.1 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f3017c08-f666-5901-aa1e-f1b731026b0d"))
+  (global_label "DIP_N6"
+    (shape input)
+    (at 38.1 69.85 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "b7d958dd-24bb-5a09-add2-8bfa99da025c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 69.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 72.39)
+      (xy 38.1 72.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "df39ed2f-10a6-50e5-83ce-f9df267a539e"))
+  (global_label "DIP_N7"
+    (shape input)
+    (at 38.1 72.39 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "90f120e3-a315-59de-aa5e-bd49ceb0f588")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 72.39 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 74.93)
+      (xy 38.1 74.93))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5fcd21c1-8e37-56ed-8388-721026c02eeb"))
+  (global_label "DIP_N8"
+    (shape input)
+    (at 38.1 74.93 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "d35b5f40-313b-5b93-9256-6dfb9ccd07fd")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 74.93 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 77.47)
+      (xy 38.1 77.47))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3941c136-0ac5-5b40-b2c1-301603bf6b9e"))
+  (global_label "DIP_N9"
+    (shape input)
+    (at 38.1 77.47 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "6c321be1-45fb-5b7d-8655-3c1511e08b91")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 77.47 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 80.01)
+      (xy 38.1 80.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c95f0cac-695e-572b-a8aa-870ac75544e1"))
+  (global_label "DIP_N10"
+    (shape input)
+    (at 38.1 80.01 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "d53e0e84-8a3f-5480-babc-70150b2d87ec")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 80.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 43.18 82.55)
+      (xy 38.1 82.55))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e8f6fa95-13c7-53f2-ba36-954f42bbb84f"))
+  (global_label "DIP_N11"
+    (shape input)
+    (at 38.1 82.55 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "8eca358b-fef4-542b-90f1-9e268c17e97c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 38.1 82.55 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 68.58 54.61)
+      (xy 73.66 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dd7b2a75-8058-5e9c-a0bc-ee476a025d80"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 54.61 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "92c5b67e-21ea-5835-bb23-ad6882ebdb0f")
+    (property "Reference" "#PWR0025"
+      (at 83.82 45.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 47.73 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 54.61 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "73beb60e-985e-5152-b183-b48eb6296d3e"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0025")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 57.15)
+      (xy 73.66 57.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "63567bb4-b881-5cff-b67e-c89a032d8fa6"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 57.15 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "f4c39abb-8459-5a26-94ae-7ae183d1db7f")
+    (property "Reference" "#PWR0026"
+      (at 83.82 47.87 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 50.27 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 57.15 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 57.15 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 57.15 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "c8e2e0ab-70ff-5c75-8b64-ca49be78dddd"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0026")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 59.69)
+      (xy 73.66 59.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1337c410-91bd-5fa2-bbaa-cc41a7d2223b"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 59.69 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "24876fc4-44dc-5a0d-a7f0-541904d788bf")
+    (property "Reference" "#PWR0027"
+      (at 83.82 50.41 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 52.81 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 59.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 59.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 59.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "1f21ed72-ce4a-5a44-98a0-512cc6a3df65"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0027")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 62.23)
+      (xy 73.66 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f5e07f91-c1e9-5d48-a0f0-42c1936cfe02"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 62.23 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "ccb6070a-7566-5afa-adc5-a6c5087e0da6")
+    (property "Reference" "#PWR0028"
+      (at 83.82 52.95 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 55.35 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 62.23 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 62.23 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 62.23 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "9c5b3200-5fb4-58e7-afb4-3bf356939e81"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0028")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 64.77)
+      (xy 73.66 64.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d82ee33f-f880-5a09-940d-1ab8043036ac"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 64.77 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "1345bd99-79a7-5254-a7ed-34aa4e2a3f2f")
+    (property "Reference" "#PWR0029"
+      (at 83.82 55.49 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 57.89 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 64.77 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 64.77 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 64.77 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "04a7e485-fbb6-549f-a5ef-21edd0ac1343"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0029")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 67.31)
+      (xy 73.66 67.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2e8416e7-f657-50e1-993d-89d2320a6264"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 67.31 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "ab146450-d621-5b94-b7a0-c13e5ac855e0")
+    (property "Reference" "#PWR0030"
+      (at 83.82 58.03 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 60.43 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 67.31 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 67.31 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 67.31 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "bddca46a-ab67-55db-850e-3b4f85f32db1"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0030")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 69.85)
+      (xy 73.66 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f383e871-ec1d-55bd-b57f-fae99084b8dc"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 69.85 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "65c67b97-84a4-515d-8d85-4f332fcf1b0b")
+    (property "Reference" "#PWR0031"
+      (at 83.82 60.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 62.97 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 69.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 69.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 69.85 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "454a7fce-7dfc-50fc-82cb-2952039d83ef"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0031")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 72.39)
+      (xy 73.66 72.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a0873d59-2673-56f4-94b0-209f83859b79"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 72.39 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "b4467d2a-6190-5f85-9d94-33804c35bea8")
+    (property "Reference" "#PWR0032"
+      (at 83.82 63.11 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 65.51 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 72.39 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 72.39 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 72.39 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "c1dd39db-852c-5090-b819-83f37ed6b23b"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0032")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 74.93)
+      (xy 73.66 74.93))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b1712c5e-30ae-5831-a1b2-3af2c06cced3"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 74.93 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "4c449bc9-9f31-511f-8324-fd5134436bf4")
+    (property "Reference" "#PWR0033"
+      (at 83.82 65.65 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 68.05 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 74.93 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 74.93 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 74.93 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "6b9bf8d5-574a-5278-85b5-76941d36ca4d"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0033")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 77.47)
+      (xy 73.66 77.47))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1864bd07-c7b3-5875-8363-15cfc546f5b5"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 77.47 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "8de5143c-532f-50f0-8c97-7d676a1e8cac")
+    (property "Reference" "#PWR0034"
+      (at 83.82 68.19 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 70.59 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 77.47 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 77.47 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 77.47 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "43cc2919-4cf7-55ca-9662-e5efc2c51528"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0034")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 80.01)
+      (xy 73.66 80.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "73520ae8-aff2-5999-9227-e975a1dd58e7"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 80.01 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "9dd09372-e697-5011-a49e-b23cc02a308b")
+    (property "Reference" "#PWR0035"
+      (at 83.82 70.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 73.13 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 80.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 80.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 80.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "12a666dd-7f43-5163-8472-f1b1680bdf35"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0035")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 68.58 82.55)
+      (xy 73.66 82.55))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8183ce5a-7990-575e-8bec-ef738a86022e"))
+  (symbol
+    (lib_id "power:GND")
+    (at 73.66 82.55 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "3de129a7-39f2-591b-bf6e-c68ba8ab69bb")
+    (property "Reference" "#PWR0036"
+      (at 83.82 73.27 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 83.82 75.67 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 73.66 82.55 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 82.55 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 82.55 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "d2f58cd4-f33b-55ad-b1c7-e3633e8c2f2f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0036")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Switch:SW_DIP_x04")
+    (at 170.18 53.34 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7763d3d4-31e2-57dc-8be1-49a2f6d2578c")
+    (property "Reference" "SW3"
+      (at 170.18 41.52 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "RAM_BASE"
+      (at 170.18 43.92 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm"
+      (at 170.18 53.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 170.18 53.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 170.18 53.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "c88edc43-9aa7-502c-b62c-8eff6b37dd23"))
+    (pin "2"
+      (uuid "0c0e3a66-7182-5ba3-ac5f-30f7d3263c6e"))
+    (pin "3"
+      (uuid "35d5999b-4b93-5f4f-8198-b25233fcb7b2"))
+    (pin "4"
+      (uuid "8ad9cf5a-1f64-5c25-b37e-4f2309d76db7"))
+    (pin "5"
+      (uuid "8155d32a-3ceb-552c-b359-4586aa9b69f7"))
+    (pin "6"
+      (uuid "4485144c-56c2-5216-b98e-0f9d29c6667c"))
+    (pin "7"
+      (uuid "a7f91da5-0d00-5168-b095-39e5c9ef73c3"))
+    (pin "8"
+      (uuid "f3e71c5b-9880-56f6-b1f5-8256c53081a5"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "SW3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 162.56 48.26)
+      (xy 157.48 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8a05ae43-e7e5-5291-aac8-ed0bfc3f57c7"))
+  (global_label "BASE_N0"
+    (shape input)
+    (at 157.48 48.26 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "7cc3755c-174d-5245-a775-c359e7f04376")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 157.48 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 162.56 50.8)
+      (xy 157.48 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "38f49b43-a287-5932-a57a-bee3d7ea035c"))
+  (global_label "BASE_N1"
+    (shape input)
+    (at 157.48 50.8 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "8e8bf557-b8d7-56d7-8fe5-aa706452df15")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 157.48 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 162.56 53.34)
+      (xy 157.48 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "119dbd88-792c-5bf9-9d28-5fc1e60018f8"))
+  (global_label "BASE_N2"
+    (shape input)
+    (at 157.48 53.34 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "07a573e0-2e1c-53c6-a1d3-958f5cdb263b")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 157.48 53.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 162.56 55.88)
+      (xy 157.48 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6602c96e-a2ff-5e4c-aaf3-b5c0fbce3e28"))
+  (global_label "BASE_N3"
+    (shape input)
+    (at 157.48 55.88 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "66c51980-1b10-5554-b25e-0d0246ae2d22")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 157.48 55.88 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 177.8 55.88)
+      (xy 182.88 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "632dcf2e-88c7-5254-9712-e627bfd8a44a"))
+  (symbol
+    (lib_id "power:GND")
+    (at 182.88 55.88 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "5923129a-5cd2-5b49-a40c-58e3c76500b3")
+    (property "Reference" "#PWR0037"
+      (at 193.04 46.6 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 193.04 49 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 182.88 55.88 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 182.88 55.88 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 182.88 55.88 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "a8854276-5c6f-5464-9f9d-1164a219e6ed"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0037")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 177.8 53.34)
+      (xy 182.88 53.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "aba3b5cb-b83f-5555-b681-ef384901b7e5"))
+  (symbol
+    (lib_id "power:GND")
+    (at 182.88 53.34 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "e551b47c-906c-527c-9b31-566e4c02406e")
+    (property "Reference" "#PWR0038"
+      (at 193.04 44.06 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 193.04 46.46 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 182.88 53.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 182.88 53.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 182.88 53.34 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "ca76280a-c577-5347-ab4d-95f3efa0c448"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0038")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 177.8 50.8)
+      (xy 182.88 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2449365e-d221-5ab6-b860-9f76fce8c938"))
+  (symbol
+    (lib_id "power:GND")
+    (at 182.88 50.8 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "b51a92f9-6c18-5e9e-8729-12a9c39bc595")
+    (property "Reference" "#PWR0039"
+      (at 193.04 41.52 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 193.04 43.92 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 182.88 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 182.88 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 182.88 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "a1254eec-6bc8-51cc-9037-72258aeec284"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0039")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (wire
+    (pts
+      (xy 177.8 48.26)
+      (xy 182.88 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "50715f35-a863-5723-9f65-b9543ca3c5e0"))
+  (symbol
+    (lib_id "power:GND")
+    (at 182.88 48.26 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "3da5786e-e611-5216-89a7-e6fedba899ff")
+    (property "Reference" "#PWR0040"
+      (at 193.04 38.98 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 193.04 41.38 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 182.88 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 182.88 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 182.88 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "be2d64be-df0c-5b4b-a9d6-a7502ceffd95"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0040")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 281.94 48.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "56eda565-60ba-5227-934d-a1c8fc51bc9e")
+    (property "Reference" "J4"
+      (at 281.94 42.79 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "DIAGNOSTIC"
+      (at 281.94 45.19 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 281.94 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 281.94 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 281.94 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "59335fe6-89e3-5d6a-a835-e73a28bdb729"))
+    (pin "2"
+      (uuid "0ea68982-46ad-5cea-88b1-6ba9c9faa4e0"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "J4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 276.86 48.26)
+      (xy 271.78 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9e8b1ee4-4e19-5264-9f2c-72c7063a7253"))
+  (global_label "DIAG_N"
+    (shape input)
+    (at 271.78 48.26 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "3349de27-02ae-5bb6-8771-44cc35988f8a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 271.78 48.26 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 276.86 50.8)
+      (xy 271.78 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cdc385a8-b17a-55ae-a565-52231ae5d921"))
+  (symbol
+    (lib_id "power:GND")
+    (at 271.78 50.8 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "514f00e0-32aa-59ab-8fdb-672341fd921c")
+    (property "Reference" "#PWR0041"
+      (at 281.94 41.52 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 281.94 43.92 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 271.78 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 271.78 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 271.78 50.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "2d6b42a4-935b-5e30-b0f7-b72f5dd4aa03"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0041")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (text "SW2 poles 1-9: option ROMs\nPole 10: reserved A/B selector\nPole 11: RAM enable; pole 12: system ROM\nJ4: short to enable diagnostic ROM/scratch RAM"
+    (at 218.44 68.58 0)
+    (effects
+      (font
+        (size 1.1 1.1))
+      (justify left top))
+    (uuid "90c9af14-3e9d-5f8f-a6cd-c3df3daaa2aa"))
+  (text "External configuration pull-ups (keepers disabled)"
+    (at 15.24 109.22 0)
+    (effects
+      (font
+        (size 1.5 1.5)
+        (bold yes))
+      (justify left top))
+    (uuid "8ea70adb-3dd4-5d64-914e-a5d940ebb096"))
+  (symbol
+    (lib_id "Device:R")
+    (at 27.94 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4ba8915f-b821-59e7-821f-fea3b903b7cc")
+    (property "Reference" "R1"
+      (at 30.94 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 32.44 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 27.94 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 27.94 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 27.94 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "35eb714b-e63d-549a-a919-e5b6cc3a0a7f"))
+    (pin "2"
+      (uuid "e33237da-c462-5b70-90ef-242965783af5"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 27.94 135.89)
+      (xy 27.94 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "58a1dbf9-bdb2-55e3-8fe7-1065d18ff4e3"))
+  (global_label "DIP_N0"
+    (shape input)
+    (at 27.94 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "a3e71ca0-991a-5750-8d8d-93b4b66ebd5c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 27.94 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 27.94 128.27)
+      (xy 27.94 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3f5c41f5-d76b-5fa2-a83b-d589da946afe"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 27.94 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "5e828f55-c3f3-50fc-9068-d88a39c04a9b")
+    (property "Reference" "#PWR0042"
+      (at 27.94 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 27.94 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 27.94 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 27.94 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 27.94 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "0d26868d-8281-597a-8c96-f7a8a8587017"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0042")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 58.42 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "281b05b6-f3c9-5954-99e7-a17c0b8debbd")
+    (property "Reference" "R2"
+      (at 61.42 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 62.92 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 58.42 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 58.42 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "dde824c4-1912-5ff0-9ed4-b50ee6b70d6c"))
+    (pin "2"
+      (uuid "966cebb7-2f61-5cbc-a265-3cc8abdcc532"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 58.42 135.89)
+      (xy 58.42 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1fa06a82-77ba-5d0a-bbd8-2a322cf9f051"))
+  (global_label "DIP_N1"
+    (shape input)
+    (at 58.42 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "b05f9e22-bd36-59cd-9697-d5698bae7816")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 58.42 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 58.42 128.27)
+      (xy 58.42 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "19ba4831-0646-5afe-8413-ca6ce1b91e91"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 58.42 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "1bcdfd54-d5c9-5657-89d9-b61ceb8c2a92")
+    (property "Reference" "#PWR0043"
+      (at 58.42 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 58.42 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 58.42 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 58.42 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "bc6259fc-26c7-563c-82c3-b064d1f24909"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0043")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 88.9 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "44cbc377-8661-57d9-aac6-e9910ced4cdb")
+    (property "Reference" "R3"
+      (at 91.9 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 93.4 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 88.9 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 88.9 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 88.9 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "764ce384-8f5e-5d3b-91aa-acbe8258dbf4"))
+    (pin "2"
+      (uuid "b2c69c68-c931-5372-ba0f-4b8480822342"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 88.9 135.89)
+      (xy 88.9 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d5c58062-d33f-5531-a7ce-3ac0d05090e4"))
+  (global_label "DIP_N2"
+    (shape input)
+    (at 88.9 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "9230b014-6f5c-54ed-bc81-d2dcc79c13ad")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 88.9 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 88.9 128.27)
+      (xy 88.9 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f115b181-e7eb-5369-89da-744d43af8f2d"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 88.9 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "67875803-f14a-5505-bddf-bccfab6d47f5")
+    (property "Reference" "#PWR0044"
+      (at 88.9 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 88.9 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 88.9 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 88.9 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 88.9 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "3cf038e2-a2f8-53d8-978f-8d0665324bba"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0044")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 119.38 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f85a54af-525c-579a-bb15-ca738dbefdcf")
+    (property "Reference" "R4"
+      (at 122.38 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 123.88 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 119.38 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 119.38 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "00bed85a-f78a-56a4-a0cc-6d3e6b0da18b"))
+    (pin "2"
+      (uuid "656493db-02b5-57e7-9ec2-be3a1254fb2a"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 119.38 135.89)
+      (xy 119.38 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8ab71cac-0832-586c-b7fb-7b77c72a8f09"))
+  (global_label "DIP_N3"
+    (shape input)
+    (at 119.38 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "f23626ac-e354-53fd-ae01-45e7c0553c29")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 119.38 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 119.38 128.27)
+      (xy 119.38 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "75c6e1da-393b-5efa-824c-1d0c00ba663e"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 119.38 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "2b36181a-6054-5abd-93f0-d2527d190979")
+    (property "Reference" "#PWR0045"
+      (at 119.38 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 119.38 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 119.38 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 119.38 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "411ec732-fb16-53a9-a8a8-b16ed964f740"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0045")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 149.86 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "bda697ff-aa79-5ffd-954c-a1ffe577139c")
+    (property "Reference" "R5"
+      (at 152.86 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 154.36 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 149.86 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 149.86 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 149.86 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "12553d04-a828-5ded-bbeb-aba278c78626"))
+    (pin "2"
+      (uuid "07e0e92a-9c22-582b-9729-abe62c9d11cd"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 149.86 135.89)
+      (xy 149.86 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e5ed3c60-6ba1-5412-8e82-250f743af860"))
+  (global_label "DIP_N4"
+    (shape input)
+    (at 149.86 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "43bc05cf-df17-5e51-883e-e6de70a20d49")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 149.86 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 149.86 128.27)
+      (xy 149.86 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5739d2e2-afac-50e6-8857-377547a3fd47"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 149.86 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "83493d26-6f79-5afb-bf86-07f9dcd357d6")
+    (property "Reference" "#PWR0046"
+      (at 149.86 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 149.86 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 149.86 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 149.86 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 149.86 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "48f47b4d-e465-5127-b3cf-3a636a4c474f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0046")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 180.34 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "bc0c323c-c130-59c6-8e16-a9b2dd0402e3")
+    (property "Reference" "R6"
+      (at 183.34 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 184.84 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 180.34 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 180.34 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 180.34 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "1c31d6dc-8de1-574f-b8fa-ddee4815774c"))
+    (pin "2"
+      (uuid "f3e0da23-6e27-534f-9fb4-266b5b937e44"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R6")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 180.34 135.89)
+      (xy 180.34 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "81b73f72-c9ce-544c-93a8-74c5bbd12887"))
+  (global_label "DIP_N5"
+    (shape input)
+    (at 180.34 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "06c336cd-0c16-54a2-9495-9c1fa4ce6a1f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 180.34 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 180.34 128.27)
+      (xy 180.34 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "83d95558-48e5-5c17-92cf-37778e35a221"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 180.34 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "2c4db85c-f693-51bc-abb6-f31f6213f461")
+    (property "Reference" "#PWR0047"
+      (at 180.34 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 180.34 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 180.34 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 180.34 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 180.34 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "b5256005-8c19-52a1-99d4-6b144c59d13f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0047")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 27.94 167.64 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "18f85e50-02af-5b02-86bd-38fb4267821b")
+    (property "Reference" "R7"
+      (at 30.94 166.34 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 32.44 168.94 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 27.94 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 27.94 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 27.94 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "ce15b6c1-0b7c-5bcb-b558-648bcabd8e8d"))
+    (pin "2"
+      (uuid "defd922a-a333-5571-b93f-b50dc804aa16"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R7")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 27.94 171.45)
+      (xy 27.94 176.53))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0e121cf2-148a-5da4-abb7-4f4d29fcff55"))
+  (global_label "DIP_N6"
+    (shape input)
+    (at 27.94 176.53 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "9cd9af8e-980a-5572-8c0c-a9bde2e7d523")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 27.94 176.53 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 27.94 163.83)
+      (xy 27.94 161.29))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2f0f1e3b-cb90-5f02-a264-1d0bda03ac65"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 27.94 161.29 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "041286b5-02d1-5eaf-88a4-961cb9b9a081")
+    (property "Reference" "#PWR0048"
+      (at 27.94 152.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 27.94 158.19 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 27.94 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 27.94 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 27.94 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "cd4a06bb-3529-5741-b937-1c9d2b3e6700"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0048")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 58.42 167.64 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "de65e6c9-671c-500f-94e3-eff0e9adf6e5")
+    (property "Reference" "R8"
+      (at 61.42 166.34 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 62.92 168.94 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 58.42 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 58.42 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "2e4f8b7e-2002-5870-8548-c822639ebf02"))
+    (pin "2"
+      (uuid "190666f8-e3ea-5b61-878b-3eedcd5ad790"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R8")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 58.42 171.45)
+      (xy 58.42 176.53))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7f18d51e-7e02-5a98-bcda-9f69a9f411c4"))
+  (global_label "DIP_N7"
+    (shape input)
+    (at 58.42 176.53 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "a7553f1a-f440-5ab6-a135-fe534b2c43a1")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 58.42 176.53 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 58.42 163.83)
+      (xy 58.42 161.29))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d183f54e-3853-5ff4-99b0-0037fa9f2cb6"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 58.42 161.29 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "ce134174-4380-57c3-957c-e5d8a0325b1e")
+    (property "Reference" "#PWR0049"
+      (at 58.42 152.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 58.42 158.19 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 58.42 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 58.42 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 58.42 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "e124a125-3df6-5ae5-8102-61affb22c135"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0049")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 88.9 167.64 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "afa2fc24-3a49-5097-946e-c8a3f154c0fd")
+    (property "Reference" "R9"
+      (at 91.9 166.34 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 93.4 168.94 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 88.9 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 88.9 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 88.9 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "756c1e44-7f0c-5c1c-9f36-c420f2f63ddb"))
+    (pin "2"
+      (uuid "cdc0c831-0bec-55fb-92e5-6cbf704bd5ba"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R9")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 88.9 171.45)
+      (xy 88.9 176.53))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "21030e87-d661-5a56-b5c5-fde5beb639ff"))
+  (global_label "DIP_N8"
+    (shape input)
+    (at 88.9 176.53 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "23dd9949-85af-5e26-9c7d-97d2bd9a25dc")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 88.9 176.53 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 88.9 163.83)
+      (xy 88.9 161.29))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9f4fbfed-65e3-52f1-8622-4b1067f16555"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 88.9 161.29 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "ddaa0083-d1f5-503b-93a6-2e9980cfb769")
+    (property "Reference" "#PWR0050"
+      (at 88.9 152.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 88.9 158.19 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 88.9 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 88.9 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 88.9 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "927d75b7-2d4b-59f5-844b-7b6749d555b0"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0050")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 119.38 167.64 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "870ed5ba-92dc-5373-8e69-2b14cd142d1f")
+    (property "Reference" "R16"
+      (at 122.38 166.34 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 123.88 168.94 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 119.38 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 119.38 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "7c0fb280-2182-55db-ab21-be400fdaac0b"))
+    (pin "2"
+      (uuid "a0dbd30c-a0a2-5f88-96f8-a55a1720981e"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R16")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 119.38 171.45)
+      (xy 119.38 176.53))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dda6a10e-7bfa-5cba-825b-fd86574d2c50"))
+  (global_label "DIP_N9"
+    (shape input)
+    (at 119.38 176.53 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "6ccc0ea0-5fee-5637-84fd-769c8d54ea5a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 119.38 176.53 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 119.38 163.83)
+      (xy 119.38 161.29))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "33bcd493-d545-5fb5-bbdb-1020e80d4043"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 119.38 161.29 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "6fdcba1a-4fc0-5458-a3d2-0b0c71934061")
+    (property "Reference" "#PWR0051"
+      (at 119.38 152.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 119.38 158.19 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 119.38 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 119.38 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "13e207ea-1e7d-515c-82f9-7a0a2e4d1420"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0051")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 149.86 167.64 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "49a7a88f-6c62-56da-bfbd-97f0e31b8f10")
+    (property "Reference" "R17"
+      (at 152.86 166.34 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 154.36 168.94 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 149.86 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 149.86 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 149.86 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "b3419739-124d-50ab-afef-f32a80a4503f"))
+    (pin "2"
+      (uuid "17b0840a-e952-5dce-9fa9-f49ab33a043b"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R17")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 149.86 171.45)
+      (xy 149.86 176.53))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "97efadd2-d4f4-5d9c-a22f-b28d55cd1036"))
+  (global_label "DIP_N10"
+    (shape input)
+    (at 149.86 176.53 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "148840c1-6a3d-5a3e-9635-3c1995d18567")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 149.86 176.53 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 149.86 163.83)
+      (xy 149.86 161.29))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b5c629b5-f613-5c33-a8e6-e7b27f6789fc"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 149.86 161.29 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "6e858b7a-4fde-595b-95f8-c794c8452a17")
+    (property "Reference" "#PWR0052"
+      (at 149.86 152.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 149.86 158.19 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 149.86 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 149.86 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 149.86 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "43660a47-7525-5705-b927-6ef9278215a0"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0052")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 180.34 167.64 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a86afb9c-a51d-599f-9184-15d56bb37e1a")
+    (property "Reference" "R18"
+      (at 183.34 166.34 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 184.84 168.94 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 180.34 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 180.34 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 180.34 167.64 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "ab53007f-b650-596e-ad7c-a92ca6db8ef5"))
+    (pin "2"
+      (uuid "cfe3c3fe-904c-5891-a3ee-49f2eda11ee4"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R18")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 180.34 171.45)
+      (xy 180.34 176.53))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "891e5408-cb84-5e5b-b2f4-b29e875f57b0"))
+  (global_label "DIP_N11"
+    (shape input)
+    (at 180.34 176.53 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "92e60f08-15db-551f-bdc9-7ceaaa98a95a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 180.34 176.53 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 180.34 163.83)
+      (xy 180.34 161.29))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dc89203f-1f7d-5b59-8ae0-4f25574dc831"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 180.34 161.29 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "59746f2c-5dde-5150-85c6-8fd5cae00e7f")
+    (property "Reference" "#PWR0053"
+      (at 180.34 152.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 180.34 158.19 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 180.34 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 180.34 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 180.34 161.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "4ef7ec2a-f01d-5637-b643-716472560eb7"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0053")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 236.22 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7b7dddfc-6622-5037-9184-e1117ee914b4")
+    (property "Reference" "R19"
+      (at 239.22 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 240.72 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 236.22 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 236.22 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 236.22 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "c453507a-088e-5ed0-b0ec-7eefbe24f009"))
+    (pin "2"
+      (uuid "6c7e54e8-479a-5fa9-84d0-42bbad1d2edb"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R19")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 236.22 135.89)
+      (xy 236.22 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0740b27f-11d8-5861-94d3-1426d2740225"))
+  (global_label "BASE_N0"
+    (shape input)
+    (at 236.22 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "95d8f1f3-d0bf-5cc7-be5a-3b1f39e3db7f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 236.22 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 236.22 128.27)
+      (xy 236.22 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "72ec0759-9a28-500a-9952-e34a977e381b"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 236.22 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "6a186f8e-78e9-541b-834d-0400114d0e2e")
+    (property "Reference" "#PWR0054"
+      (at 236.22 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 236.22 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 236.22 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 236.22 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 236.22 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "41b9dce4-3ea9-5953-a61f-bb9d085ab2d4"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0054")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 266.7 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a4ecd380-1360-51a7-b3c1-6e6006eb02a1")
+    (property "Reference" "R20"
+      (at 269.7 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 271.2 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 266.7 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 266.7 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 266.7 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "b3320324-9772-5fea-a04f-991ed7306882"))
+    (pin "2"
+      (uuid "44cbc83b-c707-529f-91b1-0f9ba2569cd5"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R20")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 266.7 135.89)
+      (xy 266.7 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9a1b6993-0e34-5299-af93-800e657761e9"))
+  (global_label "BASE_N1"
+    (shape input)
+    (at 266.7 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "180398b8-e156-53dd-9627-b63506292346")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 266.7 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 266.7 128.27)
+      (xy 266.7 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "53da7d63-3a51-56d2-83dc-98ad6cb2c32c"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 266.7 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "063c40e2-4412-55fc-ace9-519193e22a35")
+    (property "Reference" "#PWR0055"
+      (at 266.7 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 266.7 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 266.7 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 266.7 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 266.7 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "ef2f3e9a-466f-5e79-b0f0-0718dd5c7752"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0055")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 297.18 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "988eb6aa-cdee-5080-b386-17878bf80c2a")
+    (property "Reference" "R21"
+      (at 300.18 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 301.68 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 297.18 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 297.18 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 297.18 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "3607b6e4-fd43-57b5-8014-98992db6e122"))
+    (pin "2"
+      (uuid "6848f04a-a6ed-5693-8702-4eb60ec35450"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R21")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 297.18 135.89)
+      (xy 297.18 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1b3550a9-0210-51e8-95d7-7ba14165b4e0"))
+  (global_label "BASE_N2"
+    (shape input)
+    (at 297.18 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "4fff9aac-c090-5f8f-b5e3-018dfa01190b")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 297.18 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 297.18 128.27)
+      (xy 297.18 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a94dc5ee-de41-5154-b62e-f2acf264e098"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 297.18 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "87994485-dc8f-5f66-90a1-0d8d5267248d")
+    (property "Reference" "#PWR0056"
+      (at 297.18 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 297.18 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 297.18 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 297.18 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 297.18 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "ff9ca9dc-8aef-59f4-992d-5ee53fdd7a09"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0056")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 327.66 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7499979c-1b58-5337-abcb-2680a52f8a3c")
+    (property "Reference" "R22"
+      (at 330.66 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 332.16 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 327.66 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 327.66 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 327.66 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "92b036cb-9210-5e96-a20e-023dbd57fb54"))
+    (pin "2"
+      (uuid "1c5a94fb-09ef-527b-b6a7-af887e405ba9"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R22")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 327.66 135.89)
+      (xy 327.66 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ba4f3e39-07bc-5006-a379-ea0c32bd0bad"))
+  (global_label "BASE_N3"
+    (shape input)
+    (at 327.66 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "7819c804-f583-5cb3-a605-ccc5a0f219ae")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 327.66 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 327.66 128.27)
+      (xy 327.66 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5caa69e5-8ccb-5e24-b677-a05d40a7318f"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 327.66 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "08fd296d-013e-562a-af21-66657389a5c9")
+    (property "Reference" "#PWR0057"
+      (at 327.66 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 327.66 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 327.66 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 327.66 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 327.66 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "48797cf9-194c-5bf2-9f93-6756ef84b6ad"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0057")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 358.14 132.08 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8dc9e3b7-dc7e-5e46-a251-1d52f963ca13")
+    (property "Reference" "R23"
+      (at 361.14 130.78 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 362.64 133.38 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 358.14 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 358.14 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 358.14 132.08 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "2818772c-d2b3-5510-b9e1-8c7317c2df79"))
+    (pin "2"
+      (uuid "5167915c-2b9c-5583-ac71-e7c19fa207fc"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R23")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 358.14 135.89)
+      (xy 358.14 140.97))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8fa9fea5-2bc5-5897-85d0-856543f7b2aa"))
+  (global_label "DIAG_N"
+    (shape input)
+    (at 358.14 140.97 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "8a1137b2-6894-5afe-836d-59d8416a0611")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 358.14 140.97 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 358.14 128.27)
+      (xy 358.14 125.73))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b97a0664-a7de-5a27-8d45-63013b27e11a"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 358.14 125.73 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "b8a4c047-7655-5894-a497-0c0f19c6a563")
+    (property "Reference" "#PWR0058"
+      (at 358.14 116.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 358.14 122.63 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 358.14 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 358.14 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 358.14 125.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "c67ee04e-fcc9-565e-9e59-19eb8e069219"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0058")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (text "Safe idle defaults"
+    (at 228.6 157.48 0)
+    (effects
+      (font
+        (size 1.5 1.5)
+        (bold yes))
+      (justify left top))
+    (uuid "170803c2-ca3a-588f-bc43-1d61ef2c0260"))
+  (symbol
+    (lib_id "Device:R")
+    (at 236.22 177.8 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d45424d3-8eb2-5e49-8e1b-aa917911c1d5")
+    (property "Reference" "R10"
+      (at 239.22 176.5 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 240.72 179.1 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 236.22 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 236.22 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 236.22 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "620ae19a-7e5a-5c23-bb7c-f25e6d9fee7d"))
+    (pin "2"
+      (uuid "6f2b0cc6-711d-56f0-b479-4df6b06f87d7"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R10")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 236.22 181.61)
+      (xy 236.22 186.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "873c3974-b4bc-5a19-bf3a-3521fd8680ef"))
+  (global_label "CPLD_XCVR_OE_N"
+    (shape input)
+    (at 236.22 186.69 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "bb7848e3-d6a4-55f2-8d98-b4f9718b39ff")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 236.22 186.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 236.22 173.99)
+      (xy 236.22 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "eb1ec579-67a3-537e-8af4-3226b3a94a11"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 236.22 171.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "694d5535-67d9-51dd-82fd-35d3e8754e14")
+    (property "Reference" "#PWR0059"
+      (at 236.22 162.17 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 236.22 168.35 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 236.22 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 236.22 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 236.22 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "cbd26e09-52ef-52eb-99f2-5da87e8c0519"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0059")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 292.1 177.8 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f39cc023-9d3b-5e26-9767-3e7f68b2d319")
+    (property "Reference" "R11"
+      (at 295.1 176.5 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 296.6 179.1 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 292.1 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 292.1 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 292.1 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "12e5559b-43a5-55d9-8d65-1a7ea5457b95"))
+    (pin "2"
+      (uuid "b5209216-eb0a-513f-a9cd-2c6af1987424"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R11")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 292.1 181.61)
+      (xy 292.1 186.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b7dd03ec-6a6b-53fc-b83f-5e3a31f84073"))
+  (global_label "FLASH_CE_N"
+    (shape input)
+    (at 292.1 186.69 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "aa4379fe-89b6-5461-9c70-ebfdeea2e6e0")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 292.1 186.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 292.1 173.99)
+      (xy 292.1 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4ec27101-54da-57df-abbb-5c677e81be58"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 292.1 171.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "129c3c20-929e-5ba3-8f2f-880755d8714d")
+    (property "Reference" "#PWR0060"
+      (at 292.1 162.17 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 292.1 168.35 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 292.1 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 292.1 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 292.1 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "4933b191-30e9-5ea9-baa4-eaac293a2055"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0060")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 347.98 177.8 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f370611a-cb4b-5503-bf6d-4d4eb0b41b8e")
+    (property "Reference" "R12"
+      (at 350.98 176.5 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 352.48 179.1 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 347.98 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 347.98 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 347.98 177.8 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "0324a153-c628-5716-9684-2a763a759d7c"))
+    (pin "2"
+      (uuid "95905086-bf81-5fae-9b7b-a32916b34e2e"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R12")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 347.98 181.61)
+      (xy 347.98 186.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2c553164-921d-5cee-8e3c-f89d78227424"))
+  (global_label "MEM_WE_N"
+    (shape input)
+    (at 347.98 186.69 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "c3c83784-2e57-584b-982b-962dfa8db6f2")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 347.98 186.69 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 347.98 173.99)
+      (xy 347.98 171.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "446dd5a1-ebd2-5b66-ae96-9e0c63326c50"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 347.98 171.45 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "cef05ea4-88c9-573a-8ec0-bd9df8ed9b53")
+    (property "Reference" "#PWR0061"
+      (at 347.98 162.17 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 347.98 168.35 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 347.98 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 347.98 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 347.98 171.45 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "8154f7ea-30f1-5184-a096-909e25a39e1d"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0061")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 236.22 213.36 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ee4dbf7c-1499-53c3-a134-2c78c19f8fd0")
+    (property "Reference" "R13"
+      (at 239.22 212.06 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 240.72 214.66 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 236.22 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 236.22 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 236.22 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "4a00f075-f08c-541c-abfe-3baa136f15fa"))
+    (pin "2"
+      (uuid "53f69050-7444-54ec-bf85-7bef02662423"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R13")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 236.22 217.17)
+      (xy 236.22 222.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "96351398-60b3-5c95-a5e0-e74d44ae8b07"))
+  (global_label "FLASH_RESET_N"
+    (shape input)
+    (at 236.22 222.25 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "119a2834-28e3-5e5e-8be5-ea7dbd803d0f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 236.22 222.25 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 236.22 209.55)
+      (xy 236.22 207.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "18176685-cd10-5ce4-aa0b-bec48920f464"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 236.22 207.01 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "5e9e795b-8862-5751-9c01-c944f15f0ce9")
+    (property "Reference" "#PWR0062"
+      (at 236.22 197.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 236.22 203.91 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 236.22 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 236.22 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 236.22 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "dfd41b6a-4601-5921-a979-4b7fa119b8ab"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0062")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 292.1 213.36 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "33451cd5-b4f9-56bc-ba6b-b073d4577103")
+    (property "Reference" "R14"
+      (at 295.1 212.06 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 296.6 214.66 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 292.1 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 292.1 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 292.1 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "81235389-b4d0-5d18-a526-c454351677d9"))
+    (pin "2"
+      (uuid "ed58ee61-3e1e-5332-8045-651a77062a7f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R14")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 292.1 217.17)
+      (xy 292.1 222.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cea3f137-9cf2-5d8d-815c-00229fda28c4"))
+  (global_label "SRAM_CE_N"
+    (shape input)
+    (at 292.1 222.25 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "470444d0-033c-5a9b-beeb-d2a41d4357db")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 292.1 222.25 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 292.1 209.55)
+      (xy 292.1 207.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2b055623-0d77-54a9-b6ab-00224584d51e"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 292.1 207.01 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "4b922c47-3e5e-55c4-95fa-4b612d37962f")
+    (property "Reference" "#PWR0063"
+      (at 292.1 197.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 292.1 203.91 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 292.1 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 292.1 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 292.1 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "c0aafecb-7489-5129-885b-4415d9fd44bd"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0063")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 347.98 213.36 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ff1ab854-5ee8-580d-b65e-89e53020d8f1")
+    (property "Reference" "R15"
+      (at 350.98 212.06 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 352.48 214.66 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 347.98 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 347.98 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 347.98 213.36 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "4866b749-3e81-549b-82f7-3d0435dba802"))
+    (pin "2"
+      (uuid "c0fc5a49-9899-5fa3-94b1-c3fb27d36d67"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R15")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 347.98 217.17)
+      (xy 347.98 222.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5346e0a8-23dd-5419-9ee2-994bb1f969b3"))
+  (global_label "MEM_OE_N"
+    (shape input)
+    (at 347.98 222.25 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "214204c6-2333-537a-baa1-6d20075e94f7")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 347.98 222.25 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 347.98 209.55)
+      (xy 347.98 207.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "03c5b79f-90d1-5798-9ea4-49d1c731ecfa"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 347.98 207.01 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "358f35ce-bcd8-5f3c-9084-18be6d6e350e")
+    (property "Reference" "#PWR0064"
+      (at 347.98 197.73 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 347.98 203.91 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 347.98 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 347.98 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 347.98 207.01 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "6084c4c6-8d7f-509e-80a5-35a638299a4b"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0064")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 220.98 248.92 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "865238de-e616-594a-b900-72fbbe1f8f23")
+    (property "Reference" "R46"
+      (at 223.98 247.62 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 225.48 250.22 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 220.98 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 220.98 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 220.98 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "8201bde6-02fb-5fd1-a3b7-419d9469ddba"))
+    (pin "2"
+      (uuid "16398805-a544-5099-b606-f1980e304c1e"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R46")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 220.98 252.73)
+      (xy 220.98 257.81))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d8df23da-d38a-5229-b2de-ef6cabd88668"))
+  (global_label "FLASH_RYBY_N"
+    (shape input)
+    (at 220.98 257.81 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "92de08c4-8a76-5826-86f2-a792129c8c4f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 220.98 257.81 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 220.98 245.11)
+      (xy 220.98 242.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b8cf6e1e-efbf-5f58-ad82-3244461d2eee"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 220.98 242.57 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "edf242cd-74b1-5297-bb3f-8a01b3c8e5e4")
+    (property "Reference" "#PWR0065"
+      (at 220.98 233.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 220.98 239.47 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 220.98 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 220.98 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 220.98 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "0696c005-bdfb-5075-a2aa-949f45682d62"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0065")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 254 248.92 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8b3c17e2-dc2e-5fb3-b506-ffacff0daebd")
+    (property "Reference" "R49"
+      (at 257 247.62 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 258.5 250.22 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 254 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 254 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 254 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "92f9720c-d23c-58b5-b393-ce7bc5ffddff"))
+    (pin "2"
+      (uuid "e087cec7-eb7b-5255-8c2f-3c8ac186ac9f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R49")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 254 252.73)
+      (xy 254 257.81))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0df14298-5c4a-50eb-986a-ac05e7d51103"))
+  (global_label "XCVR_OE_N"
+    (shape input)
+    (at 254 257.81 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "4fdc0b73-4bd4-5c72-abd6-c0ba8f15e16a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 254 257.81 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 254 245.11)
+      (xy 254 242.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c8ff8250-5c2d-56ec-9f9b-36b9122c2935"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 254 242.57 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "3d30e76f-f632-5c10-b56c-08fb17e6b643")
+    (property "Reference" "#PWR0066"
+      (at 254 233.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 254 239.47 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 254 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 254 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 254 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "087f9f9d-9823-5698-b302-2d232e54209a"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0066")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 287.02 248.92 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "25d30db6-5134-5464-8b79-bfceadc63883")
+    (property "Reference" "R50"
+      (at 290.02 247.62 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 291.52 250.22 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 287.02 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 287.02 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 287.02 248.92 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "de5626ee-cfcd-5798-936b-f2a26f530a20"))
+    (pin "2"
+      (uuid "2566f12f-d606-57b1-8f66-6c3ecf387aa0"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R50")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 287.02 252.73)
+      (xy 287.02 257.81))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1bd426c9-1f2d-50c2-8592-22d83c25228a"))
+  (global_label "HP_MIP_GATE_N"
+    (shape input)
+    (at 287.02 257.81 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "7c4c4afb-015f-5ff7-bb95-e155a9ff55c2")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 287.02 257.81 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 287.02 245.11)
+      (xy 287.02 242.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1d2cee42-96d9-508a-8b7d-35b10d42f1e1"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 287.02 242.57 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "6d8b4586-7be0-5967-a045-788a732def8a")
+    (property "Reference" "#PWR0067"
+      (at 287.02 233.29 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 287.02 239.47 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 287.02 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 287.02 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 287.02 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "23f6aa40-a46b-506e-a2ea-119e08682f8f"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0067")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (text "Common JTAG biasing - fitted in BOTH assemblies"
+    (at 15.24 208.28 0)
+    (effects
+      (font
+        (size 1.5 1.5)
+        (bold yes))
+      (justify left top))
+    (uuid "7d98b1dd-bc7d-57f5-af4c-43b852c125d1"))
+  (text "Use the base/diagnostic selection before boot.\nConfiguration HDL and CPLD pad assignments are retained.\nAll local power bypassing is on sheet 5."
+    (at 15.24 261.62 0)
+    (effects
+      (font
+        (size 1.1 1.1))
+      (justify left top))
+    (uuid "1a86c998-7988-5e64-8e10-cff627919183"))
+  (symbol
+    (lib_id "Device:R")
+    (at 27.94 233.68 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "619f9731-cbdc-5182-a9a5-a78d4e40b5ff")
+    (property "Reference" "R41"
+      (at 30.94 232.38 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 32.44 234.98 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 27.94 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 27.94 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 27.94 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "7b2949a4-657c-5752-ac12-7a6f320e738f"))
+    (pin "2"
+      (uuid "c1469b88-5688-5b4e-a867-b40cd2f592ad"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R41")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 27.94 237.49)
+      (xy 27.94 242.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a6930266-9e13-50f3-80b5-d7068e6c5834"))
+  (global_label "TCK"
+    (shape input)
+    (at 27.94 242.57 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "3d47e293-0235-53cb-b68c-5d348f4c6c49")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 27.94 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 27.94 229.87)
+      (xy 27.94 227.33))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3cecfeb5-933a-5326-9cd8-97aa1059aaf9"))
+  (symbol
+    (lib_id "power:GND")
+    (at 27.94 227.33 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "59771c63-7cf8-550e-b86a-f5e81c53c3a0")
+    (property "Reference" "#PWR0205"
+      (at 38.1 218.05 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 38.1 220.45 0)
+      (effects
+        (font
+          (size 0.9 0.9))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 27.94 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 27.94 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 27.94 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "667315ad-e629-5e26-854f-66daae5e744b"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0205")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 73.66 233.68 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8412bf77-d6cb-55a6-8665-3e10f716fa38")
+    (property "Reference" "R42"
+      (at 76.66 232.38 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 78.16 234.98 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 73.66 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "f88eb6b4-1c90-54b2-ae10-a5ad5d5040b0"))
+    (pin "2"
+      (uuid "4e783716-c0b5-589f-b64b-572f55ed5f22"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R42")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 73.66 237.49)
+      (xy 73.66 242.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e57b289c-9ae8-528e-b84b-6520f6f7a60c"))
+  (global_label "TMS"
+    (shape input)
+    (at 73.66 242.57 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "c1b1f4d5-b919-5978-987d-0a376c54528a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 73.66 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 73.66 229.87)
+      (xy 73.66 227.33))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bccac4b8-e8e9-5bbc-9364-402f3f881f1f"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 73.66 227.33 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "ad9301e4-cf2c-5e62-bd70-75bc7ec61888")
+    (property "Reference" "#PWR0206"
+      (at 73.66 218.05 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 73.66 224.23 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 73.66 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 73.66 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 73.66 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "1d7d5be6-b6eb-58d0-8d27-18fd4b4b7cf2"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0206")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 119.38 233.68 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fd69d0b6-7918-56c5-8043-12af9291a048")
+    (property "Reference" "R43"
+      (at 122.38 232.38 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 123.88 234.98 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 119.38 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 119.38 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "e0d4e492-12be-57f6-9b3f-dd538381a275"))
+    (pin "2"
+      (uuid "0dc8ab39-fc01-59d4-9c08-0e0e662264a9"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R43")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 119.38 237.49)
+      (xy 119.38 242.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "72d05c7c-ec70-5426-bcb7-6be4f3557c79"))
+  (global_label "TDI"
+    (shape input)
+    (at 119.38 242.57 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "00c46afd-48ff-5fa2-a411-c96efece66b1")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 119.38 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 119.38 229.87)
+      (xy 119.38 227.33))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d2535a87-417d-5719-bc2e-1f64df8a0510"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 119.38 227.33 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "ef8dfbbc-0421-5100-997e-6f7bcad59088")
+    (property "Reference" "#PWR0207"
+      (at 119.38 218.05 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 119.38 224.23 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 119.38 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 119.38 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "44e16c0c-ef95-57da-9cbd-63d343134704"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0207")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes))
+  (symbol
+    (lib_id "Device:R")
+    (at 165.1 233.68 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d5ec166d-b229-5986-9944-ed9479addf24")
+    (property "Reference" "R44"
+      (at 168.1 232.38 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Value" "10k"
+      (at 169.6 234.98 0)
+      (effects
+        (font
+          (size 0.95 0.95))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 165.1 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 165.1 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 165.1 233.68 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "2a0a7ac4-907c-5f7d-af7d-05344dc096d7"))
+    (pin "2"
+      (uuid "f565045a-94af-519b-b9f9-5d5be2b848c6"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "R44")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 165.1 237.49)
+      (xy 165.1 242.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "97b45a46-1508-5c72-9919-5fd52b90c4de"))
+  (global_label "TDO"
+    (shape input)
+    (at 165.1 242.57 0)
+    (effects
+      (font
+        (size 0.95 0.95))
+      (justify right))
+    (uuid "6cbf93b6-4103-54fb-836f-2b729eb5326d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 165.1 242.57 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 165.1 229.87)
+      (xy 165.1 227.33))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0f924f43-ef8d-5543-befe-275105e99532"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 165.1 227.33 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (dnp no)
+    (uuid "b6b8ba05-f3de-5b94-8543-31c893858dfd")
+    (property "Reference" "#PWR0208"
+      (at 165.1 218.05 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Value" "+5V"
+      (at 165.1 224.23 0)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" ""
+      (at 165.1 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 165.1 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (property "Assembly" "COMMON"
+      (at 165.1 227.33 0)
+      (effects
+        (font
+          (size 1 1))
+        (hide yes)))
+    (pin "1"
+      (uuid "2ff99899-a3e9-5a97-ba0a-8930c964d9b1"))
+    (instances
+      (project "hp9835_unified_ram_rom_board"
+        (path "/84c24153-2fcb-4318-851a-b096109d7b0d/da693c4c-48ec-5014-8910-89e62fc36d19"
+          (reference "#PWR0208")
+          (unit 1))))
+    (in_bom no)
+    (on_board yes)))
